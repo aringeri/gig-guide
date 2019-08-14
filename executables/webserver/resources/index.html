@@ -1,0 +1,144 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+   integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+   crossorigin=""></script>
+  <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-omnivore/v0.2.0/leaflet-omnivore.min.js'></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" ></script>
+
+  <title>Gig Guide</title>
+  
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    #mapid {
+      position: absolute;
+      top : 50px;
+      bottom: 0;
+      width: 100%;
+    }
+    #main {
+      position: relative;
+      height: 100%;
+    }
+    #reset-button {
+      display: none;
+    }
+    .fa-search {
+      margin-right: 8px;
+    }
+    .leaflet-right {
+      padding-top:5%;
+      padding-right: 45%;
+    }
+    #licon {
+      margin-left: 8px;
+    }
+    .close-button {
+      display: inline-block !important;
+      float : right;
+      font-size: 18px;
+      width: 25% !important;
+    }
+    .filter-label {
+      display: inline-block !important;
+      width: 75% !important;
+    }
+    .apply-button {
+      width: 50% !important;
+    }
+    #gitlink {
+      float: right;
+      margin-top: 17px;
+      margin-right: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
+    <label class="w3-bar-item w3-large w3-teal filter-label">Filters</label>
+    <button class="w3-button close-button" onclick="w3_close()">&times;</button>
+    <div class="w3-bar-item">
+      <label for"date">Date:</label>
+      <input id="date" type="date" onchange="dateChange(event)"></input>
+    </div>
+    <div class="w3-bar-item w3-teal">
+      <div style="float: left; width: 50%">&nbsp;</div>
+      <button id="apply" class="w3-button apply-button" onclick="apply()" disabled="true">Apply<i id="licon" style="display:none" class="fa fa-circle-o-notch fa-spin"></i></button>
+    </div>
+    <div id="venue-holder" class="w3-bar-item">
+    </div>
+  </div>
+  <div id="main">
+    <div class="w3-teal">
+      <button id="openNav" class="w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776;</button>
+      <span>Gig Guide</span>
+      <a id="gitlink" href="https://github.com/aringeri/gig-guide" style=>
+        <i class="fa fa-github" aria-hidden="true"></i>
+      </a>
+    </div>
+    <div id="mapid"></div>
+  </div>
+  <script src='index.js'></script>
+  <script>
+let today = adjustTimezone(new Date());
+let day = 8 - today.getDay();
+let maxDate = new Date(today.getFullYear(), today.getMonth(), today.getDate() + day);
+let todayStr = today.toISOString().substr(0, 10);
+let date = document.getElementById("date");
+date.value = todayStr;
+date.min = todayStr;
+date.max = maxDate.toISOString().substr(0, 10);
+
+function adjustTimezone(date) {
+  return new Date(
+      date.getTime() 
+      + Math.abs(date.getTimezoneOffset()*60000)
+  );
+}
+
+function dateChange(event) {
+  document.getElementById("apply").disabled = false;
+}
+
+function loading_feedback() {
+  document.getElementById("licon").style.display = "inline-block";
+}
+
+function loading_feedback_off() {
+  document.getElementById("licon").style.display = "none";
+}
+
+function apply() {
+  loading_feedback();
+  reload();
+  document.getElementById("apply").disabled = true  
+  venue_div = document.getElementById("venue-holder");
+  venue_div.innerHTML = "";
+}
+
+function w3_open() {
+  document.getElementById("main").style.marginLeft = "25%";
+  document.getElementById("mySidebar").style.width = "25%";
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("openNav").style.visibility = 'hidden';
+}
+
+function w3_close() {
+  document.getElementById("main").style.marginLeft = "0%";
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("openNav").style.display = "inline-block";
+  document.getElementById("openNav").style.visibility = '';
+}
+  </script>
+</body>
+</html>
