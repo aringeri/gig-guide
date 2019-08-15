@@ -8,7 +8,7 @@ module GigGuide.Types
 
 import GigGuide.Types.Range (MinMaxRange, mkRange, mkRange') 
 
-type Price = Double --TODO use Rational
+type Price = Double
 
 newtype PriceRange = PriceRange { priceRange :: MinMaxRange Price }
   deriving (Eq, Ord, Show, Read)

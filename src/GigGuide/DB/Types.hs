@@ -60,7 +60,6 @@ Event
   location Text
   price Price
   upperPrice Price Maybe
-  --eventVenue VenueId Maybe
   deriving Show Ord Eq
 Venue
   name Text
@@ -70,11 +69,6 @@ Venue
   categories [VenueCategory]
   city Text Maybe
   deriving Show Ord Eq
---VenueLocation
---  venueId VenueId
---  UniqueId venueId
---  lat Latitude
---  lon Longitude
 VenueGeo
   venueId VenueId
   GeoUniqueId venueId

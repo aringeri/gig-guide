@@ -6,7 +6,7 @@ import           Data.Char (isSpace)
 import           Data.Maybe (fromMaybe)
 import           Data.Either (partitionEithers)
 import           Control.Monad (guard)
-import           Control.Monad.Except hiding (liftEither)
+import           Control.Monad.Except
 import           Control.Lens
 import           Data.Time (Day, fromGregorian, defaultTimeLocale)
 import           Data.Time.Format (formatTime, parseTimeM)
@@ -138,17 +138,15 @@ runErrorScraper scr u s = do
 maxFetches :: Int
 maxFetches = 250
 
-scrapeAll :: {-Show a =>-} URL -> SearchParams -> Scraper L.Text a -> IO [a]
+scrapeAll :: URL -> SearchParams -> Scraper L.Text a -> IO [a]
 scrapeAll url p scr =
   run (take maxFetches $ iterate incReload p)
   where incReload s = s { reloadParam = Just $ maybe 1 (+1) (reloadParam s) } 
         run []     = return []
         run (a:as) = do
           c <- fetchPage url a
-          --putStrLn (maybe "" show $ reloadParam a)
           case scrapeStringLike (LE.decodeUtf8 c) scr of
             Just e ->
-              --putStrLn $ show e
               (e :) <$> run as
             _      -> return []
 
@@ -156,7 +154,6 @@ scrapeAll url p scr =
 testFile :: String -> Scraper L.Text a -> IO (Maybe a)
 testFile f sc = do 
   s <- readFile f
-  --return $ runScrapeM s art
   return $ scrapeStringLike (L.pack s) sc
 
 events :: Scraper L.Text [Either EventCreationError Event] 
@@ -164,10 +161,6 @@ events = do
   es <- chroots' (tagSelector "article") event
   guard $ not (null es)
   return es
-
--- available in mtl 2.2.2
-liftEither :: MonadError e m => Either e a -> m a
-liftEither = either throwError return
 
 event :: (MonadError EventCreationError m
          , MonadScraper L.Text m) 
