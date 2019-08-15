@@ -1,32 +1,27 @@
 {-# LANGUAGE OverloadedStrings          #-}
 module Geocode
-  ( geocode )
-where
+  ( ConnStr(..)
+  , Config(..)
+  , ApiKey(..)
+  , removeEsc
+  ) where
 
-import qualified Data.ByteString.Lazy as LB
 import           Data.Text
-import           Control.Lens
-import           Data.Aeson.Lens
-import           Network.Wreq
-import           GigGuide.Types.Geo (Latitude(..), Longitude(..), Coord(..))
-import           GigGuide.Util (readMaybeT)
 
-url :: String
-url = "https://nominatim.openstreetmap.org/search/"
+removeEsc :: Text -> Text
+removeEsc = replace "\n" " " .
+            replace "\t" " " .
+            replace "\r" " "
 
-geocode :: Text -> IO (Maybe Coord)
-geocode t = parseCoord <$> fetchJSON url t
+newtype ConnStr = ConnStr
+  { unConnStr :: Text }
+  deriving (Show, Eq)
 
-parseCoord :: (AsValue p) => p -> Maybe Coord
-parseCoord json =
-  let parse k = readMaybeT =<< json ^? nth 0 . key k . _String
-      lt = Latitude <$> parse "lat"
-      ln = Longitude <$> parse "lon"
-  in  Coord <$> lt <*> ln
+newtype ApiKey = ApiKey
+  { unApiKey :: Text }
+  deriving (Show, Eq)
 
-fetchJSON :: String -> Text -> IO LB.ByteString
-fetchJSON u t = do
-  let opts = defaults & param "q" .~ [t]
-                      & param "format" .~ ["json"]
-  r <- getWith opts u
-  pure $ r ^. responseBody
+data Config = Config
+  { dbConn :: ConnStr
+  , apiKey :: ApiKey
+  } deriving (Show, Eq)

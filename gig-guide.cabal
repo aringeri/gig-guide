@@ -79,10 +79,13 @@ executable scrape-events
 executable geocode-venues
   main-is: Main.hs
   other-modules: Geocode
+              ,  Geocode.Google
+              ,  Geocode.Nominatim
   hs-source-dirs: executables/geocode-venues
   build-depends:       base ^>=4.12.0.0
                      , lib
                      , text
+                     , mtl
                      , bytestring
                      , persistent
                      , wreq
