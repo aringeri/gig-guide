@@ -30,6 +30,9 @@ global_geo_layer.addTo(mymap);
 function reload() {
   var b = mymap.getBounds();
   let d = document.getElementById("date").value;
+  if (!d || d === "") {
+    d = fmtDate(todaysDate());
+  }
 
   $.ajax({
     dataType: "json",

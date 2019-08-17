@@ -70,7 +70,7 @@
     <button class="w3-button close-button" onclick="w3_close()">&times;</button>
     <div class="w3-bar-item">
       <label for"date">Date:</label>
-      <input id="date" type="date" onchange="dateChange(event)"></input>
+      <input id="date" type="date" required pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}" onchange="dateChange(event)"></input>
     </div>
     <div class="w3-bar-item w3-teal">
       <div style="float: left; width: 50%">&nbsp;</div>
@@ -89,16 +89,14 @@
     </div>
     <div id="mapid"></div>
   </div>
-  <script src='index.js'></script>
   <script>
-let today = adjustTimezone(new Date());
-let day = 8 - today.getDay();
-let maxDate = new Date(today.getFullYear(), today.getMonth(), today.getDate() + day);
-let todayStr = today.toISOString().substr(0, 10);
-let date = document.getElementById("date");
-date.value = todayStr;
-date.min = todayStr;
-date.max = maxDate.toISOString().substr(0, 10);
+function fmtDate(date) {
+  return date.toISOString().substr(0, 10);
+}
+
+function todaysDate() {
+  return new Date();
+}
 
 function adjustTimezone(date) {
   return new Date(
@@ -107,8 +105,22 @@ function adjustTimezone(date) {
   );
 }
 
+let today = todaysDate();
+let day = 7 - today.getDay();
+let maxDate = adjustTimezone(
+  new Date(today.getFullYear(),
+           today.getMonth(),
+           today.getDate() + day)
+  );
+
+let todayStr = fmtDate(today);
+let date = document.getElementById("date");
+date.value = todayStr;
+date.min = todayStr;
+date.max = fmtDate(maxDate);
+
 function dateChange(event) {
-  document.getElementById("apply").disabled = false;
+  document.getElementById("apply").disabled = !event.srcElement.validity.valid;
 }
 
 function loading_feedback() {
@@ -141,5 +153,6 @@ function w3_close() {
   document.getElementById("openNav").style.visibility = '';
 }
   </script>
+  <script src='index.js'></script>
 </body>
 </html>
