@@ -1,32 +1,66 @@
 {-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE FlexibleContexts  #-}
 module GigGuide.Scraper.Beat.Venue 
- ( venues
+ ( VenueUrlParams(..)
  , VenueCreationError(..)
+ , venueSearchParams
+ , scrapeVenues
  ) where
 
-import           Control.Monad (guard)
 import           Control.Monad.Except
 import           Control.Lens
+import qualified Data.List.NonEmpty as N
 
 import           Text.HTML.Scalpel.Core ( Scraper, (//), atDepth
                                         , hasClass, (@:), textSelector)
 import           Text.HTML.Scalpel.Class
+import           Network.Wreq (Options, defaults, param)
 
-import           GigGuide.DB ( Venue(..), VenueCategory(..))
+import           GigGuide.Types (URL)
+import           GigGuide.DB (Venue(..), VenueCategory(..))
 import           GigGuide.Scraper.Common
 
+import qualified Data.Text as T
 import qualified Data.Text.Lazy as L
+
+newtype VenueUrlParams =  
+  VenueUrlParams 
+    { venueReload :: Maybe Integer 
+    } deriving (Eq, Show)
+
+venueReloadL :: Lens' VenueUrlParams (Maybe Integer)
+venueReloadL = lens venueReload (\p r -> p { venueReload = r })
+
+mkOpts :: VenueUrlParams -> Options
+mkOpts (VenueUrlParams (Just r)) = 
+  defaults & param "more" .~ [(T.pack . show) r]
+mkOpts _ = defaults
+
+venueSearchParams :: VenueUrlParams
+venueSearchParams = VenueUrlParams Nothing
+
+itPages :: VenueUrlParams -> [VenueUrlParams]
+itPages = iterate incPage
+
+incPage :: VenueUrlParams -> VenueUrlParams
+incPage = venueReloadL %~ incMaybe
+
+scrapeVenues :: URL -> VenueUrlParams -> IO [Venue]
+scrapeVenues u s = printLefts (runScraper (zipUrls u s) venues)
+
+zipUrls :: URL -> VenueUrlParams -> [(URL, Options)]
+zipUrls u p = 
+  zip (replicate maxFetches u)
+      (mkOpts <$> itPages p)
 
 data VenueCreationError = Blank
   deriving (Show, Eq)
 
-venues :: Scraper L.Text [Either VenueCreationError Venue]
+venues :: Scraper L.Text (N.NonEmpty (Either VenueCreationError Venue))
 venues = do 
   vs <- chroot ("div" @: [hasClass "loaded-content"])
         $ chroots' ("article" @: [hasClass "article-card-row"]) venue
-  guard (not (null vs)) 
-  return vs
+  failEmpty vs
 
 venue :: ( MonadError VenueCreationError m
          , MonadScraper L.Text m) =>

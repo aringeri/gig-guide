@@ -1,4 +1,3 @@
-{-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE FlexibleContexts  #-}
 module GigGuide.Scraper.Beat
   ( module GigGuide.Scraper.Beat.Event
