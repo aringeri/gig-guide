@@ -62,6 +62,14 @@
       margin-top: 17px;
       margin-right: 20px;
     }
+    .gig-label {
+      width: 100px;
+      float: left;
+    }
+    .multi-line-content {
+      display: block;
+      overflow: hidden;
+    }
   </style>
 </head>
 <body>
@@ -134,14 +142,14 @@ function loading_feedback_off() {
 function apply() {
   loading_feedback();
   reload();
-  document.getElementById("apply").disabled = true  
+  document.getElementById("apply").disabled = true
   venue_div = document.getElementById("venue-holder");
   venue_div.innerHTML = "";
 }
 
 function w3_open() {
-  document.getElementById("main").style.marginLeft = "25%";
-  document.getElementById("mySidebar").style.width = "25%";
+  document.getElementById("main").style.marginLeft = "30%";
+  document.getElementById("mySidebar").style.width = "30%";
   document.getElementById("mySidebar").style.display = "block";
   document.getElementById("openNav").style.visibility = 'hidden';
 }

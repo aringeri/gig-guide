@@ -5,13 +5,14 @@ import           System.Environment (getArgs)
 import           System.FilePath ((</>))
 import           Control.Monad (join)
 import           Control.Monad.Reader (runReaderT, MonadReader, MonadIO, liftIO)
-import           Data.List (unwords)
+import           Data.List (unwords, sortOn)
 import           Text.Printf (printf)
 import           Text.Read (readMaybe)
 import qualified Data.ByteString as B
 import qualified Data.Text as T
 import qualified Data.Text.Lazy as TL
 import           Data.Text.Encoding (decodeUtf8)
+import           Data.Time (TimeOfDay, formatTime, todMin)
 import           Data.Time.Clock (utctDay, getCurrentTime)
 import           Data.Time.Calendar (Day, showGregorian)
 import           Data.Time.Format (parseTimeM, defaultTimeLocale)
@@ -156,7 +157,7 @@ toFeature ((VenueLocation (Latitude lat') (Longitude lon'), v), e) =
           (Properties (venueName v) (mapToEJSON e))
 
 mapToEJSON :: [Event] -> [EventJSON]
-mapToEJSON = map toEJSON
+mapToEJSON = map toEJSON . sortOn eventTime
 
 toEJSON :: Event -> EventJSON
 toEJSON e = EventJSON
@@ -164,6 +165,10 @@ toEJSON e = EventJSON
   (TL.pack . showGregorian . eventDate $ e)
   (fmtPrice . eventPrice $ e)
   (TL.pack . show <$> filter notEmptyCat (eventCategories e))
+  (fmtTime . eventTime $ e)
+  (fmtGenre <$> eventGenre e)
+  (eventSupports e)
+  (eventTicketUrl e)
 
 notEmptyCat :: EventCategory -> Bool
 notEmptyCat (Other "") = False
@@ -175,3 +180,31 @@ fmtPrice (Left d) = TL.pack $ printf "$%.2f" d
 fmtPrice (Right (PriceRange range)) =
   TL.pack $ printf "$%.2f - %.2f" (minVal range) 
                                   (maxVal range)
+
+fmtTime :: TimeOfDay -> String
+fmtTime t =
+  let fmt = if todMin t == 0
+              then "%l%P"
+              else "%l:%M%P"
+  in formatTime defaultTimeLocale fmt t
+
+fmtGenre :: EventGenre -> TL.Text
+fmtGenre g =
+  case g of
+    Rock         -> "Rock"
+    Global       -> "Global"
+    Jazz         -> "Jazz"
+    Electronic   -> "Electronic"
+    HipHop       -> "Hip Hop"
+    Classical    -> "Classical"
+    RnB          -> "R&B"
+    Punk         -> "Punk"
+    Metal        -> "Metal"
+    Pop          -> "Pop"
+    Acoustic     -> "Acoustic"
+    CountryFolk  -> "Country/Folk"
+    Blues        -> "Blues"
+    SoulFunk     -> "Soul/Funk"
+    Experimental -> "Experimental"
+    WorldMusic   -> "World Music"
+    Indie        -> "Indie"

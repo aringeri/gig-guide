@@ -83,28 +83,82 @@ function set_sidebar_data(feature) {
     <span id="venue">${feature.properties.vName}</span>`;
 
   for (var e in feature.properties.events) {
-    var ev = feature.properties.events[e]
+    var ev = feature.properties.events[e];
     html += 
-    `<div>
-        <h3 id="event_name${e}">${ev.eName}</h3>
-        <label for"price${e}">Price:</label>
-        <span id="event_price${e}">${ev.price}</span>`;
-
-    if (ev.categories.length > 0) {
-      var cats = ""
-      for (var c in ev.categories) {
-        cats += ev.categories[c] + " ";
-      }
+      `<div>
+          <h3 id="event_name${e}">${ev.eName}`
+    if (ev.ticketUrl) {
       html += 
-    `    <br><label>Category:<label>
-         <span>${cats}</span>`; 
+        `   <a target="_blank" rel="noopener noreferrer" href="${ev.ticketUrl}">
+              <i class="fa fa-ticket" aria-hidden="true"></i>
+            </a>`;
     }
+    html += `
+        </h3>
+        
+        <label for"event_time${e}" class="gig-label">Time:</label>
+        <span id="event_time${e}" >${ev.time}</span><br>
+        <label for"event_price${e}" class="gig-label">Price:</label>
+        <span id="event_price${e}">${ev.price}</span>`;
+    
+    if (ev.genre) {
+      tagColour = genreColour(ev.genre);
+      html += 
+        `    <br><label for"event_genre" class="gig-label">Genre:</label>
+             <span id="event_genre" class="w3-tag ${tagColour}">${ev.genre}</span>`;
+    }
+
+    html += arrToHTMl(ev.supports, "Supports:", ", ");
     
     html += 
-    `    <hr>
-     </div>`;
+      `    <hr>
+       </div>`;
   }
   venue_div.innerHTML = html
+}
+
+function genreColour(genre) {
+  switch (genre) {
+    case "Rock":
+    case "Indie":
+      return "w3-red";
+    case "Global":
+    case "World Music":
+      return "w3-cyan";
+    case "Jazz":
+    case "Soul/Funk":
+    case "Experimental":
+      return "w3-purple";
+    case "Blues":
+      return "w3-indigo";
+    case "Electronic":
+      return "w3-light-green";
+    case "R&B":
+    case "Hip Hop":
+      return "w3-deep-purple";
+    case "Classical":
+      return "w3-amber";
+    case "Punk":
+    case "Metal":
+      return "w3-dark-grey";
+    case "Pop":
+      return "w3-pale-red";
+    case "Acoustic":
+    case "Country/Folk":
+      return "w3-khaki";
+    default:
+      return "";
+  }
+}
+
+function arrToHTMl(arr, label, sep=" ") {
+  if (arr.length > 0) {
+    let h = 
+      `    <br><label class="gig-label">${label}</label>
+           <span class="multi-line-content">${arr.join(sep)}</span>`; 
+    return h;
+  }
+  return "";
 }
 
 L.control.reload = function(opts) {

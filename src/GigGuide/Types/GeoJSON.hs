@@ -12,6 +12,7 @@ module GigGuide.Types.GeoJSON
 import Data.Text.Lazy
 import Data.Aeson (ToJSON(..), object, (.=))
 import GHC.Generics
+import GigGuide.Types (URL)
 
 newtype FeatureCollection = FeatureCollection
   { features :: [Feature]
@@ -36,6 +37,10 @@ data EventJSON = EventJSON
   , eDate :: Text
   , price :: Text
   , categories :: [Text]
+  , time :: String
+  , genre :: Maybe Text
+  , supports :: [Text]
+  , ticketUrl :: Maybe URL
   } deriving (Eq, Show, Generic)
 instance ToJSON EventJSON
 
