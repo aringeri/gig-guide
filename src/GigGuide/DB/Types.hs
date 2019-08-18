@@ -8,13 +8,29 @@
 {-# LANGUAGE QuasiQuotes                #-}
 {-# LANGUAGE TemplateHaskell            #-}
 {-# LANGUAGE TypeFamilies               #-}
-module GigGuide.DB.Types where
+module GigGuide.DB.Types
+  ( module GigGuide.DB.EventGenre
+  , EventCategory(..)
+  , VenueCategory(..)
+  , Event(..)
+  , EventId
+  , Venue(..)
+  , VenueId
+  , VenueGeo(..)
+  , VenueGeoId
+  , VenueLocation(..)
+  , EntityField(..)
+  , entityDefs
+  , migrateAll) where
 
 import           Data.Text.Lazy
-import           Data.Time (Day)
+import           Data.Time (Day, TimeOfDay)
 
+import           Database.Persist
+import           Database.Persist.Sql
 import           Database.Persist.TH
 
+import           GigGuide.DB.EventGenre
 import           GigGuide.Types.Geo (Latitude(..), Longitude(..))
 import           GigGuide.Types (Price, URL)
 
@@ -54,12 +70,17 @@ share [mkPersist sqlSettings, mkMigrate "migrateAll", mkSave "entityDefs"] [pers
 Event
   name Text
   url URL
-  UniqueEventUrl url
   date Day
   categories [EventCategory]
   location Text
   price Price
   upperPrice Price Maybe
+  time TimeOfDay
+  genre EventGenre Maybe
+  supports [Text]
+  venueUrl URL
+  ticketUrl URL Maybe
+  UniqueEvent name date venueUrl time
   deriving Show Ord Eq
 Venue
   name Text

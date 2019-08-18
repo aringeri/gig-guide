@@ -2,6 +2,7 @@
 {-# LANGUAGE FlexibleInstances #-}
 {-# LANGUAGE FlexibleContexts #-}
 {-# LANGUAGE UndecidableInstances #-}
+{-# LANGUAGE GeneralizedNewtypeDeriving #-}
 module Text.HTML.Scalpel.Class where
 
 import           Data.Either
@@ -12,7 +13,21 @@ import           Text.HTML.Scalpel.Core hiding (attr, attrs, html, htmls,
 import qualified Text.HTML.Scalpel.Core as C
 import           Text.StringLike (StringLike)
 
-type ScrapeM str e a = ExceptT e (Scraper str) a
+newtype ScrapeM str e a = ScrapeM
+  { unScrapeM :: ExceptT e (Scraper str) a }
+  deriving(
+    Functor,
+    Applicative,
+    Monad,
+    MonadError e,
+    MonadScraper str
+  )
+
+runScrapeM :: StringLike str =>
+              ScrapeM str e a ->
+              str ->
+              Maybe (Either e a)
+runScrapeM m s = C.scrapeStringLike s . runExceptT $ unScrapeM m
 
 class (Show str, StringLike str, Monad m) => MonadScraper str m | m -> str where
   attr :: String -> Selector -> m str
@@ -54,5 +69,11 @@ instance (Show str, StringLike str, MonadScraper str m) => MonadScraper str (Exc
                   (l:_, _) -> Left l
                   (_,  rs) -> Right rs
 
+class LiftScraper str t where
+  liftScraper  :: Scraper str a -> t a
+
+instance LiftScraper str (ScrapeM str e) where
+  liftScraper = ScrapeM . lift
+
 chroots' :: StringLike str => Selector -> ScrapeM str e a -> Scraper str [Either e a]
-chroots' s = C.chroots s . runExceptT
+chroots' s = C.chroots s . runExceptT . unScrapeM

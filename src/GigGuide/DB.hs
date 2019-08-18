@@ -14,6 +14,7 @@ module GigGuide.DB
   , runStderrSqlite
   , selectAll
   , insertVenueCoords
+  , migrateEntity
   , migrateVenueGeos
   , selectEventsByVenue
   , EntityField(..)
@@ -99,6 +100,12 @@ insertVenueCoords conn c k =
     
 
 migrateVenueGeos :: MonadUnliftIO m => T.Text -> m ()
-migrateVenueGeos c =
-  runStderrSqlite c $ 
-    runMigration (migrate entityDefs $ entityDef (Nothing :: Maybe VenueGeo))
+migrateVenueGeos c = migrateEntity c (Nothing :: Maybe VenueGeo)
+
+migrateEntity :: (MonadUnliftIO m1,
+                  PersistEntity record,
+                  Monad m2) =>
+                 T.Text -> m2 record -> m1 ()
+migrateEntity c e =
+   runStderrSqlite c $
+    runMigration (migrate entityDefs $ entityDef e)

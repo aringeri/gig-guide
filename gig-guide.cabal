@@ -111,16 +111,21 @@ library lib
                      , GigGuide.Types
                      , GigGuide.Types.Event
                      , GigGuide.Types.Geo
+                     , GigGuide.Types.GeoJSON
+                     , GigGuide.Types.Range
                      , GigGuide.Util
                      , GigGuide.Config
                      , GigGuide.AppM
-                     , GigGuide.Types.GeoJSON
-                     , GigGuide.Types.Range
 
   -- Modules included in this library but not exported.
   other-modules:       Text.HTML.Scalpel.Class
                      , GigGuide.DB.Types
                      , GigGuide.DB.Query
+                     , GigGuide.DB.EventGenre
+                     , GigGuide.Scraper.Beat
+                     , GigGuide.Scraper.Beat.Event
+                     , GigGuide.Scraper.Beat.Venue
+                     , GigGuide.Scraper.Common
 
   -- LANGUAGE extensions used by modules in this package.
   -- other-extensions:
