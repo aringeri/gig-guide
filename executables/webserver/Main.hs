@@ -23,7 +23,7 @@ import           Network.Wai.Handler.Warp (run)
 import           Data.Aeson
 
 import           GigGuide.DB hiding (Event(..))
-import           GigGuide.Scraper (fromDB)
+import           GigGuide.Scraper.BeatScraper (fromDB)
 import           GigGuide.Util (readMaybeT)
 import           GigGuide.Types.Geo (Latitude(..), Longitude(..), Coord(..), mkBounds, CoordBounds)
 import           GigGuide.Types (Price, PriceRange(..))

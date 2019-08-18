@@ -73,6 +73,7 @@ executable scrape-events
                      , lib
                      , text
                      , time
+                     , optparse-applicative ^>= 0.14.3
   ghc-options:        -Wall
   default-language: Haskell2010 
 
@@ -106,7 +107,7 @@ executable scrape-venues
 
 library lib
   -- Modules exported by the library.
-  exposed-modules:     GigGuide.Scraper
+  exposed-modules:     GigGuide.Scraper.BeatScraper
                      , GigGuide.DB
                      , GigGuide.Types
                      , GigGuide.Types.Event
@@ -122,7 +123,6 @@ library lib
                      , GigGuide.DB.Types
                      , GigGuide.DB.Query
                      , GigGuide.DB.EventGenre
-                     , GigGuide.Scraper.Beat
                      , GigGuide.Scraper.Beat.Event
                      , GigGuide.Scraper.Beat.Venue
                      , GigGuide.Scraper.Common

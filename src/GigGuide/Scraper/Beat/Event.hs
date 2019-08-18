@@ -85,11 +85,8 @@ data EventCreationError =
   | VenueUrlMissingError
   deriving (Show, Eq)
 
-scrapeEvents :: URL -> EventUrlParams -> IO [Event]
-scrapeEvents u s = printLefts (crawlEvents u s)
-
-crawlEvents :: URL -> EventUrlParams -> IO [Either EventCreationError Event]
-crawlEvents u s = do
+scrapeEvents :: URL -> EventUrlParams -> IO [Either EventCreationError Event]
+scrapeEvents u s = do
   let urls = zipUrls u s
   rs <- runScraper urls events
   forM rs (fmap join . mapM scrape)

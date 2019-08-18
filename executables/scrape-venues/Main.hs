@@ -2,7 +2,7 @@ module Main where
 
 import System.Environment (getArgs)
 import Data.Text (pack)
-import GigGuide.Scraper (scrapeVenues, venueSearchParams)
+import GigGuide.Scraper.BeatScraper (scrapeVenues, venueSearchParams)
 import GigGuide.DB (runPutMany)
 
 main :: IO ()
