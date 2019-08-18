@@ -45,11 +45,17 @@ function reload() {
         // remove old points
         function onEachFeature(feature, layer) {
             if (feature.properties && feature.properties.vName) {
-              let markerClicked = function() {
-                set_sidebar_data(feature);
-                w3_open();
-              }
-              layer.on("click", markerClicked)
+              layer.on("click", function() {
+                 set_sidebar_data(feature);
+                 w3_open();
+              });
+              layer.bindPopup(feature.properties.vName);
+              layer.on('mouseover', function (e) {
+                  this.openPopup();
+              });
+              layer.on('mouseout', function (e) {
+                  this.closePopup();
+              });
             }
         }
         var geoLayer = new L.geoJson(null, {
