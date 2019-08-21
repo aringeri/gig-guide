@@ -67,6 +67,19 @@ function reload() {
             }
         }
         var geoLayer = new L.geoJson(null, {
+          pointToLayer: function(feature, latlng) {
+              var iconPath = "icon/" + genreIcon(feature);
+              var smallIcon = new L.Icon({
+                   iconSize: [33, 33],
+                   iconAnchor: [17, 33],
+                   popupAnchor:  [0, -25],
+                   shadowSize:   [35, 30],
+                   shadowAnchor: [10, 30],
+                   iconUrl: iconPath,
+                   shadowUrl: 'https://unpkg.com/leaflet@1.4.0/dist/images/marker-shadow.png'
+              });
+             return L.marker(latlng, {icon: smallIcon});
+             },
           onEachFeature : onEachFeature
         });
         geoLayer.addTo(mymap);
@@ -128,6 +141,51 @@ function set_sidebar_data(feature) {
        </div>`;
   }
   venue_div.innerHTML = html
+}
+
+function findFirstGenre(feature) {
+  var events = feature.properties.events;
+  for (var i in events) {
+    var e = events[i];
+    if (e.genre) {
+      return e.genre;
+    }
+  }
+  return "";
+}
+
+function genreIcon(feature) {
+  var genre = findFirstGenre(feature);
+  switch (genre) {
+    case "Rock":
+    case "Indie":
+      return "icon-red.png";
+    case "Global":
+    case "World Music":
+      return "icon-cyan.png";
+    case "Jazz":
+    case "Soul/Funk":
+    case "Experimental":
+    case "R&B":
+    case "Hip Hop":
+      return "icon-purple.png";
+    case "Blues":
+      return "icon-blue.png";
+    case "Electronic":
+      return "icon-lime.png";
+    case "Classical":
+      return "icon-amber.png";
+    case "Punk":
+    case "Metal":
+      return "icon-black.png";
+    case "Pop":
+      return "icon-pale-red.png";
+    case "Acoustic":
+    case "Country/Folk":
+      return "icon-orange.png";
+    default:
+      return "icon-green.png";
+  }
 }
 
 function genreColour(genre) {

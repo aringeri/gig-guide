@@ -79,6 +79,7 @@ handleRequest request =
     []           -> staticFileM "index.html" "text/html"
     ["index.js"] -> staticFileM "index.js"   "application/javascript"
     ["search"]   -> search request
+    ["icon", p]  -> staticFileM ("icons/" ++ T.unpack p) "image/png"
     _            -> pure notFound
 
 staticFileM :: (MonadReader r m, HasServerConfig r) => 
