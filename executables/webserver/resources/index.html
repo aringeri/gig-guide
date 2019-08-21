@@ -26,6 +26,7 @@
       top : 50px;
       bottom: 0;
       width: 100%;
+      z-index: -1;
     }
     #main {
       position: sticky;
@@ -106,8 +107,8 @@
     </div>
   </div>
   <div id="main">
-    <div class="w3-teal">
-      <button id="openNav" class="w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776;</button>
+    <div class="w3-teal" onclick="exitFullscreen()">
+      <button id="openNav" class="w3-button w3-teal w3-xlarge" onclick="menuPressed(event)">&#9776;</button>
       <span>Gig Guide</span>
       <a id="gitlink" href="https://github.com/aringeri/gig-guide" style=>
         <i class="fa fa-github" aria-hidden="true"></i>
@@ -162,6 +163,22 @@ function loading_feedback_off() {
   document.getElementById("licon").style.display = "none";
 }
 
+function toggleFullscreen() {
+  if (document.fullscreenElement == null) {
+    enterFullscreen();
+  } else {
+    exitFullscreen();
+  }
+}
+
+function enterFullscreen() {
+  document.body.requestFullscreen();
+}
+
+function exitFullscreen() {
+  document.exitFullscreen();
+}
+
 function apply() {
   loading_feedback();
   reload();
@@ -170,8 +187,18 @@ function apply() {
   venue_div.innerHTML = "";
 }
 
-function w3_open() {
-  document.getElementById("mySidebar").style.width = "30%";
+var mq = window.matchMedia( "(max-width: 600px)" );
+function sidebarWidth() {
+  return mq.matches ? "50%" : "30%";
+}
+
+function menuPressed(e) {
+  w3_open();
+  e.stopPropagation();
+}
+
+function w3_open(event) {
+  document.getElementById("mySidebar").style.width = sidebarWidth();
   document.getElementById("mySidebar").style.display = "block";
   document.getElementById("openNav").style.visibility = 'hidden';
 }

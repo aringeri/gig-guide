@@ -20,6 +20,7 @@ L.Control.Reload = L.Control.extend({
         var btn = L.DomUtil.create('button', 'leaflet-control button');
         btn.innerHTML = '<i class=\"fa fa-search\"></i>Search this area';
         btn.onclick = reload;
+        L.DomEvent.disableClickPropagation(btn);
         return btn;
     },
 
@@ -27,6 +28,8 @@ L.Control.Reload = L.Control.extend({
         // Nothing to do here
     }
 });
+
+mymap.on("dblclick", toggleFullscreen);
 
 var global_geo_layer = new L.geoJson();
 global_geo_layer.addTo(mymap);
