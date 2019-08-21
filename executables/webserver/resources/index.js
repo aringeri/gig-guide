@@ -1,5 +1,7 @@
 var tileUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
-var mymap = L.map('mapid').setView([-37.813611,144.963056], 13);
+var mymap = L.map('mapid', {
+  zoomControl: false
+}).setView([-37.813611,144.963056], 13);
 
 L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/streets-v10/tiles/{z}/{x}/{y}?access_token={accessToken}', {
     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
@@ -10,6 +12,9 @@ L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/streets-v10/tiles/{z}/{x}/{
 var bounds = mymap.getBounds();
 var reloadBtn;
 
+L.control.zoom({
+  position: "topright"
+}).addTo(mymap);
 L.Control.Reload = L.Control.extend({
     onAdd: function(map) {
         var btn = L.DomUtil.create('button', 'leaflet-control button');
@@ -172,7 +177,7 @@ L.control.reload = function(opts) {
 
 function boundsMoved(e) {
   if (reloadBtn == null) {
-    reloadBtn = L.control.reload({ position: 'topright' });
+    reloadBtn = L.control.reload({ position: 'topleft' });
     reloadBtn.addTo(mymap);
   }
 }

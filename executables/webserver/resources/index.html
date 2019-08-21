@@ -28,7 +28,7 @@
       width: 100%;
     }
     #main {
-      position: relative;
+      position: sticky;
       height: 100%;
     }
     #reset-button {
@@ -37,9 +37,9 @@
     .fa-search {
       margin-right: 8px;
     }
-    .leaflet-right {
-      padding-top:5%;
-      padding-right: 45%;
+    .leaflet-left {
+      padding-top: 0%;
+      padding-left: 45%;
     }
     #licon {
       margin-left: 8px;
@@ -99,7 +99,12 @@
   </div>
   <script>
 function fmtDate(date) {
-  return date.toISOString().substr(0, 10);
+  var d = new Date();
+  d.setUTCFullYear(date.getFullYear());
+  d.setUTCMonth(date.getMonth());
+  d.setUTCDate(date.getDate());
+
+  return d.toISOString().substr(0, 10);
 }
 
 function todaysDate() {
@@ -148,14 +153,12 @@ function apply() {
 }
 
 function w3_open() {
-  document.getElementById("main").style.marginLeft = "30%";
   document.getElementById("mySidebar").style.width = "30%";
   document.getElementById("mySidebar").style.display = "block";
   document.getElementById("openNav").style.visibility = 'hidden';
 }
 
 function w3_close() {
-  document.getElementById("main").style.marginLeft = "0%";
   document.getElementById("mySidebar").style.display = "none";
   document.getElementById("openNav").style.display = "inline-block";
   document.getElementById("openNav").style.visibility = '';
