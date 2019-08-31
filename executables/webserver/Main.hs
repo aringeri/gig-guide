@@ -6,6 +6,7 @@ import           System.FilePath ((</>))
 import           Control.Monad (join)
 import           Control.Monad.Reader (runReaderT, MonadReader, MonadIO, liftIO)
 import           Data.List (unwords, sortOn)
+import           Data.Maybe (maybe)
 import           Text.Printf (printf)
 import qualified Data.ByteString as B
 import qualified Data.Text as T
@@ -20,7 +21,8 @@ import           Control.Lens (_2, (%~),
                               (^.), to, view)
 import           Network.Wai
 import           Network.HTTP.Types
-import           Network.Wai.Handler.Warp (run)
+import           Network.Wai.Handler.Warp (run, setPort, defaultSettings)
+import           Network.Wai.Handler.WarpTLS (runTLS, tlsSettings)
 import           Data.Aeson
 
 import           GigGuide.DB hiding (Event(..))
@@ -61,6 +63,7 @@ parseArgs = Environment
   <*> (ServerConfig
        <$> (Port <$> parsePort)
        <*> parseFilePath
+       <*> (Just <$> parseTls <|> pure Nothing)
       )
   where
     parseConnection = strOption
@@ -78,12 +81,29 @@ parseArgs = Environment
          <> long "port"
          <> help "The port to run the server on. (default 80)"
          <> value 80)
+    parseTls = TlsConfig
+      <$> strOption
+           (short 't'
+         <> long "tls_certificate"
+         <> help "Path to TLS certificate file")
+      <*> strOption
+           (short 'k'
+         <> long "tls_key"
+         <> help "Path to file containing TLS key")
 
 runApp :: Environment -> IO ()
 runApp e = do
-  let p = e ^. serverConfig . serverPort . getPort
+  let p      = e ^. serverConfig . serverPort . getPort
+      tlsCfg = e ^. serverConfig . serverTlsConfig
   putStrLn $ "Starting server on port: " ++ show p
-  run p (app e)
+  maybe (runHttp p)
+        (runHttps p)
+        tlsCfg
+  where
+    runHttp  p     = run p (app e)
+    runHttps p tls = runTLS (tlsSettings (_certificateFile tls) (_keyFile tls))
+                       (setPort p defaultSettings)
+                       (app e)
 
 app :: Environment -> Application
 app env request respond =

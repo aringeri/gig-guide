@@ -15,14 +15,21 @@ newtype Port = Port { _getPort :: Int }
   deriving (Eq, Show)
 makeClassy ''Port
 
+data TlsConfig = TlsConfig
+  { _certificateFile :: FilePath
+  , _keyFile :: FilePath
+  } deriving (Eq, Show)
+makeClassy ''TlsConfig
+
 data ServerConfig = ServerConfig
   { _serverPort :: Port
   , _resourceFilePath :: FilePath
+  , _serverTlsConfig :: Maybe TlsConfig
   } deriving (Eq, Show)
 makeClassy ''ServerConfig
 
 defaultServerConfig :: ServerConfig
-defaultServerConfig = ServerConfig (Port 80) "."
+defaultServerConfig = ServerConfig (Port 80) "." Nothing
 
 data Environment = Environment
   { _dbConfig :: DBConfig
