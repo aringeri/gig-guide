@@ -16,9 +16,12 @@ import GigGuide.Types (URL)
 
 newtype FeatureCollection = FeatureCollection
   { features :: [Feature]
-  } deriving (Eq, Show, Generic)
+  } deriving (Eq, Show)
 
-instance ToJSON FeatureCollection
+instance ToJSON FeatureCollection where
+  toJSON (FeatureCollection fs) = 
+    object [ "type" .= ("FeatureCollection" :: String)
+           , "features" .= fs]
 
 data Feature = Feature
   { featureType :: String
