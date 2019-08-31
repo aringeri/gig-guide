@@ -1,7 +1,7 @@
 # gig-guide
-A visual gig guide for events in Melbourne. Check it out [here](http://104.196.248.201/)!
+A visual gig guide for events in Melbourne. Check it out [here](https://melbgigs.ml)!
 
-Written with Haskell and Leaflet.
+Written with Haskell, Elm and Leaflet.
 
 Current event data sources:
 * beat.com.au
