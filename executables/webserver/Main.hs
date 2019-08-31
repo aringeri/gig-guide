@@ -7,7 +7,6 @@ import           Control.Monad (join)
 import           Control.Monad.Reader (runReaderT, MonadReader, MonadIO, liftIO)
 import           Data.List (unwords, sortOn)
 import           Text.Printf (printf)
-import           Text.Read (readMaybe)
 import qualified Data.ByteString as B
 import qualified Data.Text as T
 import qualified Data.Text.Lazy as TL
@@ -16,7 +15,8 @@ import           Data.Time (TimeOfDay, formatTime, todMin)
 import           Data.Time.Clock (utctDay, getCurrentTime)
 import           Data.Time.Calendar (Day, showGregorian)
 import           Data.Time.Format (parseTimeM, defaultTimeLocale)
-import           Control.Lens (_2, (%~), (&), (.~), 
+import           Options.Applicative
+import           Control.Lens (_2, (%~), 
                               (^.), to, view)
 import           Network.Wai
 import           Network.HTTP.Types
@@ -39,8 +39,7 @@ type ContentType = B.ByteString
 
 main :: IO ()
 main = 
-  parseArgs <$> getArgs
-    >>= maybe printUsage runApp 
+  runApp =<< execParser parserInfo
 
 printUsage :: IO ()
 printUsage = do
@@ -48,19 +47,37 @@ printUsage = do
   putStr $ "Invalid arguments: " ++ unwords a ++ "\
     \\n  Usage: server [-c db_connection] [-p server_port] [-f resource_file_path]\n"
 
+parserInfo :: ParserInfo Environment
+parserInfo =
+  info (parseArgs <**> helper)
+     (fullDesc
+      <> progDesc "GigGuide - Web server"
+      <> header "webserver"
+     )
 
-parseArgs :: [String] -> Maybe Environment
-parseArgs = parseArgs' defaultEnvironment
+parseArgs :: Parser Environment
+parseArgs = Environment
+  <$> (DBConfig <$> parseConnection)
+  <*> (ServerConfig
+       <$> (Port <$> parsePort)
+       <*> parseFilePath
+      )
   where
-    parseArgs' e ("-c":d:rest) = 
-      parseArgs' (e & dbConfig . connStr .~ d) rest
-    parseArgs' e ("-p":p:rest) = do
-      pt <- Port <$> readMaybe p
-      parseArgs' (e & srvConfig . serverPort .~ pt) rest
-    parseArgs' e ("-f":f:rest) = 
-      parseArgs' (e & srvConfig . resourceFilePath .~ f) rest
-    parseArgs' e [] = Just e
-    parseArgs' _ _  = Nothing
+    parseConnection = strOption
+           (short 'c'
+         <> long "db_connection"
+         <> help "Connection string for database containing gig info (default 'host=localhost port=5454')"
+         <> value "host=localhost port=5454")
+    parseFilePath = strOption
+           (short 'f'
+         <> long "file_path_resource"
+         <> help "Directory containing the web resources/assets. (default '.'')"
+         <> value ".")
+    parsePort = option auto
+           (short 'p'
+         <> long "port"
+         <> help "The port to run the server on. (default 80)"
+         <> value 80)
 
 runApp :: Environment -> IO ()
 runApp e = do
