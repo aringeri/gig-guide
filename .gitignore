@@ -2,3 +2,4 @@
 dist-*
 dist
 .ghc.environment*
+executables/webserver/ui/elm/elm-stuff*

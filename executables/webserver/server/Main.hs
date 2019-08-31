@@ -117,7 +117,20 @@ handleRequest request =
     ["index.js"] -> staticFileM "index.js"   "application/javascript"
     ["search"]   -> search request
     ["icon", p]  -> staticFileM ("icons/" ++ T.unpack p) "image/png"
+    [f]          -> fileByExtension f
     _            -> pure notFound
+
+fileByExtension :: (MonadReader r m, HasServerConfig r) =>
+                   T.Text -> m Response
+fileByExtension f = staticFileM (T.unpack f) c
+  where
+    ext = T.toLower . T.takeWhileEnd (/= '.')
+    c = case ext f of
+          "js"   -> "application/javascript"
+          "css"  -> "text/css"
+          "html" -> "text/html"
+          "png"  -> "image/png"
+          _       -> "text/plain"
 
 staticFileM :: (MonadReader r m, HasServerConfig r) => 
                FilePath -> ContentType -> m Response
