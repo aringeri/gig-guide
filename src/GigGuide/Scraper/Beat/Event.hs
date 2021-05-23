@@ -7,6 +7,7 @@ module GigGuide.Scraper.Beat.Event
   , scrapeEvents
   , fromDB
   , toDB
+  , events
   ) where
 
 import           Data.Maybe (fromMaybe)

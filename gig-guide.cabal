@@ -119,10 +119,12 @@ library lib
                      , GigGuide.Util
                      , GigGuide.Config
                      , GigGuide.AppM
+                     , GigGuide.Scraper.Beat.Internal
+                     , GigGuide.DB.Internal
+                     , Text.HTML.Scalpel.Class
 
   -- Modules included in this library but not exported.
-  other-modules:       Text.HTML.Scalpel.Class
-                     , GigGuide.DB.Types
+  other-modules:       GigGuide.DB.Types
                      , GigGuide.DB.Query
                      , GigGuide.DB.EventGenre
                      , GigGuide.Scraper.Beat.Event
@@ -166,3 +168,20 @@ library lib
   -- Base language which the package is written in.
   default-language:    Haskell2010
 
+
+test-suite spec
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  hs-source-dirs:
+      test
+  ghc-options: -Wall
+  build-depends:
+      base ^>= 4.12.0.0
+    , hspec == 2.*
+    , scalpel-core ^>=0.6.0
+    , text
+    , lib
+  other-modules:
+      GigGuide.Scraper.Beat.VenueSpec
+  default-language: Haskell2010
+  build-tool-depends: hspec-discover:hspec-discover == 2.*

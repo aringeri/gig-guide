@@ -5,6 +5,8 @@ module GigGuide.Scraper.Beat.Venue
  , VenueCreationError(..)
  , venueSearchParams
  , scrapeVenues
+ , venues
+ , venue
  ) where
 
 import           Control.Monad.Except
@@ -53,7 +55,7 @@ zipUrls u p =
   zip (replicate maxFetches u)
       (mkOpts <$> itPages p)
 
-data VenueCreationError = Blank
+newtype VenueCreationError = MissingField String
   deriving (Show, Eq)
 
 venues :: Scraper L.Text (N.NonEmpty (Either VenueCreationError Venue))
@@ -69,7 +71,7 @@ venue = do
   url <- L.unpack <$> attr "href" "a"
   chroot ("div" @: [hasClass "row"]) $
     Venue 
-      <$> name
+      <$> required "venueName" name
       <*> address
       <*> pure url
       <*> categories
@@ -87,6 +89,13 @@ venue = do
 nonEmpty :: L.Text -> Maybe L.Text
 nonEmpty it | L.null it = Nothing
             | otherwise = Just it
+
+required :: (MonadError VenueCreationError m) => String -> m L.Text -> m L.Text
+required name a = do
+  a' <- a
+  if L.null a' then
+    throwError $ MissingField name
+  else a
 
 parseVenueCategories :: L.Text -> [VenueCategory]
 parseVenueCategories = parseCommaSep parseVenueCategory
