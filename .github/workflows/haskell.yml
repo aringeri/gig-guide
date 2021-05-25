@@ -25,3 +25,6 @@ jobs:
       run: |
         cabal configure
         cabal build
+    - name: Test Specs
+      run: |
+        cabal test spec --test-show-details=direct
