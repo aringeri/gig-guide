@@ -16,7 +16,7 @@ jobs:
     - uses: actions/setup-haskell@v1
       with:
         ghc-version: '8.6.5'
-        cabal-version: '3.0'
+        cabal-version: '3.2'
     - name: Install dependencies
       run: |
         cabal update
@@ -25,3 +25,6 @@ jobs:
       run: |
         cabal configure
         cabal build
+    - name: Test Specs
+      run: |
+        cabal test spec --test-show-details=direct
