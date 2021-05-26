@@ -185,3 +185,20 @@ test-suite spec
       GigGuide.Scraper.Beat.VenueSpec
   default-language: Haskell2010
   build-tool-depends: hspec-discover:hspec-discover == 2.*
+
+test-suite integration
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  hs-source-dirs:
+      integration-test/src
+  ghc-options: -Wall
+  build-depends:
+      base ^>= 4.12.0.0
+    , hspec == 2.*
+    , scalpel-core ^>=0.6.0
+    , text
+    , lib
+  other-modules:
+    GigGuide.Scraper.Beat.VenueIntegrationSpec
+  default-language: Haskell2010
+  build-tool-depends: hspec-discover:hspec-discover == 2.*

@@ -5,3 +5,4 @@ dist
 executables/webserver/ui/elm/elm-stuff*
 executables/webserver/ui/elm/index/main.js
 executables/webserver/ui/elm/main.orig.js
+integration-test/beat-web-stub/dist*
