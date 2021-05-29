@@ -28,3 +28,5 @@ jobs:
     - name: Test Specs
       run: |
         cabal test spec --test-show-details=direct
+    - name: Integration test
+      run: docker-compose -f integration-test-docker-compose.yml run integration-tests
