@@ -2,7 +2,7 @@ FROM haskell:8.6.5@sha256:6ae86033bfa75027fc36a63bb69e7fa41d4e7df6ae4a78baeb77da
 
 WORKDIR /beat-web-stub
 
-RUN cabal update
+RUN cabal new-update
 
 COPY *.cabal ./
 
