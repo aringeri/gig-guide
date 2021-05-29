@@ -9,7 +9,9 @@ services:
     networks: 
       - integration-test-network
   integration-tests:
-    build: ./
+    build:
+      context: ./
+      dockerfile: integration-test.Dockerfile
     environment: 
       BEAT_URL: http://beat-web-stub:8080
     networks: 
