@@ -202,3 +202,14 @@ test-suite integration
     GigGuide.Scraper.Beat.VenueIntegrationSpec
   default-language: Haskell2010
   build-tool-depends: hspec-discover:hspec-discover == 2.*
+
+executable beat-web-stub
+  main-is:             Main.hs
+  build-depends:       base >=4.12 && <4.13
+                     , wai
+                     , warp
+                     , http-types
+  hs-source-dirs:      integration-test/beat-web-stub/src
+  ghc-options:        -Wall
+  default-language:    Haskell2010
+  data-dir:            integration-test/beat-web-stub/static

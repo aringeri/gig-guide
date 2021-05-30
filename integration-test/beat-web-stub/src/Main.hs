@@ -6,7 +6,7 @@ import Data.Maybe(fromMaybe)
 import System.Environment
 import Network.Wai
 import Network.HTTP.Types
-import Network.Wai.Handler.Warp (run, setPort, defaultSettings)
+import Network.Wai.Handler.Warp (run)
 
 main :: IO ()
 main = do
@@ -14,6 +14,9 @@ main = do
   let port = fromMaybe "8080" portEnv
   putStrLn $ "Starting beat.com.au web testing stub on port: " ++ port
   run (read port :: Int) app
+
+staticDir :: FilePath
+staticDir = "integration-test/beat-web-stub/static"
 
 app :: Application
 app request respond = respond $ case rawPathInfo request of
@@ -41,19 +44,19 @@ directory1 :: Response
 directory1 = responseFile
     status200
     [("Content-Type", "text/html")]
-    "static/directory_1.html"
+    (staticDir ++ "/directory_1.html")
     Nothing
 
 directory2 :: Response
 directory2 = responseFile
     status200
     [("Content-Type", "text/html")]
-    "static/directory_2.html"
+    (staticDir ++ "/directory_2.html")
     Nothing
 
 noMoreVenues :: Response
 noMoreVenues = responseFile
     status200
     [("Content-Type", "text/html")]
-    "static/directory-no-more-venues.html"
+    (staticDir ++ "/directory-no-more-venues.html")
     Nothing
