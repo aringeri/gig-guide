@@ -13,20 +13,16 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - uses: actions/setup-haskell@v1
-      with:
-        ghc-version: '8.6.5'
-        cabal-version: '3.2'
     - name: Install dependencies
       run: |
-        cabal update
-        cabal install --only-dependencies
+        docker build . -f gig-guide-cache.Dockerfile -t aringeri/gig-guide-cache
     - name: Build
       run: |
-        cabal configure
-        cabal build
+        docker build . -f gig-guide-lib.Dockerfile -t aringeri/gig-guide-lib
     - name: Test Specs
       run: |
-        cabal test spec --test-show-details=direct
+        docker build . -f gig-guide-spec.Dockerfile -t aringeri/gig-guide-spec
+        docker run -it aringeri/gig-guide-spec
     - name: Integration test
-      run: docker-compose -f integration-test-docker-compose.yml run integration-tests
+      run: |
+        docker-compose -f integration-test-docker-compose.yml run integration-tests
