@@ -22,7 +22,7 @@ jobs:
     - name: Test Specs
       run: |
         docker build . -f gig-guide-spec.Dockerfile -t aringeri/gig-guide-spec
-        docker run -it aringeri/gig-guide-spec
+        docker run aringeri/gig-guide-spec
     - name: Integration test
       run: |
         docker-compose -f integration-test-docker-compose.yml run integration-tests
