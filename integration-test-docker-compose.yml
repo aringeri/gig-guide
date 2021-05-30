@@ -5,7 +5,9 @@ services:
       PORT: 8080
     ports:
       - 8080:8080
-    build: integration-test/beat-web-stub
+    build:
+      context: ./
+      dockerfile: beat-web-stub.Dockerfile
     networks: 
       - integration-test-network
   integration-tests:
