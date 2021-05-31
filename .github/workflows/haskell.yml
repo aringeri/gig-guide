@@ -13,9 +13,17 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+    - name: Docker login
+      run: echo ${{ secrets.GITHUB_TOKEN }} | docker login docker.pkg.github.com -u $GITHUB_ACTOR --password-stdin
+    - name: Docker pull cache
+      run: docker pull docker.pkg.github.com/aringeri/gig-guide/gig-guide-cache:latest || true
     - name: Install dependencies
       run: |
-        docker build . -f gig-guide-cache.Dockerfile -t aringeri/gig-guide-cache
+        docker build . -f gig-guide-cache.Dockerfile -t aringeri/gig-guide-cache --cache-from=docker.pkg.github.com/aringeri/gig-guide/gig-guide-cache:latest
+    - name: Upload cache image
+      run: |
+        docker tag aringeri/gig-guide-cache docker.pkg.github.com/aringeri/gig-guide/gig-guide-cache:latest
+        docker push docker.pkg.github.com/aringeri/gig-guide/gig-guide-cache:latest
     - name: Build
       run: |
         docker build . -f gig-guide-lib.Dockerfile -t aringeri/gig-guide-lib

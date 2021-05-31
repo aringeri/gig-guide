@@ -212,4 +212,3 @@ executable beat-web-stub
   hs-source-dirs:      integration-test/beat-web-stub/src
   ghc-options:        -Wall
   default-language:    Haskell2010
-  data-dir:            integration-test/beat-web-stub/static
