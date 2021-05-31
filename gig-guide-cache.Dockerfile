@@ -10,10 +10,4 @@ ENV LANG C.UTF-8
 COPY *.cabal ./
 
 RUN cabal new-update
-RUN cabal new-build --only-dependencies lib webserver scrape-events scrape-venues geocode-venues
-
-COPY LICENSE CHANGELOG.md ./
-COPY src/ ./src
-COPY executables ./executables
-COPY integration-test/ ./integration-test
-COPY test/ ./test
+RUN cabal new-build --only-dependencies --enable-tests all
