@@ -19,7 +19,7 @@ jobs:
       run: docker pull aringeri/gig-guide-cache docker.pkg.github.com/aringeri/gig-guide-cache:latest || true
     - name: Install dependencies
       run: |
-        docker build . -f gig-guide-cache.Dockerfile -t aringeri/gig-guide-cache --cache-from=aringeri/gig-guide-cache docker.pkg.github.com/aringeri/gig-guide-cache:latest
+        docker build . -f gig-guide-cache.Dockerfile -t aringeri/gig-guide-cache --cache-from=docker.pkg.github.com/aringeri/gig-guide-cache:latest
         docker tag aringeri/gig-guide-cache docker.pkg.github.com/aringeri/gig-guide-cache:latest
         docker push aringeri/gig-guide-cache docker.pkg.github.com/aringeri/gig-guide-cache:latest
     - name: Build
