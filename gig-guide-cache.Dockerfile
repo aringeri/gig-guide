@@ -7,12 +7,13 @@ WORKDIR /gig-guide
 # when running tests against HTML files containing special characters ('Cafe').
 ENV LANG C.UTF-8
 
-RUN cabal new-update
+COPY *.cabal ./
 
-COPY *.cabal LICENSE CHANGELOG.md ./
+RUN cabal new-update
+RUN cabal new-build --only-dependencies lib webserver scrape-events scrape-venues geocode-venues
+
+COPY LICENSE CHANGELOG.md ./
 COPY src/ ./src
 COPY executables ./executables
 COPY integration-test/ ./integration-test
 COPY test/ ./test
-
-RUN cabal new-install --only-dependencies lib webserver scrape-events scrape-venues geocode-venues
