@@ -35,6 +35,7 @@ jobs:
       run: |
         docker-compose -f integration-test-docker-compose.yml run integration-tests
     - name: Build and push 'scrape-venues' image
+      if: ${{ github.ref == 'refs/heads/master' }}
       run: |
-        docker build . -f docker/runtime.Dockerfile --build-arg EXECUTABLE=scrape-venues -t docker.pkg.github.com/aringeri/gig-guide/scrape-venues
-        docker push docker.pkg.github.com/aringeri/gig-guide/scrape-venues
+        docker build . -f docker/runtime.Dockerfile --build-arg EXECUTABLE=scrape-venues -t docker.pkg.github.com/aringeri/gig-guide/scrape-venues:${GITHUB_SHA}
+        docker push docker.pkg.github.com/aringeri/gig-guide/scrape-venues:${GITHUB_SHA}
