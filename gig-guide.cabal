@@ -198,8 +198,11 @@ test-suite integration
     , scalpel-core ^>=0.6.0
     , text
     , lib
+    , persistent
+    , directory
   other-modules:
     GigGuide.Scraper.Beat.VenueIntegrationSpec
+    GigGuide.DB.DBIntegrationSpec
   default-language: Haskell2010
   build-tool-depends: hspec-discover:hspec-discover == 2.*
 
