@@ -1,8 +1,9 @@
 {-# LANGUAGE OverloadedStrings          #-}
-module Geocode
+module GigGuide.Geocode
   ( ConnStr(..)
   , Config(..)
   , ApiKey(..)
+  , Url
   , removeEsc
   ) where
 
@@ -21,7 +22,10 @@ newtype ApiKey = ApiKey
   { unApiKey :: Text }
   deriving (Show, Eq)
 
+type Url = String
+
 data Config = Config
   { dbConn :: ConnStr
   , apiKey :: ApiKey
+  , geocoderEndpoint :: Url
   } deriving (Show, Eq)

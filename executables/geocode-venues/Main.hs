@@ -11,8 +11,8 @@ import           GigGuide.DB ( migrateVenueGeos, insertVenueCoords
                         , Venue(..), EntityField(..), selectAll
                         , runStderrSqlite)
 import           GigGuide.Types.Geo (Coord)
-import           Geocode
-import           Geocode.Google
+import           GigGuide.Geocode
+import           GigGuide.Geocode.Google
 
 type Geocoder a = ReaderT Config IO a
 
@@ -39,9 +39,10 @@ geocoder = do
                     ++ unpack cstr ++ "\""
 
 parseArgs :: [String] -> Maybe Config
-parseArgs [conn, api] = 
+parseArgs [conn, api, url] = 
   Just $ Config (ConnStr . pack $ conn)
                 (ApiKey . pack  $ api)
+                url
 parseArgs _      = Nothing
 
 printUsage :: IO ()
@@ -49,7 +50,8 @@ printUsage = putStr "Unrecognized arguments\
   \\n  Usage : geocode-venues db_connection api_key\
   \\n\
   \\neg connection : \"host=localhost port=5000\"\
-  \\napi_key : geocoding API key\n"
+  \\napi_key : geocoding API key\
+  \\ngeocode_url : geocoding service url\n"
 
 retryVenuesWithoutGeo :: (MonadReader Config m, MonadIO m) => m ()
 retryVenuesWithoutGeo = do

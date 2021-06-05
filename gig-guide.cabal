@@ -81,9 +81,6 @@ executable scrape-events
 
 executable geocode-venues
   main-is: Main.hs
-  other-modules: Geocode
-              ,  Geocode.Google
-              ,  Geocode.Nominatim
   hs-source-dirs: executables/geocode-venues
   build-depends:       base ^>=4.12.0.0
                      , lib
@@ -122,6 +119,8 @@ library lib
                      , GigGuide.Scraper.Beat.Internal
                      , GigGuide.DB.Internal
                      , Text.HTML.Scalpel.Class
+                     , GigGuide.Geocode
+                     , GigGuide.Geocode.Google
 
   -- Modules included in this library but not exported.
   other-modules:       GigGuide.DB.Types
@@ -160,6 +159,7 @@ library lib
                      , http-types
                      , resourcet
                      , aeson ^>=1.4.4
+                     , lens-aeson
                      , esqueleto ^>=3.0.0
 
   -- Directories containing source files.
@@ -196,6 +196,7 @@ test-suite integration
       base ^>= 4.12.0.0
     , hspec == 2.*
     , scalpel-core ^>=0.6.0
+    , mtl ^>=2.2.2
     , text
     , lib
     , persistent
@@ -203,6 +204,7 @@ test-suite integration
   other-modules:
     GigGuide.Scraper.Beat.VenueIntegrationSpec
     GigGuide.DB.DBIntegrationSpec
+    GigGuide.Geocode.GeocodeIntegrationSpec
   default-language: Haskell2010
   build-tool-depends: hspec-discover:hspec-discover == 2.*
 
@@ -213,5 +215,16 @@ executable beat-web-stub
                      , warp
                      , http-types
   hs-source-dirs:      integration-test/beat-web-stub/src
+  ghc-options:        -Wall
+  default-language:    Haskell2010
+
+executable geocode-stub
+  main-is:             Main.hs
+  build-depends:       base >=4.12 && <4.13
+                     , wai
+                     , warp
+                     , http-types
+                     , text
+  hs-source-dirs:      integration-test/geocode-stub/src
   ghc-options:        -Wall
   default-language:    Haskell2010
