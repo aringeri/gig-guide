@@ -1,6 +1,8 @@
 {-# LANGUAGE OverloadedStrings          #-}
 module GigGuide.Geocode.GeocodeIntegrationSpec where
 
+import Data.Maybe
+import System.Environment
 import Control.Monad.Reader
 import Test.Hspec
 import GigGuide.Geocode
@@ -8,14 +10,18 @@ import GigGuide.Geocode.Google
 import GigGuide.Types.Geo (Coord(..), Latitude(..), Longitude(..))
 import GigGuide.DB(Venue(..), VenueCategory (..))
 
-config :: Config
-config = Config 
-  { dbConn = ConnStr "NOT USED"
-  , apiKey = ApiKey "APIKEY"
-  , geocoderEndpoint = "http://localhost:8081/maps/api/geocode/json" }
+baseConfig :: Url -> Config
+baseConfig = Config 
+  (ConnStr "NOT USED")
+  (ApiKey "APIKEY")
+
+getConfigFromEnv :: IO Config 
+getConfigFromEnv = baseConfig 
+  <$> (fromMaybe "http://localhost:8081/maps/api/geocode/json" <$> lookupEnv "GEOCODE_URL")
 
 spec :: Spec
-spec =
+spec = do
+  config <- runIO getConfigFromEnv
   describe "google geocoder" $ do
     it "should call service to geocode venue address" $ do
       runGeocode venue config `shouldReturn` 
