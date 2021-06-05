@@ -21,6 +21,7 @@ services:
       - integration-test-network
     depends_on: 
       - beat-web-stub
+      - geocode-stub
   geocode-stub:
     environment: 
       PORT: 80
