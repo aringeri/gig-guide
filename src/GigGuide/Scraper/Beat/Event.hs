@@ -8,6 +8,7 @@ module GigGuide.Scraper.Beat.Event
   , fromDB
   , toDB
   , events
+  , defaultParams
   ) where
 
 import           Data.Maybe (fromMaybe)
