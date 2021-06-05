@@ -1,6 +1,6 @@
 {-# LANGUAGE FlexibleContexts           #-}
 {-# LANGUAGE OverloadedStrings          #-}
-module Geocode.Google
+module GigGuide.Geocode.Google
  (geocode)
  where
 
@@ -13,10 +13,7 @@ import           Data.Aeson.Lens
 import           Network.Wreq
 import           GigGuide.Types.Geo (Latitude(..), Longitude(..), Coord(..))
 import           GigGuide.DB(Venue(..))
-import           Geocode
-
-url :: String
-url = "https://maps.googleapis.com/maps/api/geocode/json"
+import           GigGuide.Geocode
 
 geocode :: (MonadReader Config m, MonadIO m) => 
            Venue -> m (Maybe Coord)
@@ -24,7 +21,9 @@ geocode = geocodeT . fmtAddress
 
 geocodeT :: (MonadReader Config m, MonadIO m) => 
            Text -> m (Maybe Coord)
-geocodeT t = parseCoord <$> fetchJSON url t
+geocodeT t = do
+  url <- reader geocoderEndpoint
+  parseCoord <$> fetchJSON url t
 
 fmtAddress :: Venue -> Text
 fmtAddress v = 
@@ -44,7 +43,7 @@ parseCoord json =
   in  Coord <$> lt <*> ln
 
 fetchJSON :: (MonadReader Config m, MonadIO m) => 
-            String -> 
+            Url -> 
             Text -> 
             m LB.ByteString
 fetchJSON u a = do

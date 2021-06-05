@@ -66,6 +66,7 @@ scrapeAll urls scr =
   run urls
   where run []     = return []
         run ((url,o) : as) = do
+          putStrLn $ "fetching page: " ++ url ++ " " ++ show o
           c <- fetchPage url o
           case scrapeStringLike (LE.decodeUtf8 c) scr of
             Just e -> (e :) <$> run as

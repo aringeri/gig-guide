@@ -20,6 +20,16 @@ services:
       - integration-test-network
     depends_on: 
       - beat-web-stub
+  geocode-stub:
+    environment: 
+      PORT: 8081
+    ports:
+      - 8081:8081
+    build:
+      context: ./
+      dockerfile: geocode-stub.Dockerfile
+    networks: 
+      - integration-test-network
 
 networks: 
   integration-test-network:
