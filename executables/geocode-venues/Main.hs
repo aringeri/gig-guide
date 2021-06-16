@@ -12,7 +12,7 @@ import           GigGuide.DB ( migrateVenueGeos, insertVenueCoords
                         , runStderrSqlite)
 import           GigGuide.Types.Geo (Coord)
 import           GigGuide.Geocode
-import           GigGuide.Geocode.Google
+import           GigGuide.Geocode.Nominatim
 
 type Geocoder a = ReaderT Config IO a
 
@@ -47,7 +47,7 @@ parseArgs _      = Nothing
 
 printUsage :: IO ()
 printUsage = putStr "Unrecognized arguments\
-  \\n  Usage : geocode-venues db_connection api_key\
+  \\n  Usage : geocode-venues db_connection api_key geocode_url\
   \\n\
   \\neg connection : \"host=localhost port=5000\"\
   \\napi_key : geocoding API key\
@@ -75,7 +75,8 @@ lookupAndInsert e =
 lookupCoords :: (MonadReader Config m, MonadIO m) =>
                 Entity Venue -> m (Key Venue, Either String Coord)
 lookupCoords e = do
-  coords <- geocode . entityVal $ e
+  url <- asks geocoderEndpoint
+  coords <- geocode url . entityVal $ e
   pure
     (entityKey e
     , maybe (Left $ "Geocoding failed for: " ++ show e)

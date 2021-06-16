@@ -15,7 +15,8 @@ services:
       context: ./
       dockerfile: integration-test.Dockerfile
     environment: 
-      GEOCODE_URL: http://geocode-stub/maps/api/geocode/json
+      GOOGLE_GEOCODE_URL: http://geocode-stub/maps/api/geocode/json
+      NOMINATIM_GEOCODE_URL: http://geocode-stub/search
       BEAT_URL: http://beat-web-stub
     networks: 
       - integration-test-network

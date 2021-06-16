@@ -121,6 +121,7 @@ library lib
                      , Text.HTML.Scalpel.Class
                      , GigGuide.Geocode
                      , GigGuide.Geocode.Google
+                     , GigGuide.Geocode.Nominatim
 
   -- Modules included in this library but not exported.
   other-modules:       GigGuide.DB.Types
@@ -225,6 +226,7 @@ executable geocode-stub
                      , warp
                      , http-types
                      , text
+                     , raw-strings-qq >= 1.1
   hs-source-dirs:      integration-test/geocode-stub/src
   ghc-options:        -Wall
   default-language:    Haskell2010

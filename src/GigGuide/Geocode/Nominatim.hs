@@ -1,5 +1,6 @@
 {-# LANGUAGE OverloadedStrings          #-}
-module Geocode.Nominatim
+{-# LANGUAGE FlexibleContexts           #-}
+module GigGuide.Geocode.Nominatim
   (geocode)
   where
 
@@ -7,7 +8,6 @@ import qualified Data.ByteString.Lazy as LB
 import           Data.Text
 import qualified Data.Text as T
 import qualified Data.Text.Lazy as L
-import           Control.Concurrent (threadDelay)
 import           Control.Monad.Reader
 import           Control.Lens
 import           Data.Aeson.Lens
@@ -15,23 +15,16 @@ import           Network.Wreq
 import           GigGuide.Types.Geo (Latitude(..), Longitude(..), Coord(..))
 import           GigGuide.DB(Venue(..))
 import           GigGuide.Util (readMaybeT)
-import           Geocode (removeEsc)
+import           GigGuide.Geocode (removeEsc)
 
-url :: String
-url = "https://nominatim.openstreetmap.org/search/"
+geocode :: (MonadIO m) =>
+           String -> Venue -> m (Maybe Coord)
+geocode url v = do
+  let address = fmtAddress . venueAddress $ v
+  liftIO $ geocodeAddress url address
 
-geocode :: (MonadReader r m, MonadIO m) =>
-           Venue -> m (Maybe Coord)
-geocode v = liftIO $
-    (geocodeT . fmtAddress . venueAddress) v
-      <* delay 5
-
-delay :: Int -> IO ()
-delay t =
-  threadDelay $ t * 1000000 -- 1 second
-
-geocodeT :: Text -> IO (Maybe Coord)
-geocodeT t = parseCoord <$> fetchJSON url t
+geocodeAddress :: String -> Text -> IO (Maybe Coord)
+geocodeAddress url t = parseCoord <$> fetchJSON url t
 
 fmtAddress :: L.Text -> Text
 fmtAddress = stripSlash

@@ -6,7 +6,8 @@ import System.Environment
 import Control.Monad.Reader
 import Test.Hspec
 import GigGuide.Geocode
-import GigGuide.Geocode.Google
+import qualified GigGuide.Geocode.Google as G
+import qualified GigGuide.Geocode.Nominatim as N
 import GigGuide.Types.Geo (Coord(..), Latitude(..), Longitude(..))
 import GigGuide.DB(Venue(..), VenueCategory (..))
 
@@ -15,16 +16,23 @@ baseConfig = Config
   (ConnStr "NOT USED")
   (ApiKey "APIKEY")
 
-getConfigFromEnv :: IO Config 
-getConfigFromEnv = baseConfig 
-  <$> (fromMaybe "http://localhost:8081/maps/api/geocode/json" <$> lookupEnv "GEOCODE_URL")
-
 spec :: Spec
 spec = do
-  config <- runIO getConfigFromEnv
+  googleUrl <- runIO $ fromJust <$> lookupEnv "GOOGLE_GEOCODE_URL"
+  nominatimUrl <- runIO $ fromJust <$> lookupEnv "NOMINATIM_GEOCODE_URL"
+  
   describe "google geocoder" $ do
+    let config = baseConfig googleUrl
     it "should call service to geocode venue address" $ do
-      runGeocode venue config `shouldReturn` 
+      runGoogleGeocode venue config `shouldReturn` 
+        Just (Coord 
+                (Latitude (-37.81194738558151)) 
+                (Longitude 144.96788006894667))
+  
+  describe "nominatim geocoder" $ do
+    let config = baseConfig nominatimUrl
+    it "should call service to geocode venue address" $ do
+      runNominatimGeocode venue config `shouldReturn` 
         Just (Coord 
                 (Latitude (-37.81194738558151)) 
                 (Longitude 144.96788006894667))
@@ -38,7 +46,11 @@ venue = Venue
       , venueCity = Just "Melbourne, VIC"
       }
 
-runGeocode :: Venue -> Config -> IO (Maybe Coord)
-runGeocode v = 
-  runReaderT (geocode v)
+runGoogleGeocode :: Venue -> Config -> IO (Maybe Coord)
+runGoogleGeocode v = 
+  runReaderT (G.geocode v)
+
+runNominatimGeocode :: Venue -> Config -> IO (Maybe Coord)
+runNominatimGeocode v c =
+  runReaderT (N.geocode (geocoderEndpoint c) v) c
   
