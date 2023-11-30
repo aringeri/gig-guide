@@ -146,13 +146,7 @@ getPoints selectedDate bounds =
       date = fmtMaybeDate selectedDate
       uFloat p = U.string p << String.fromFloat
   in Http.get
-      { url = U.relative ["search"]
-              [ uFloat   "north" north
-              , uFloat   "east"  east
-              , uFloat   "south" south
-              , uFloat   "west"  west
-              , U.string "date"  date
-              ]
+      { url = U.relative ["search", "FeatureCollection.json"] []
       , expect = Http.expectJson (GotPoints << Result.map (\p -> (bounds, p))) decoder
       }
 
