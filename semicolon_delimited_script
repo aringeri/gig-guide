@@ -1,2 +1,0 @@
-/app/scrape-events -d 2023-12-07 -o /app/out/FeatureCollection.json -i /app/data/geocoded-venues.json
-

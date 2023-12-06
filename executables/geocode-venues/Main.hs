@@ -1,92 +1,78 @@
-{-# LANGUAGE OverloadedStrings          #-}
-{-# LANGUAGE FlexibleContexts           #-}
+{-# LANGUAGE ScopedTypeVariables #-}
 module Main where
+import Options.Applicative
+import Data.Aeson ( decodeFileStrict, encodeFile )
+import GigGuide.Types.Venue (Venue)
+import GigGuide.Types.VenueAndGeo (VenueAndGeo(..))
+import GigGuide.Geocode.Nominatim (geocode)
+import GigGuide.Types (URL)
+import Control.Monad (when)
+import Control.Concurrent ( threadDelay )
+import Data.Traversable (for)
+import Data.Maybe (isNothing, mapMaybe)
+import Data.Foldable (for_)
 
-import           Control.Monad (filterM)
-import           Control.Monad.Reader
-import           System.Environment (getArgs)
-import           Data.Text (Text, pack, unpack)
-import           Database.Persist
-import           GigGuide.DB ( migrateVenueGeos, insertVenueCoords
-                        , Venue(..), EntityField(..), selectAll
-                        , runStderrSqlite)
-import           GigGuide.Types.Geo (Coord)
-import           GigGuide.Geocode
-import           GigGuide.Geocode.Nominatim
 
-type Geocoder a = ReaderT Config IO a
-
-askConnStr :: (MonadReader Config m) => m Text
-askConnStr = reader (unConnStr . dbConn)
+data Args = Args
+  {
+    venueJsonFile :: FilePath,
+    outFile :: FilePath,
+    url :: URL
+  } deriving(Show)
 
 main :: IO ()
-main = fmap parseArgs getArgs
-    >>= maybe printUsage runGeocoder
+main = do
+  (Args input out url) <- getArgs
+  (venues :: Maybe [Venue]) <- decodeFileStrict input
 
-runGeocoder :: Config -> IO ()
-runGeocoder = runReaderT geocoder
+  when (isNothing venues)
+    (putStrLn $ "WARN: Unable to decode input file: " ++ input)
 
-geocoder :: (MonadReader Config m, MonadIO m) => m ()
-geocoder = do
-  cstr <- askConnStr
-  venues <- liftIO $ selectAll cstr
-  if not (null venues) 
-    then do
-      liftIO $ migrateVenueGeos cstr
-      sequence_ $ lookupAndInsert <$> venues
-    else liftIO . putStrLn $ 
-          "Warning : No Venues Found in db \"" 
-                    ++ unpack cstr ++ "\""
+  for_ venues (\vs -> do
+      let total = length vs
+      putStrLn $ "Geocoding " ++ show total ++ " venues"
 
-parseArgs :: [String] -> Maybe Config
-parseArgs [conn, api, url] = 
-  Just $ Config (ConnStr . pack $ conn)
-                (ApiKey . pack  $ api)
-                url
-parseArgs _      = Nothing
+      gs <- for (zip [1..] vs) (\(i,v) -> do
+          when (i `mod` 100 == 0)
+            (putStrLn $ "processing " ++ show i ++ "/" ++ show total)
+          
+          c <- geocode url v
+          when (isNothing c)
+            (putStrLn $ "WARN: Unable to geocode venue: " ++ show v)
+          threadDelay 1000000
+          return (v, c)
+        )
 
-printUsage :: IO ()
-printUsage = putStr "Unrecognized arguments\
-  \\n  Usage : geocode-venues db_connection api_key geocode_url\
-  \\n\
-  \\neg connection : \"host=localhost port=5000\"\
-  \\napi_key : geocoding API key\
-  \\ngeocode_url : geocoding service url\n"
+      let gs' = mapMaybe (\(v,c) -> VenueAndGeo v <$> c) gs
+      encodeFile out gs'
+    )
 
-retryVenuesWithoutGeo :: (MonadReader Config m, MonadIO m) => m ()
-retryVenuesWithoutGeo = do
-  vs   <- selectVenuesWithoutGeo
-  sequence_ (lookupAndInsert <$> vs)
+getArgs :: IO Args
+getArgs =
+  execParser parserInfo
 
-selectVenuesWithoutGeo :: (MonadReader Config m, MonadIO m) =>
-                          m [Entity Venue]
-selectVenuesWithoutGeo = do
-  cstr <- askConnStr
-  vs   <- liftIO $ selectAll cstr
-  liftIO $ filterM
-     (\v -> (==0) <$> runStderrSqlite cstr (count [VenueGeoVenueId ==. entityKey v]))
-     vs
+parserInfo :: ParserInfo Args
+parserInfo =
+  info (parseArgs <**> helper)
+     (fullDesc
+      <> progDesc "Geocode venue addresses from beat.com.au"
+      <> header "geocode-venues"
+     )
 
-lookupAndInsert :: (MonadReader Config m, MonadIO m) =>
-                   Entity Venue -> m ()
-lookupAndInsert e =
-  logOrInsert =<< lookupCoords e
-
-lookupCoords :: (MonadReader Config m, MonadIO m) =>
-                Entity Venue -> m (Key Venue, Either String Coord)
-lookupCoords e = do
-  url <- asks geocoderEndpoint
-  coords <- geocode url . entityVal $ e
-  pure
-    (entityKey e
-    , maybe (Left $ "Geocoding failed for: " ++ show e)
-            Right
-            coords)
-
-logOrInsert :: (MonadReader Config m, MonadIO m) =>
-               (Key Venue, Either String Coord) -> m ()
-logOrInsert coords = do
-  conn <- askConnStr
-  liftIO $ case coords of
-    (v, Right c) -> insertVenueCoords conn c v
-    (_, Left e)  -> putStrLn e
+parseArgs :: Parser Args
+parseArgs = Args
+  <$> strOption
+    (short 'i'
+    <> long "input-file"
+    <> help "input file containing the un-geocoded venues as JSON"
+    )
+  <*> strOption
+    (short 'o'
+    <> long "outFile"
+    <> help "Output file to write the geocoded venues as JSON"
+    )
+  <*> strOption
+    (short 'u'
+    <> long "url"
+    <> value "https://nominatim.openstreetmap.org/search"
+    <> help "the Nominatim API url: defaults to 'https://nominatim.openstreetmap.org/search'")

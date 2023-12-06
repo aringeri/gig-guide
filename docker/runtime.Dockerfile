@@ -1,4 +1,4 @@
-FROM aringeri/gig-guide-lib as builder
+FROM aringeri/gig-guide/gig-guide-lib as builder
 
 # An executable to build
 ARG EXECUTABLE
@@ -6,9 +6,9 @@ ARG EXECUTABLE
 # Check that ARG is set up
 RUN if [ -z "$EXECUTABLE" ]; then echo "ERROR: Empty $EXECUTABLE"; false; fi
 
-RUN cabal new-install exe:$EXECUTABLE
+RUN cabal install exe:$EXECUTABLE
 
-FROM debian:stretch-slim
+FROM debian:buster-slim
 
 RUN apt-get -yq update && apt-get -yq --no-install-suggests --no-install-recommends install \
     ca-certificates \
@@ -24,6 +24,7 @@ RUN apt-get -yq update && apt-get -yq --no-install-suggests --no-install-recomme
     zlib1g \
   && apt-get clean \
   && rm -rf /var/lib/apt/lists/*
+
 
 WORKDIR /app
 

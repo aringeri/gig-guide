@@ -1,5 +1,5 @@
 # gig-guide
-A visual gig guide for events in Melbourne. Check it out [here](https://melbgigs.ml)!
+A visual gig guide for events in Melbourne. Check it out [here](https://aringeri.github.io/gig-guide/)!
 
 Written with Haskell, Elm and Leaflet.
 
@@ -8,17 +8,11 @@ Current event data sources:
 
 ### Build with cabal
 ```
-cabal v2-build
+cabal build
 ```
 
-### Build with stack
-```
-stack build
-```
 ---
 The build will produce the following webserver executable and scraping utilities.
-
-`webserver` : server app that responds to web requests (default port 80).
 
 `scrape-venues` : utility to gather and store venue data from online sources.
 
