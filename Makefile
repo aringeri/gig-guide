@@ -46,3 +46,17 @@ scrape-venues: lib
 .PHONY: scrape-events
 scrape-events: lib
 	$(call make-exe,scrape-events)
+
+.PHONY: elm-ui
+elm-ui:
+	cd ui/elm && \
+	elm make --optimize --output=../../docs/main.js src/GigGuide.elm
+
+.PHONY: elm-ui-dist
+elm-ui-dist: elm-ui
+	uglifyjs docs/main.js --compress "pure_funcs=[F2,F3,F4,F5,F6,F7,F8,F9,A2,A3,A4,A5,A6,A7,A8,A9],pure_getters,keep_fargs=false,unsafe_comps,unsafe" \
+		| uglifyjs --mangle -o docs/main.js
+
+.PHONY: run-local-ui-server
+run-local-ui-server:
+	python3 -m http.server 8080 -d docs/
