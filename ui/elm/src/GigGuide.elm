@@ -217,7 +217,7 @@ onInitialized f d =
 
 searchOverlay : Model -> Html Msg
 searchOverlay model = 
-  div [class "overlay leaflet-bar"]
+  div [class "overlay leaflet-bar", style "visibility" "hidden"]
       [button [ class "search-button", onClick GetPoints
               , style "visibility" <| if canSearch model then "inherit" else "hidden"] 
               [i [class "fa fa-search"] [], text "Search this area"]
