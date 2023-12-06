@@ -2,7 +2,7 @@ name: Fetch today's events
 
 on:
   schedule:
-    - cron:  '36 4 * * *'
+    - cron:  '55 4 * * *'
 
 jobs:
   testing:
