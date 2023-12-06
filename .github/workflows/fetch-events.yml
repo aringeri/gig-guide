@@ -1,10 +1,8 @@
 name: Fetch today's events
 
 on:
-  push:
-    branches: [ master ]
-  # schedule:
-    # - cron:  '55 4 * * *'
+  schedule:
+    - cron:  '10 14 * * *'
 
 jobs:
   fetch-events:
@@ -21,8 +19,8 @@ jobs:
           image: ghcr.io/aringeri/gig-guide/scrape-events:latest
           options: -v ${{ github.workspace }}/data/:/app/data/ -v ${{ github.workspace}}/docs/search:/app/out
           run: |
-            today=$(date -I)
-            /app/scrape-events -d $today -o /app/out/FeatureCollection.json -i /app/data/geocoded-venues.json
+            todayMel=$(TZ='Australia/Melbourne' date -I)
+            /app/scrape-events -d $todayMel -o /app/out/FeatureCollection.json -i /app/data/geocoded-venues.json
       - run: |
           cat docs/search/FeatureCollection.json
       - uses: stefanzweifel/git-auto-commit-action@v5
