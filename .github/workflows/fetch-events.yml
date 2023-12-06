@@ -9,6 +9,8 @@ on:
 jobs:
   fetch-events:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v2
       - name: Docker login
@@ -19,6 +21,9 @@ jobs:
       - uses: addnab/docker-run-action@v3
         with:
           image: ghcr.io/aringeri/gig-guide/scrape-events:latest
-          options: -v ${{ github.workspace }}/data/:/app/data/
+          options: -v ${{ github.workspace }}/data/:/app/data/ -v ${{ github.workspace}}/docs/search:/app/out
           run: |
-            /app/scrape-events -d 2023-12-07 -o /app/data/FeatureCollection.json -i /app/data/geocoded-venues.json
+            /app/scrape-events -d 2023-12-07 -o /app/out/FeatureCollection.json -i /app/data/geocoded-venues.json
+      - run: |
+          cat docs/search/FeatureCollection.json
+      - uses: stefanzweifel/git-auto-commit-action@v5
