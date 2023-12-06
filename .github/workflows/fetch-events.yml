@@ -7,7 +7,7 @@ on:
     # - cron:  '55 4 * * *'
 
 jobs:
-  testing:
+  fetch-events:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -16,3 +16,9 @@ jobs:
       - name: Pull image
         run: |
           docker pull ghcr.io/aringeri/gig-guide/scrape-events:latest
+      - uses: addnab/docker-run-action@v3
+        with:
+          image: ghcr.io/aringeri/gig-guide/scrape-events:latest
+          options: -v ${{ github.workspace }}/data/:/app/data/
+          run: |
+            /app/scrape-events -d 2023-12-07 -o /app/data/FeatureCollection.json -i /app/data/geocoded-venues.json
