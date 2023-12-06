@@ -9,8 +9,6 @@ on:
 jobs:
   fetch-events:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
     steps:
       - uses: actions/checkout@v2
       - name: Docker login
