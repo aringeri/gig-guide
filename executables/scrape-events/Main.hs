@@ -19,14 +19,14 @@ import GigGuide.Types.EventOverview
     ( EventOverview(..), EventCategory, EventCategory(..) )
 import GigGuide.Types.EventDetails
     ( EventDetails(..), EventGenre, EventGenre(..) )
-import GigGuide.Types.Venue (Venue(..))
+import GigGuide.Types.Venue ( Venue(name) )
+import qualified GigGuide.Types.Venue as Venue
 import GigGuide.Types.VenueAndGeo
     ( VenueAndGeo, VenueAndGeo(venue), VenueAndGeo(..) )
 import GigGuide.Types.Geo
     ( Coord(..), Longitude(..), Latitude(..) )
 import GigGuide.Types.Range (MinMaxRange(..))
 import GigGuide.Types.GeoJSON (FeatureCollection (FeatureCollection), Feature (Feature), Geometry (Geometry), Properties (Properties), EventJSON (EventJSON))
-
 
 import Data.Aeson (encodeFile, decodeFileStrict)
 import Text.HTML.Scalpel (scrapeStringLikeT)
@@ -35,7 +35,7 @@ import Network.Wreq (defaults)
 import qualified Data.Text.Lazy.Encoding as LE
 import Text.Printf (printf)
 
-import Data.Maybe (catMaybes, fromMaybe, mapMaybe, isNothing)
+import Data.Maybe (catMaybes, fromMaybe, isNothing)
 
 import Control.Monad (when, join)
 import Data.Foldable (for_)
@@ -53,7 +53,6 @@ import qualified Data.Text as Text
 import Control.Monad.Logger (MonadLogger, logWarnN, runStdoutLoggingT, logInfoN)
 import Control.Monad.Trans (MonadIO (liftIO))
 
-
 data Args = Args
   {
     date :: Day,
@@ -63,20 +62,15 @@ data Args = Args
     maxFetches :: Int
   } deriving(Show)
 
--- testLog :: MonadLogger m => m Int
--- testLog = do
---   logWarnN "hello"
---   return 1
-
 main :: IO()
 main = do
     runStdoutLoggingT app
 
 app :: (MonadLogger m, MonadIO m) => m ()
 app = do
-  a@(Args day _ outFile url maxFetches) <- liftIO getArgs
+  a@(Args day _ outF url maxF) <- liftIO getArgs
   let opt = eventSearchDayParam day
-  let opts = take maxFetches $ iteratePages opt
+  let opts = take maxF $ iteratePages opt
 
   venues' <- loadVenues a
   when (isNothing venues')
@@ -85,14 +79,14 @@ app = do
   for_ venues' (\venues -> do
       events <- join <$> seqUntilNothing (scrapeFullEvent url <$> opts)
       m <- groupByVenue venues events
-      let geo = convertToGeoJSON m
-      liftIO $ encodeFile outFile geo
+      let fc = convertToGeoJSON m
+      liftIO $ encodeFile outF fc
     )
 
 loadVenues :: (MonadLogger m, MonadIO m) => Args -> m (Maybe (Map URL VenueAndGeo))
 loadVenues a = do
   (x :: Maybe [VenueAndGeo]) <- liftIO $ decodeFileStrict (venueJsonFile a)
-  return $ fmap (M.fromList . fmap (\v -> (GigGuide.Types.Venue.url (venue v),v)) ) x
+  return $ fmap (M.fromList . fmap (\v -> (Venue.url (venue v),v)) ) x
 
 groupByVenue :: MonadLogger m => Map URL VenueAndGeo -> [FullEvent] -> m (Multimap VenueAndGeo FullEvent)
 groupByVenue vs es = MM.fromList . catMaybes <$> lookupVenues es
@@ -185,8 +179,7 @@ scrapeFullEvent :: (MonadLogger m, MonadIO m) => URL -> EventSearchParams -> m (
 scrapeFullEvent url o = do
   logInfoN $ "fetching page " `mappend` Text.pack (show (fromMaybe 0 (eventReload o)))
   page <- LE.decodeUtf8 <$> liftIO (fetchPage url (mkOpts o))
-  --TODO implement MonadLogger in eventOverviews scraper
-  overviews <- liftIO $ scrapeStringLikeT page eventOverviews
+  overviews <- scrapeStringLikeT page eventOverviews
     <&> fmap (filter (either (const True) (hasSameDay o)))
 
   mkFullEvent overviews
@@ -214,8 +207,7 @@ mkEventDetails overview = do
   logInfoN $ "Scraping event details for: " `mappend` Text.pack (show (eventName overview))
   let url = eventUrl overview
   detailPage <- LE.decodeUtf8 <$> liftIO (fetchPage url defaults)
-  --TODO implement MonadLogger in eventDetail scraper
-  detail <- join . maybeToMissingError <$> liftIO (scrapeStringLikeT detailPage eventDetail)
+  detail <- join . maybeToMissingError <$> scrapeStringLikeT detailPage eventDetail
   return $ FullEvent overview <$> addContext url detail
   where
     maybeToMissingError = maybe (Left ExtraDetailsMissingError) Right
@@ -230,7 +222,7 @@ seqUntilNothing (a:as) = do
     _ -> pure []
 
 takeWhileM :: Monad m => (a -> Bool) -> [m a] -> m [a]
-takeWhileM p [] = return []
+takeWhileM _ [] = return []
 takeWhileM p (a:as) = do
   a' <- a
   if p a'

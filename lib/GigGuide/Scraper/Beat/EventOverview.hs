@@ -17,6 +17,7 @@ import Text.Read (readMaybe)
 import Data.Maybe (fromMaybe)
 import GigGuide.Types.EventOverview (EventOverview(..), EventCategory(..))
 import Data.Bifunctor (first)
+import Control.Monad.Logger (MonadLogger)
 
 data EventCreationError = 
     DateParseError String
@@ -28,12 +29,12 @@ data EventCreationError =
   | ErrorContext{ context :: String, err :: EventCreationError }
   deriving (Show, Eq)
 
-eventOverviews :: ScraperT L.Text IO [Either EventCreationError EventOverview]
+eventOverviews :: MonadLogger m => ScraperT L.Text m [Either EventCreationError EventOverview]
 eventOverviews = do
   es <- chroots (tagSelector "article") eventOverview
   if null es then fail "stopping on empty events" else pure es
 
-eventOverview :: ScraperT L.Text IO (Either EventCreationError EventOverview)
+eventOverview :: MonadLogger m => ScraperT L.Text m (Either EventCreationError EventOverview)
 eventOverview = do
   url <- L.unpack <$> attr "href" "a"
   let row = "div" @: [hasClass "row"]

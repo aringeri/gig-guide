@@ -11,22 +11,23 @@ import Data.List ( find, find )
 import qualified Data.Text.Lazy as L
 import Text.HTML.Scalpel
 import Data.Time ( TimeOfDay, TimeOfDay )
-import Control.Applicative ((<|>))
+import Control.Applicative ((<|>), optional)
 
 import GigGuide.Scraper.Common
 import GigGuide.Scraper.Beat.EventOverview (EventCreationError (..))
+import Control.Monad.Logger (MonadLogger)
 
-eventDetail :: ScraperT L.Text IO (Either EventCreationError EventDetails)
+eventDetail :: MonadLogger m => ScraperT L.Text m (Either EventCreationError EventDetails)
 eventDetail = chroot ("div" @: [hasClass "article-content"]) innerEventDetail
 
-innerEventDetail :: ScraperT L.Text IO (Either EventCreationError EventDetails)
+innerEventDetail :: MonadLogger m => ScraperT L.Text m (Either EventCreationError EventDetails)
 innerEventDetail = do
   time <- orElse TimeParseError . (parseTime =<<) <$> findText "Time"
   genre <- (parseEventGenre =<<) <$> findText "Genre"
   supports <- maybe [] (L.splitOn ",") <$> findText "Support"
   vUrlItem <- orElse VenueUrlMissingError
                . fmap L.unpack <$> findItem url "LOCATION"
-  ticketUrl <- Just <$> tickets <|> pure Nothing
+  ticketUrl <- optional tickets 
 
   return $
     EventDetails
@@ -37,9 +38,10 @@ innerEventDetail = do
       <*> pure ticketUrl
 
   where
-    findText :: L.Text -> ScraperT L.Text IO (Maybe L.Text)
+    -- findText :: MonadLogger m' => L.Text -> ScraperT L.Text m' (Maybe L.Text)
     findText = findItem textScr
-    findItem :: (Selector -> ScraperT L.Text IO b) -> L.Text -> ScraperT L.Text IO (Maybe b)
+    -- findItem :: MonadLogger m' => (Selector -> ScraperT L.Text m' b) 
+                  -- -> L.Text -> ScraperT L.Text m' (Maybe b)
     findItem f' k = findKey k <$> metaItems f'
     findKey k = fmap snd . find ((k==) . fst)
     textScr = fmap L.strip . text
