@@ -1,5 +1,6 @@
 {-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE ScopedTypeVariables #-}
+{-# LANGUAGE TupleSections #-}
 module Main where
 
 import Data.Time
@@ -48,6 +49,9 @@ import qualified Data.Multimap as MM
 import Data.List.NonEmpty (NonEmpty)
 import qualified Data.List.NonEmpty as NE
 import qualified Data.Text.Lazy as T
+import qualified Data.Text as Text
+import Control.Monad.Logger (MonadLogger, logWarnN, runStdoutLoggingT, logInfoN)
+import Control.Monad.Trans (MonadIO (liftIO))
 
 
 data Args = Args
@@ -59,34 +63,51 @@ data Args = Args
     maxFetches :: Int
   } deriving(Show)
 
+-- testLog :: MonadLogger m => m Int
+-- testLog = do
+--   logWarnN "hello"
+--   return 1
+
 main :: IO()
 main = do
-    a@(Args day _ outFile url maxFetches) <- getArgs
-    let opt = eventSearchDayParam day
-    let opts = take maxFetches $ iteratePages opt
+    runStdoutLoggingT app
 
-    venues' <- loadVenues a
-    when (isNothing venues')
-      (putStrLn $ "WARN: Unable to decode input venue file: " ++ show a)
+app :: (MonadLogger m, MonadIO m) => m ()
+app = do
+  a@(Args day _ outFile url maxFetches) <- liftIO getArgs
+  let opt = eventSearchDayParam day
+  let opts = take maxFetches $ iteratePages opt
 
-    for_ venues' (\venues -> do
-        events <- join <$> seqUntilNothing (scrapeFullEvent url <$> opts)
-        let m = groupByVenue venues events
-        let geo = convertToGeoJSON m
-        encodeFile outFile geo
-      )
+  venues' <- loadVenues a
+  when (isNothing venues')
+    (logWarnN $ "WARN: Unable to decode input venue file: " `mappend` Text.pack (show a))
 
-loadVenues :: Args -> IO (Maybe (Map URL VenueAndGeo))
+  for_ venues' (\venues -> do
+      events <- join <$> seqUntilNothing (scrapeFullEvent url <$> opts)
+      m <- groupByVenue venues events
+      let geo = convertToGeoJSON m
+      liftIO $ encodeFile outFile geo
+    )
+
+loadVenues :: (MonadLogger m, MonadIO m) => Args -> m (Maybe (Map URL VenueAndGeo))
 loadVenues a = do
-  (x :: Maybe [VenueAndGeo]) <- decodeFileStrict (venueJsonFile a)
+  (x :: Maybe [VenueAndGeo]) <- liftIO $ decodeFileStrict (venueJsonFile a)
   return $ fmap (M.fromList . fmap (\v -> (GigGuide.Types.Venue.url (venue v),v)) ) x
 
-groupByVenue :: Map URL VenueAndGeo -> [FullEvent] -> Multimap VenueAndGeo FullEvent
-groupByVenue vs = MM.fromList . lookupVenues
+groupByVenue :: MonadLogger m => Map URL VenueAndGeo -> [FullEvent] -> m (Multimap VenueAndGeo FullEvent)
+groupByVenue vs es = MM.fromList . catMaybes <$> lookupVenues es
   where
-    lookupVenues = mapMaybe (\e -> (,)
-        <$> ((`M.lookup` vs) . eventVenueUrl . details) e
-        <*> pure e)
+    lookupVenues = mapM (\e -> (fmap . fmap) (,e) (findVenue e))
+
+    findVenue :: MonadLogger x => FullEvent -> x (Maybe VenueAndGeo)
+    findVenue e =
+      let venueUrl = eventVenueUrl . details $ e
+      in logIfNotFound e (M.lookup venueUrl vs)
+    logIfNotFound e m = case m of
+      Nothing -> logWarnN ("Cannot map event to venue: " `mappend` Text.pack (show e))
+        >> return Nothing
+      j -> return j
+
 
 convertToGeoJSON :: Multimap VenueAndGeo FullEvent -> FeatureCollection
 convertToGeoJSON = FeatureCollection
@@ -160,24 +181,25 @@ data FullEvent = FullEvent
   , details :: EventDetails
   } deriving (Show, Eq)
 
-scrapeFullEvent :: URL -> EventSearchParams -> IO (Maybe [FullEvent])
+scrapeFullEvent :: (MonadLogger m, MonadIO m) => URL -> EventSearchParams -> m (Maybe [FullEvent])
 scrapeFullEvent url o = do
-  putStrLn $ "fetching page " ++ show (fromMaybe 0 (eventReload o))
-  page <- LE.decodeUtf8 <$> fetchPage url (mkOpts o)
-  overviews <- scrapeStringLikeT page eventOverviews
+  logInfoN $ "fetching page " `mappend` Text.pack (show (fromMaybe 0 (eventReload o)))
+  page <- LE.decodeUtf8 <$> liftIO (fetchPage url (mkOpts o))
+  --TODO implement MonadLogger in eventOverviews scraper
+  overviews <- liftIO $ scrapeStringLikeT page eventOverviews
     <&> fmap (filter (either (const True) (hasSameDay o)))
 
   mkFullEvent overviews
 
 type OverviewScrapeResult = Maybe [Either EventCreationError EventOverview]
 
-mkFullEvent :: OverviewScrapeResult -> IO (Maybe [FullEvent])
+mkFullEvent :: (MonadLogger m, MonadIO m) => OverviewScrapeResult -> m (Maybe [FullEvent])
 mkFullEvent r = do
   seqFullEvents <- mapM (printErrsAndMapM mkEventDetails) r
   mapM (printErrsAndMapM pure) seqFullEvents
 
-printErrsAndMapM :: (a -> IO b) -> [Either EventCreationError a] -> IO [b]
-printErrsAndMapM = consumeLsMapRs print
+printErrsAndMapM :: MonadLogger m => (a -> m b) -> [Either EventCreationError a] -> m [b]
+printErrsAndMapM = consumeLsMapRs (logWarnN . Text.pack . show)
 
 consumeLsMapRs :: Monad m => (e -> m ()) -> (a -> m b) -> [Either e a] -> m[b]
 consumeLsMapRs f g es = do
@@ -185,15 +207,16 @@ consumeLsMapRs f g es = do
   where
     consumeL l = Nothing <$ f l
     mapR = fmap Just . g
-    mapEither = either consumeL (fmap Just . g)
+    mapEither = either consumeL mapR
 
-mkEventDetails :: EventOverview -> IO (Either EventCreationError FullEvent)
+mkEventDetails :: (MonadLogger m, MonadIO m) => EventOverview -> m (Either EventCreationError FullEvent)
 mkEventDetails overview = do
-  print $ "Scraping event details for: " ++ show (eventName overview)
+  logInfoN $ "Scraping event details for: " `mappend` Text.pack (show (eventName overview))
   let url = eventUrl overview
-  detailPage <- LE.decodeUtf8 <$> fetchPage url defaults
-  eventDetail <- join . maybeToMissingError <$> scrapeStringLikeT detailPage eventDetail
-  return $ FullEvent overview <$> addContext url eventDetail
+  detailPage <- LE.decodeUtf8 <$> liftIO (fetchPage url defaults)
+  --TODO implement MonadLogger in eventDetail scraper
+  detail <- join . maybeToMissingError <$> liftIO (scrapeStringLikeT detailPage eventDetail)
+  return $ FullEvent overview <$> addContext url detail
   where
     maybeToMissingError = maybe (Left ExtraDetailsMissingError) Right
     addContext u = first (ErrorContext ("parsing event details, url = " ++ u))
