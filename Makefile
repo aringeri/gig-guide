@@ -47,6 +47,13 @@ scrape-venues: lib
 scrape-events: lib
 	$(call make-exe,scrape-events)
 
+.PHONY: run-merge-overrides
+run-merge-overrides:
+	cabal run merge-overrides -- -r data/scraped/raw-venues.json \
+		-g data/geocoded/first-pass/geocoded-venues.json \
+		-i data/overrides/override-venues.json \
+		-o data/geocoded/second-pass/geocoded-venues.json
+
 .PHONY: elm-ui
 elm-ui:
 	cd ui/elm && \

@@ -1,0 +1,110 @@
+[
+    {
+        "url": "https://beat.com.au/directory/alex-theatre/",
+        "venueOverride": {
+            "geo": {
+                "lat": -37.859552,
+                "lon": 144.978283
+            }
+        }
+    },
+    {
+        "url": "https://beat.com.au/directory/alexander-theatre/",
+        "venueOverride": {
+            "geo": {
+                "lat": -37.91372355,
+                "lon": 145.13337431967784
+            }
+        }
+    },
+    {
+        "url": "https://beat.com.au/directory/ceres-community-environment-park/",
+        "venueOverride": {
+            "geo": {
+                "lat": -37.76580971811538,
+                "lon": 144.982709011885
+            }
+        }
+    },
+    {
+        "url": "https://beat.com.au/directory/comedy-republic/",
+        "venueOverride": {
+            "geo": {
+                "lat": -37.8133834,
+                "lon": 144.9668096
+            }
+        }
+    },
+    {
+        "url": "https://beat.com.au/directory/darebin-arts-entertainment-centre/",
+        "venueOverride": {
+            "geo": {
+                "lat": -37.74553004870929,
+                "lon": 144.9980448484126
+            }
+        }
+    },
+    {
+        "url": "https://beat.com.au/directory/federation-square/",
+        "venueOverride": {
+            "geo": {
+                "lat": -37.81799793179876,
+                "lon": 144.96904143685853
+            }
+        }
+    },
+    {
+        "url": "https://beat.com.au/directory/frankston-bowls-club/",
+        "venueOverride": {
+            "geo": {
+                "lat": -38.15204535630377,
+                "lon": 145.12504662549605
+            }
+        }
+    },
+    {
+        "url": "https://beat.com.au/directory/future-mountain-brewing-blending/",
+        "venueOverride": {
+            "geo": {
+                "lat": -37.7297231,
+                "lon": 145.0161771
+            }
+        }
+    },
+    {
+        "url": "https://beat.com.au/directory/mycelium-studios/",
+        "venueOverride": {
+            "geo": {
+                "lat": -37.757249,
+                "lon": 144.9796096
+            }
+        }
+    },
+    {
+        "url": "https://beat.com.au/directory/palais-theatre/",
+        "venueOverride": {
+            "geo": {
+                "lat": -37.867583041643705,
+                "lon": 144.97609011199125
+            }
+        }
+    },
+    {
+        "url": "https://beat.com.au/directory/sidney-myer-music-bowl/",
+        "venueOverride": {
+            "geo": {
+                "lat": -37.823819181966286,
+                "lon": 144.9746525926778
+            }
+        }
+    },
+    {
+        "url": "https://beat.com.au/directory/the-thorn/",
+        "venueOverride": {
+            "geo": {
+                "lat": -37.75727334842702,
+                "lon": 145.02737506965843
+            }
+        }
+    }
+]

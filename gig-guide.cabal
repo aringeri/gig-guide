@@ -100,6 +100,29 @@ executable geocode-venues
     default-language: Haskell2010
     ghc-options: -Wall
 
+executable merge-overrides
+    main-is:          Main.hs
+    other-modules: GigGuide.Types.Override
+
+    -- LANGUAGE extensions used by modules in this package.
+    -- other-extensions:
+    build-depends:
+        base ^>=4.17.2.0,
+        gig-guide,
+        bytestring,
+        text,
+        mtl,
+        aeson,
+        lens,
+        lens-aeson,
+        optparse-applicative,
+        containers,
+        monad-logger
+
+    hs-source-dirs:   executables/merge-overrides
+    default-language: Haskell2010
+    ghc-options: -Wall
+
 executable scrape-events
     main-is:          Main.hs
 
