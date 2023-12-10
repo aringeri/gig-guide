@@ -47,6 +47,10 @@ scrape-venues: lib
 scrape-events: lib
 	$(call make-exe,scrape-events)
 
+.PHONY: push-scrape-events
+push-scrape-events:
+	docker push $(repository)/scrape-events:$(or ${GIT_SHA},latest)
+
 .PHONY: run-merge-overrides
 run-merge-overrides:
 	cabal run merge-overrides -- -r data/scraped/raw-venues.json \

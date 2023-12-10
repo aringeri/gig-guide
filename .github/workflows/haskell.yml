@@ -1,7 +1,12 @@
-name: Build
+name: Build executable docker images
 
 on:
-  workflow_dispatch:
+  push:
+    branches:
+      - 'master'
+    paths-ignore:
+      - 'docs/**'
+      - 'data/**'
 
 jobs:
   build:
@@ -9,28 +14,15 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
     - name: Docker login
       run: echo ${{ secrets.GITHUB_TOKEN }} | docker login docker.pkg.github.com -u $GITHUB_ACTOR --password-stdin
-    - name: Docker pull cache
-      run: make pull-cache || true
-    - name: Install dependencies
-      run: |
-        make cache-from-docker-repository
-    - name: Upload cache image
-      run: |
-        make push-cache
-    - name: Build
+    - name: Docker pull cache image
+      run: make pull-cache
+    - name: Build library image
       run: |
         make lib -o cache
-    - name: Test Specs
+    - name: Build and push 'scrape-events' image
       run: |
-        make run-specs -o lib
-    - name: Integration test
-      run: |
-        make run-integration-tests -o integration-test
-    - name: Build and push 'scrape-venues' image
-      if: ${{ github.ref == 'refs/heads/master' }}
-      run: |
-        make scrape-venues GIT_SHA=${GITHUB_SHA} -o lib
-        make push-scrape-venues GIT_SHA=${GITHUB_SHA}
+        make scrape-events -o lib
+        make push-scrape-events
