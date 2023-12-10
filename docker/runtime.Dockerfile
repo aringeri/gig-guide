@@ -1,4 +1,4 @@
-FROM aringeri/gig-guide/gig-guide-lib as builder
+FROM ghcr.io/aringeri/gig-guide/gig-guide-lib as builder
 
 # An executable to build
 ARG EXECUTABLE

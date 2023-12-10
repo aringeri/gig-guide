@@ -1,4 +1,4 @@
-FROM aringeri/gig-guide/gig-guide-cache
+FROM ghcr.io/aringeri/gig-guide/gig-guide-cache
 
 COPY lib/ ./lib
 COPY executables ./executables
