@@ -19,8 +19,18 @@ jobs:
           image: ghcr.io/aringeri/gig-guide/scrape-events:latest
           options: -v ${{ github.workspace }}/data/:/app/data/ -v ${{ github.workspace}}/docs/search:/app/out
           run: |
-            todayMel=$(TZ='Australia/Melbourne' date -I)
-            /app/scrape-events -d $todayMel -o /app/out/FeatureCollection.json -i /app/data/geocoded-venues.json
+            mon=$(TZ='Australia/Melbourne' date -I -d "last Monday")
+            for i in {0..6}
+            do
+              dateI=$(TZ='Australia/Melbourne' date -I -d "$mon + $i day")
+              day=$(TZ='Australia/Melbourne' date -d $dateI +%a)
+              
+              mkdir -p /app/out/$day
+              /app/scrape-events -i /app/data/geocoded-venues.json \
+                  -d $dateI \
+                  -o /app/out/$day/FeatureCollection.json 
+            done
+            
       - run: |
           cat docs/search/FeatureCollection.json
       - uses: stefanzweifel/git-auto-commit-action@v5
