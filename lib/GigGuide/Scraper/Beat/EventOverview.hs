@@ -4,6 +4,7 @@ module GigGuide.Scraper.Beat.EventOverview
   ( EventOverview(..)
   , EventCreationError(..)
   , eventOverviews
+  , parseDay
   ) where
 
 import           Data.Time (Day)
@@ -18,6 +19,7 @@ import Data.Maybe (fromMaybe)
 import GigGuide.Types.EventOverview (EventOverview(..), EventCategory(..))
 import Data.Bifunctor (first)
 import Control.Monad.Logger (MonadLogger)
+import Control.Applicative ((<|>))
 
 data EventCreationError = 
     DateParseError String
@@ -60,12 +62,19 @@ cleanTexts :: Monad m => Selector -> ScraperT L.Text m L.Text
 cleanTexts = fmap (L.strip . joinEmpty) . texts
 
 parseDay :: L.Text -> Either EventCreationError Day
-parseDay = parseDayStr . L.unpack
-
-parseDayStr :: String -> Either EventCreationError Day
-parseDayStr s = maybe 
+parseDay t = maybe 
   (Left (DateParseError s))
-  Right (parseTimeDefault "%a %d %b %_Y" s)
+  Right 
+  (parseTimeDefault "%a %d %b %_Y" s <|> parseFirstDayInRange t)
+  where s = L.unpack t
+
+parseFirstDayInRange :: L.Text -> Maybe Day
+parseFirstDayInRange s = 
+  let 
+    (dm, year) = L.breakOn "," s
+    (day, dm') =  L.breakOn "-" dm
+    month = mconcat $ drop 3 (L.words dm')
+  in parseTimeDefault "%a %d %b %_Y" (L.unpack $ day <> month <> L.drop 1 year)
 
 parsePriceRange :: L.Text -> Either EventCreationError (Either Price PriceRange)
 parsePriceRange t = case L.splitOn "-" t of

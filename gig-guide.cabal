@@ -30,7 +30,8 @@ library
         GigGuide.Types.GeoJSON,
         GigGuide.Types.Range,
         GigGuide.Scraper.BeatScraper,
-        GigGuide.Scraper.Common
+        GigGuide.Scraper.Common,
+        GigGuide.Scraper.Beat.Internal
 
     -- Modules included in this library but not exported.
     other-modules:
@@ -152,3 +153,19 @@ executable scrape-events
     hs-source-dirs:   executables/scrape-events
     default-language: Haskell2010
     ghc-options: -Wall
+
+test-suite spec
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  hs-source-dirs:
+      test
+  ghc-options: -Wall
+  build-depends:
+      base ^>=4.17.2.0
+    , hspec ^>= 2.11.7
+    , text
+    , gig-guide
+    , time
+  other-modules: GigGuide.BeatSpec
+  default-language: Haskell2010
+  build-tool-depends: hspec-discover:hspec-discover == 2.*
