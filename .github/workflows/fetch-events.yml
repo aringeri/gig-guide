@@ -1,8 +1,9 @@
 name: Fetch today's events
 
-on: workflow_dispatch
-#  schedule:
-#    - cron:  '10 14 * * *'
+on: 
+  workflow_dispatch:
+  schedule:
+    - cron:  '10 14 * * *'
 
 jobs:
   fetch-events:
