@@ -42,7 +42,7 @@ library
 
     -- LANGUAGE extensions used by modules in this package.
     -- other-extensions:
-    build-depends:    base ^>=4.17.2.0
+    build-depends:    base ^>=4.18
                     , wreq
                     , mtl
                     , time
@@ -67,7 +67,7 @@ executable scrape-venues
     -- LANGUAGE extensions used by modules in this package.
     -- other-extensions:
     build-depends:
-        base ^>=4.17.2.0,
+        base ^>=4.18,
         gig-guide,
         aeson,
         optparse-applicative
@@ -86,7 +86,7 @@ executable geocode-venues
     -- LANGUAGE extensions used by modules in this package.
     -- other-extensions:
     build-depends:
-        base ^>=4.17.2.0,
+        base ^>=4.18,
         gig-guide,
         bytestring,
         text,
@@ -108,7 +108,7 @@ executable merge-overrides
     -- LANGUAGE extensions used by modules in this package.
     -- other-extensions:
     build-depends:
-        base ^>=4.17.2.0,
+        base ^>=4.18,
         gig-guide,
         bytestring,
         text,
@@ -133,7 +133,7 @@ executable scrape-events
     -- LANGUAGE extensions used by modules in this package.
     -- other-extensions:
     build-depends:
-        base ^>=4.17.2.0,
+        base ^>=4.18,
         gig-guide,
         bytestring,
         text,
@@ -161,11 +161,15 @@ test-suite spec
       test
   ghc-options: -Wall
   build-depends:
-      base ^>=4.17.2.0
+      base ^>=4.18
     , hspec ^>= 2.11.7
     , text
     , gig-guide
     , time
+    , scalpel
+    , monad-logger
+    , mtl
+    , transformers,
   other-modules: GigGuide.BeatSpec
   default-language: Haskell2010
   build-tool-depends: hspec-discover:hspec-discover == 2.*

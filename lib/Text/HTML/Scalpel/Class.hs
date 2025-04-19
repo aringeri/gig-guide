@@ -7,6 +7,7 @@ module Text.HTML.Scalpel.Class where
 
 import           Data.Either
 import           Control.Monad.Except
+import           Control.Monad.Trans (lift)
 import           Text.HTML.Scalpel hiding (attr, attrs, html, htmls,
                                                innerHTML, innerHTMLs, text, 
                                                texts, chroot, chroots)
