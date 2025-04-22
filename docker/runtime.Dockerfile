@@ -8,7 +8,7 @@ RUN if [ -z "$EXECUTABLE" ]; then echo "ERROR: Empty $EXECUTABLE"; false; fi
 
 RUN cabal install exe:$EXECUTABLE
 
-FROM debian:buster-slim
+FROM debian:bullseye-20250407-slim
 
 RUN apt-get -yq update && apt-get -yq --no-install-suggests --no-install-recommends install \
     ca-certificates \
@@ -29,7 +29,7 @@ RUN apt-get -yq update && apt-get -yq --no-install-suggests --no-install-recomme
 WORKDIR /app
 
 ARG EXECUTABLE
-COPY --from=builder /root/.cabal/bin/$EXECUTABLE ./$EXECUTABLE
+COPY --from=builder /root/.local/bin/$EXECUTABLE ./$EXECUTABLE
 
 # echo into bash script so entrypoint can accept arguments
 RUN echo "/app/$EXECUTABLE \$@" > run.sh

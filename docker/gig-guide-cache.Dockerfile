@@ -1,4 +1,4 @@
-FROM haskell:9.4.7
+FROM haskell:9.6.7-bullseye
 
 WORKDIR /gig-guide
 
