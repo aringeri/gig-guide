@@ -34,7 +34,9 @@ data EventSearchParams =
 mkOpts :: EventSearchParams -> Options
 mkOpts s = defaults & params .~ mkParams s
   where mkParams (EventSearchParams date reload) =
-          ("date", fmtDate date) : optionL "reload" reload
+          ("start_date", fmtDate date)
+          : ("end_date", fmtDate date)
+          : optionL "reload" reload
 
 eventReloadL :: Lens' EventSearchParams (Maybe Integer)
 eventReloadL = lens eventReload (\p r -> p { eventReload = r })

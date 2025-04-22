@@ -51,7 +51,7 @@ showt :: Show a => a -> T.Text
 showt = T.pack . show
 
 fmtDate :: Day -> T.Text
-fmtDate = T.pack . formatTime defaultTimeLocale "%d.%m.%_Y"
+fmtDate = T.pack . formatTime defaultTimeLocale "%_Y-%m-%d"
 
 runScraper :: [(URL, Options)] -> Scraper L.Text (N.NonEmpty a) -> IO [a]
 runScraper urls = 
