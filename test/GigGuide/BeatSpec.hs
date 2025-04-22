@@ -64,5 +64,13 @@ spec = do
                   (Just "Comedy Republic")
                   (Right $ mkPriceRange 28.50 31.50)
                 )
+              , pure (EventOverview
+                  "Tribute Tuesdays: Ingrid Saker plays Jimi Hendrix"
+                  "https://beat.com.au/tribute-tuesdays-ingrid-saker-plays-jimi-hendrix/"
+                  (fromGregorian 2025 04 18)
+                  [Music, Free]
+                  (Just "The Drunken Poet")
+                  (Left 0)
+                )
             ]
         

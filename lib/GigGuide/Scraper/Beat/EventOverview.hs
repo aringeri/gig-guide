@@ -38,28 +38,28 @@ eventOverviews = do
 
 eventOverview :: MonadLogger m => ScraperT L.Text m (Either EventCreationError EventOverview)
 eventOverview = do
-    let gigMiddle = "div" @: [hasClass "gig-inner"] 
+    let gigMiddle = "div" @: [hasClass "gig-inner"]
                     // "div" @: [hasClass "gig-middle"]
     chroot gigMiddle $ do
       date <- parseDay . L.strip <$>
                 text ("div" @: [hasClass "gig-date"])
       cats <- chroot ("div" @: [hasClass "gig-details"]
-                // "div" @: [hasClass "gig-category"]) 
+                // "div" @: [hasClass "gig-category"])
                 (chroots "span" (parseEventCategory <$> text textSelector))
       url <- L.unpack <$> chroot ("h3" @: [hasClass "gig-title"]) (attr "href" "a")
       name <- cleanText <$> text ("h3" @: [hasClass "gig-title"] // "a")
       location <- fmap (fmap cleanText) (firstText $
-          "div" @: [hasClass "gig-details"] 
+          "div" @: [hasClass "gig-details"]
           // "div" @: [hasClass "gig-location"]
           // "a" // textSelector)
-      price <- parsePriceRange <$> 
-        text ("div" @: [hasClass "gig-details"] 
+      price <- parsePriceRange . fromMaybe "FREE" <$>
+        firstText ("div" @: [hasClass "gig-details"]
               // "div" @: [hasClass "gig-price"])
       let overview = EventOverview
                 name
                 url
                 <$> date
-                <*> pure cats 
+                <*> pure cats
                 <*> pure location
                 <*> price
       let addErrorContext  = first (ErrorContext ("Parsing event overview, url=" ++ url))
