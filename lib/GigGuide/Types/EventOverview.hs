@@ -15,7 +15,7 @@ data EventOverview = EventOverview
   , eventUrl        :: URL
   , eventDate       :: Day
   , eventCategories :: [EventCategory]
-  , eventLocation   :: L.Text
+  , eventLocation   :: Maybe L.Text
   , eventPrice      :: Either Price PriceRange
   } deriving (Eq, Show, Ord, Generic)
 

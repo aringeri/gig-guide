@@ -26,7 +26,7 @@ spec = do
       parseDay "Sat 10 Feb 2024" `shouldBe` Right (fromGregorian 2024 2 10)
     it "should take first day from date range" $ do
       parseDay "Fri 01 - Sun 03 Dec, 2023" `shouldBe` Right (fromGregorian 2023 12 1)
-  before (L.pack <$> readFile "data/responses/simple-event-overview.html") $ do
+  before (L.pack <$> readFile "data/responses/event-overview-new-style.html") $ do
     describe "event overview scraper" $ do
       it "should parse event overviews" $ \f -> do
         parseEventOverviews f `shouldBe` (expectedEventOverviews, [])
@@ -41,11 +41,11 @@ spec = do
           expectedEventOverviews :: Maybe [Either EventCreationError EventOverview]
           expectedEventOverviews = pure [
               pure (EventOverview
-                  "Dangerous Goods &#038; Aura present Astrix &#038; Victor Ruiz"
+                  "Dangerous Goods & Aura present Astrix & Victor Ruiz"
                   "https://beat.com.au/dangerous-goods-aura-present-astrix-victor-ruiz/"
                   (fromGregorian 2025 04 18)
                   [Music]
-                  ""
+                  Nothing
                   (Left 149.05)
                 )
               , pure (EventOverview
@@ -53,7 +53,7 @@ spec = do
                   "https://beat.com.au/main-stage-festival-showcase-2/"
                   (fromGregorian 2025 04 18)
                   [Comedy]
-                  "https://beat.com.au/directory/comedy-republic/"
+                  (Just "Comedy Republic")
                   (Right $ mkPriceRange 23.50 25.50)
                 )
               , pure (EventOverview
@@ -61,7 +61,7 @@ spec = do
                   "https://beat.com.au/two-hearts-heartcore-karaoke-2/"
                   (fromGregorian 2025 04 18)
                   [Music, Comedy]
-                  "https://beat.com.au/directory/comedy-republic/"
+                  (Just "Comedy Republic")
                   (Right $ mkPriceRange 28.50 31.50)
                 )
             ]
