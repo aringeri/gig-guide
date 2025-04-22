@@ -18,6 +18,15 @@
         }
     },
     {
+        "url": "https://beat.com.au/directory/burrinja-cultural-centre/",
+        "venueOverride": {
+            "geo": {
+                "lat": -37.9158104,
+                "lon": 145.3339412
+            }
+        }
+    },
+    {
         "url": "https://beat.com.au/directory/ceres-community-environment-park/",
         "venueOverride": {
             "geo": {
@@ -32,6 +41,15 @@
             "geo": {
                 "lat": -37.8133834,
                 "lon": 144.9668096
+            }
+        }
+    },
+    {
+        "url": "https://beat.com.au/directory/co/",
+        "venueOverride": {
+            "geo": {
+                "lat": -37.8233317,
+                "lon": 144.9582858
             }
         }
     },
@@ -72,6 +90,24 @@
         }
     },
     {
+        "url": "https://beat.com.au/directory/kindred-studios/",
+        "venueOverride": {
+            "geo": {
+                "lat": -37.8111559,
+                "lon": 144.8984802
+            }
+        }
+    },
+    {
+        "url": "https://beat.com.au/directory/malthouse-theatre/",
+        "venueOverride": {
+            "geo": {
+                "lat": -37.8271492,
+                "lon": 144.9671394
+            }
+        }
+    },
+    {
         "url": "https://beat.com.au/directory/mycelium-studios/",
         "venueOverride": {
             "geo": {
@@ -95,6 +131,24 @@
             "geo": {
                 "lat": -37.823819181966286,
                 "lon": 144.9746525926778
+            }
+        }
+    },
+    {
+        "url": "https://beat.com.au/directory/the-cosmopolitan-hotel/",
+        "venueOverride": {
+            "geo": {
+                "lat": -37.38866,
+                "lon": 144.32141 
+            }
+        }
+    },
+    {
+        "url": "https://beat.com.au/directory/the-local-taphouse/",
+        "venueOverride": {
+            "geo": {
+                "lat": -37.8681471,
+                "lon": 144.9900142
             }
         }
     },

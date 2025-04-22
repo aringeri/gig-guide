@@ -1,6 +1,6 @@
 [
     {
-        "address": "170 Russell St\r\nMelbourne VIC 3000",
+        "address": "170 Russell St\nMelbourne VIC 3000",
         "categories": [
             {
                 "tag": "Club"
@@ -14,7 +14,7 @@
         "url": "https://beat.com.au/directory/170-russell/"
     },
     {
-        "address": "4 Joyner St\r\nMoorabbin VIC 3189",
+        "address": "4 Joyner St\nMoorabbin VIC 3189",
         "categories": [
             {
                 "tag": "LiveMusic"
@@ -28,7 +28,7 @@
         "url": "https://beat.com.au/directory/2-brothers-brewery/"
     },
     {
-        "address": "2 Arthurton Rd\r\nNorthcote VIC 3070",
+        "address": "2 Arthurton Rd\nNorthcote VIC 3070",
         "categories": [
             {
                 "tag": "Bar"
@@ -42,7 +42,7 @@
         "url": "https://beat.com.au/directory/24-moons/"
     },
     {
-        "address": "303 Sydney Rd\r\nBrunswick VIC 3056",
+        "address": "303 Sydney Rd\nBrunswick VIC 3056",
         "categories": [
             {
                 "tag": "Bar"
@@ -62,7 +62,7 @@
         "url": "https://beat.com.au/directory/303-sydney-road/"
     },
     {
-        "address": "524 Flinders St\r\nMelbourne VIC 3000",
+        "address": "524 Flinders St\nMelbourne VIC 3000",
         "categories": [
             {
                 "tag": "EventVenue"
@@ -73,7 +73,7 @@
         "url": "https://beat.com.au/directory/524-flinders/"
     },
     {
-        "address": "8 Lynch Street\r\nFootscray VIC 3011",
+        "address": "8 Lynch Street\nFootscray VIC 3011",
         "categories": [
             {
                 "tag": "EventVenue"
@@ -87,7 +87,7 @@
         "url": "https://beat.com.au/directory/56k-records/"
     },
     {
-        "address": "75 Reid St\r\nFitzroy North VIC 3068",
+        "address": "75 Reid St\nFitzroy North VIC 3068",
         "categories": [
             {
                 "tag": "EventVenue"
@@ -98,7 +98,7 @@
         "url": "https://beat.com.au/directory/75-reid-st/"
     },
     {
-        "address": "75 Reid St\r\nFitzroy North VIC 3068",
+        "address": "75 Reid St\nFitzroy North VIC 3068",
         "categories": [
             {
                 "tag": "EventVenue"
@@ -109,7 +109,7 @@
         "url": "https://beat.com.au/directory/75-reid-street/"
     },
     {
-        "address": "Olympic Blvd\r\nMelbourne VIC 3000",
+        "address": "Olympic Blvd\nMelbourne VIC 3000",
         "categories": [
             {
                 "tag": "EventVenue"
@@ -123,7 +123,18 @@
         "url": "https://beat.com.au/directory/aami-park/"
     },
     {
-        "address": "1 St Heliers St\r\nAbbotsford VIC 3067",
+        "address": "329-341 Victoria St\nAbbotsford VIC 3067",
+        "categories": [
+            {
+                "tag": "EventVenue"
+            }
+        ],
+        "city": "Abbotsford, VIC",
+        "name": "Abbots Yard",
+        "url": "https://beat.com.au/directory/abbots-yard/"
+    },
+    {
+        "address": "1 St Heliers St\nAbbotsford VIC 3067",
         "categories": [
             {
                 "contents": "",
@@ -135,7 +146,7 @@
         "url": "https://beat.com.au/directory/abbotsford-convent/"
     },
     {
-        "address": "Federation Square, Flinders St\r\nMelbourne VIC 3000",
+        "address": "Federation Square, Flinders St\nMelbourne VIC 3000",
         "categories": [
             {
                 "tag": "EventVenue"
@@ -149,7 +160,7 @@
         "url": "https://beat.com.au/directory/acmi/"
     },
     {
-        "address": "206 Park Street\r\nSouth Melbourne VIC 3205",
+        "address": "206 Park Street\nSouth Melbourne VIC 3205",
         "categories": [
             {
                 "tag": "LiveMusic"
@@ -164,7 +175,7 @@
         "url": "https://beat.com.au/directory/acoustic-centre/"
     },
     {
-        "address": "103-105 Smith St\r\nFitzroy VIC 3065",
+        "address": "103-105 Smith St\nFitzroy VIC 3065",
         "categories": [
             {
                 "tag": "Bar"
@@ -178,7 +189,208 @@
         "url": "https://beat.com.au/directory/adam-at-sircuit/"
     },
     {
-        "address": "307 Albert St\r\nBrunswick VIC 3056",
+        "address": "307 Albert St\nBrunswick VIC 3056",
+        "categories": [
+            {
+                "contents": "",
+                "tag": "OtherVenue"
+            }
+        ],
+        "city": "Brunswick, VIC",
+        "name": "Albert Street Gallery",
+        "url": "https://beat.com.au/directory/albert-street-gallery/"
+    },
+    {
+        "address": "170 Russell St\nMelbourne VIC 3000",
+        "categories": [
+            {
+                "tag": "Club"
+            },
+            {
+                "tag": "LiveMusic"
+            }
+        ],
+        "city": "Melbourne, VIC",
+        "name": "170 Russell",
+        "url": "https://beat.com.au/directory/170-russell/"
+    },
+    {
+        "address": "4 Joyner St\nMoorabbin VIC 3189",
+        "categories": [
+            {
+                "tag": "LiveMusic"
+            },
+            {
+                "tag": "Brewery"
+            }
+        ],
+        "city": "Moorabbin, VIC",
+        "name": "2 Brothers Brewery",
+        "url": "https://beat.com.au/directory/2-brothers-brewery/"
+    },
+    {
+        "address": "2 Arthurton Rd\nNorthcote VIC 3070",
+        "categories": [
+            {
+                "tag": "Bar"
+            },
+            {
+                "tag": "Club"
+            }
+        ],
+        "city": "Northcote, VIC",
+        "name": "24 Moons",
+        "url": "https://beat.com.au/directory/24-moons/"
+    },
+    {
+        "address": "303 Sydney Rd\nBrunswick VIC 3056",
+        "categories": [
+            {
+                "tag": "Bar"
+            },
+            {
+                "tag": "Club"
+            },
+            {
+                "tag": "EventVenue"
+            },
+            {
+                "tag": "LiveMusic"
+            }
+        ],
+        "city": "Brunswick, VIC",
+        "name": "303 Sydney Road",
+        "url": "https://beat.com.au/directory/303-sydney-road/"
+    },
+    {
+        "address": "524 Flinders St\nMelbourne VIC 3000",
+        "categories": [
+            {
+                "tag": "EventVenue"
+            }
+        ],
+        "city": "Melbourne, VIC",
+        "name": "524 Flinders",
+        "url": "https://beat.com.au/directory/524-flinders/"
+    },
+    {
+        "address": "8 Lynch Street\nFootscray VIC 3011",
+        "categories": [
+            {
+                "tag": "EventVenue"
+            },
+            {
+                "tag": "LiveMusic"
+            }
+        ],
+        "city": "Footscray, VIC",
+        "name": "56K Records",
+        "url": "https://beat.com.au/directory/56k-records/"
+    },
+    {
+        "address": "75 Reid St\nFitzroy North VIC 3068",
+        "categories": [
+            {
+                "tag": "EventVenue"
+            }
+        ],
+        "city": "Fitzroy North, VIC",
+        "name": "75 Reid St",
+        "url": "https://beat.com.au/directory/75-reid-st/"
+    },
+    {
+        "address": "75 Reid St\nFitzroy North VIC 3068",
+        "categories": [
+            {
+                "tag": "EventVenue"
+            }
+        ],
+        "city": "Fitzroy North, VIC",
+        "name": "75 Reid Street",
+        "url": "https://beat.com.au/directory/75-reid-street/"
+    },
+    {
+        "address": "Olympic Blvd\nMelbourne VIC 3000",
+        "categories": [
+            {
+                "tag": "EventVenue"
+            },
+            {
+                "tag": "LiveMusic"
+            }
+        ],
+        "city": "Melbourne, VIC",
+        "name": "AAMI Park",
+        "url": "https://beat.com.au/directory/aami-park/"
+    },
+    {
+        "address": "329-341 Victoria St\nAbbotsford VIC 3067",
+        "categories": [
+            {
+                "tag": "EventVenue"
+            }
+        ],
+        "city": "Abbotsford, VIC",
+        "name": "Abbots Yard",
+        "url": "https://beat.com.au/directory/abbots-yard/"
+    },
+    {
+        "address": "1 St Heliers St\nAbbotsford VIC 3067",
+        "categories": [
+            {
+                "contents": "",
+                "tag": "OtherVenue"
+            }
+        ],
+        "city": "Abbotsford, VIC",
+        "name": "Abbotsford Convent",
+        "url": "https://beat.com.au/directory/abbotsford-convent/"
+    },
+    {
+        "address": "Federation Square, Flinders St\nMelbourne VIC 3000",
+        "categories": [
+            {
+                "tag": "EventVenue"
+            },
+            {
+                "tag": "TheatreVenue"
+            }
+        ],
+        "city": "Melbourne, VIC",
+        "name": "ACMI",
+        "url": "https://beat.com.au/directory/acmi/"
+    },
+    {
+        "address": "206 Park Street\nSouth Melbourne VIC 3205",
+        "categories": [
+            {
+                "tag": "LiveMusic"
+            },
+            {
+                "contents": "Record Store",
+                "tag": "OtherVenue"
+            }
+        ],
+        "city": "South Melbourne, VIC",
+        "name": "Acoustic Centre",
+        "url": "https://beat.com.au/directory/acoustic-centre/"
+    },
+    {
+        "address": "103-105 Smith St\nFitzroy VIC 3065",
+        "categories": [
+            {
+                "tag": "Bar"
+            },
+            {
+                "tag": "Pub"
+            }
+        ],
+        "city": "Fitzroy, VIC",
+        "name": "ADAM at Sircuit",
+        "url": "https://beat.com.au/directory/adam-at-sircuit/"
+    },
+    {
+        "address": "307 Albert St\nBrunswick VIC 3056",
         "categories": [
             {
                 "contents": "",
@@ -201,208 +413,7 @@
         "url": "https://beat.com.au/directory/alchemy-brewing/"
     },
     {
-        "address": "170 Russell St\r\nMelbourne VIC 3000",
-        "categories": [
-            {
-                "tag": "Club"
-            },
-            {
-                "tag": "LiveMusic"
-            }
-        ],
-        "city": "Melbourne, VIC",
-        "name": "170 Russell",
-        "url": "https://beat.com.au/directory/170-russell/"
-    },
-    {
-        "address": "4 Joyner St\r\nMoorabbin VIC 3189",
-        "categories": [
-            {
-                "tag": "LiveMusic"
-            },
-            {
-                "tag": "Brewery"
-            }
-        ],
-        "city": "Moorabbin, VIC",
-        "name": "2 Brothers Brewery",
-        "url": "https://beat.com.au/directory/2-brothers-brewery/"
-    },
-    {
-        "address": "2 Arthurton Rd\r\nNorthcote VIC 3070",
-        "categories": [
-            {
-                "tag": "Bar"
-            },
-            {
-                "tag": "Club"
-            }
-        ],
-        "city": "Northcote, VIC",
-        "name": "24 Moons",
-        "url": "https://beat.com.au/directory/24-moons/"
-    },
-    {
-        "address": "303 Sydney Rd\r\nBrunswick VIC 3056",
-        "categories": [
-            {
-                "tag": "Bar"
-            },
-            {
-                "tag": "Club"
-            },
-            {
-                "tag": "EventVenue"
-            },
-            {
-                "tag": "LiveMusic"
-            }
-        ],
-        "city": "Brunswick, VIC",
-        "name": "303 Sydney Road",
-        "url": "https://beat.com.au/directory/303-sydney-road/"
-    },
-    {
-        "address": "524 Flinders St\r\nMelbourne VIC 3000",
-        "categories": [
-            {
-                "tag": "EventVenue"
-            }
-        ],
-        "city": "Melbourne, VIC",
-        "name": "524 Flinders",
-        "url": "https://beat.com.au/directory/524-flinders/"
-    },
-    {
-        "address": "8 Lynch Street\r\nFootscray VIC 3011",
-        "categories": [
-            {
-                "tag": "EventVenue"
-            },
-            {
-                "tag": "LiveMusic"
-            }
-        ],
-        "city": "Footscray, VIC",
-        "name": "56K Records",
-        "url": "https://beat.com.au/directory/56k-records/"
-    },
-    {
-        "address": "75 Reid St\r\nFitzroy North VIC 3068",
-        "categories": [
-            {
-                "tag": "EventVenue"
-            }
-        ],
-        "city": "Fitzroy North, VIC",
-        "name": "75 Reid St",
-        "url": "https://beat.com.au/directory/75-reid-st/"
-    },
-    {
-        "address": "75 Reid St\r\nFitzroy North VIC 3068",
-        "categories": [
-            {
-                "tag": "EventVenue"
-            }
-        ],
-        "city": "Fitzroy North, VIC",
-        "name": "75 Reid Street",
-        "url": "https://beat.com.au/directory/75-reid-street/"
-    },
-    {
-        "address": "Olympic Blvd\r\nMelbourne VIC 3000",
-        "categories": [
-            {
-                "tag": "EventVenue"
-            },
-            {
-                "tag": "LiveMusic"
-            }
-        ],
-        "city": "Melbourne, VIC",
-        "name": "AAMI Park",
-        "url": "https://beat.com.au/directory/aami-park/"
-    },
-    {
-        "address": "1 St Heliers St\r\nAbbotsford VIC 3067",
-        "categories": [
-            {
-                "contents": "",
-                "tag": "OtherVenue"
-            }
-        ],
-        "city": "Abbotsford, VIC",
-        "name": "Abbotsford Convent",
-        "url": "https://beat.com.au/directory/abbotsford-convent/"
-    },
-    {
-        "address": "Federation Square, Flinders St\r\nMelbourne VIC 3000",
-        "categories": [
-            {
-                "tag": "EventVenue"
-            },
-            {
-                "tag": "TheatreVenue"
-            }
-        ],
-        "city": "Melbourne, VIC",
-        "name": "ACMI",
-        "url": "https://beat.com.au/directory/acmi/"
-    },
-    {
-        "address": "206 Park Street\r\nSouth Melbourne VIC 3205",
-        "categories": [
-            {
-                "tag": "LiveMusic"
-            },
-            {
-                "contents": "Record Store",
-                "tag": "OtherVenue"
-            }
-        ],
-        "city": "South Melbourne, VIC",
-        "name": "Acoustic Centre",
-        "url": "https://beat.com.au/directory/acoustic-centre/"
-    },
-    {
-        "address": "103-105 Smith St\r\nFitzroy VIC 3065",
-        "categories": [
-            {
-                "tag": "Bar"
-            },
-            {
-                "tag": "Pub"
-            }
-        ],
-        "city": "Fitzroy, VIC",
-        "name": "ADAM at Sircuit",
-        "url": "https://beat.com.au/directory/adam-at-sircuit/"
-    },
-    {
-        "address": "307 Albert St\r\nBrunswick VIC 3056",
-        "categories": [
-            {
-                "contents": "",
-                "tag": "OtherVenue"
-            }
-        ],
-        "city": "Brunswick, VIC",
-        "name": "Albert Street Gallery",
-        "url": "https://beat.com.au/directory/albert-street-gallery/"
-    },
-    {
-        "address": "396 Lygon St, Brunswick East VIC 3057",
-        "categories": [
-            {
-                "tag": "Brewery"
-            }
-        ],
-        "city": null,
-        "name": "Alchemy Brewing",
-        "url": "https://beat.com.au/directory/alchemy-brewing/"
-    },
-    {
-        "address": "Level 1, 135 Fitzroy Street\r\nSt Kilda VIC 3182",
+        "address": "Level 1, 135 Fitzroy Street\nSt Kilda VIC 3182",
         "categories": [
             {
                 "tag": "TheatreVenue"
@@ -413,7 +424,7 @@
         "url": "https://beat.com.au/directory/alex-theatre/"
     },
     {
-        "address": "Monash University (Clayton Campus)\r\n48 Exhibition Walk\r\nClayton VIC 3169",
+        "address": "Monash University (Clayton Campus)\n48 Exhibition Walk\nClayton VIC 3169",
         "categories": [
             {
                 "tag": "TheatreVenue"
@@ -424,7 +435,7 @@
         "url": "https://beat.com.au/directory/alexander-theatre/"
     },
     {
-        "address": "Level 1/205 Collins St\r\nMelbourne VIC 3000",
+        "address": "Level 1/205 Collins St\nMelbourne VIC 3000",
         "categories": [
             {
                 "contents": "",
@@ -436,7 +447,7 @@
         "url": "https://beat.com.au/directory/allegro-restaurant/"
     },
     {
-        "address": "51 Grey St\r\nSt Kilda VIC 3182",
+        "address": "51 Grey St\nSt Kilda VIC 3182",
         "categories": [
             {
                 "tag": "EventVenue"
@@ -447,7 +458,7 @@
         "url": "https://beat.com.au/directory/alliance-francaise-de-melbourne/"
     },
     {
-        "address": "l2/195 Flinders Ln\r\nMelbourne VIC 3000",
+        "address": "l2/195 Flinders Ln\nMelbourne VIC 3000",
         "categories": [
             {
                 "tag": "EventVenue"
@@ -458,7 +469,18 @@
         "url": "https://beat.com.au/directory/alpha60-chapter-house/"
     },
     {
-        "address": "213a High St\r\nPreston VIC 3072",
+        "address": "12 Bourke St\nMelbourne VIC 3000",
+        "categories": [
+            {
+                "tag": "Bar"
+            }
+        ],
+        "city": "Melbourne, VIC",
+        "name": "Angel Music Bar",
+        "url": "https://beat.com.au/directory/angel-music-bar/"
+    },
+    {
+        "address": "213a High St\nPreston VIC 3072",
         "categories": [
             {
                 "tag": "EventVenue"
@@ -469,7 +491,7 @@
         "url": "https://beat.com.au/directory/apax-warehouse/"
     },
     {
-        "address": "89-91 Archies Creek Rd\r\nArchies Creek VIC 3995",
+        "address": "89-91 Archies Creek Rd\nArchies Creek VIC 3995",
         "categories": [
             {
                 "tag": "Bar"
@@ -480,11 +502,8 @@
         "url": "https://beat.com.au/directory/archies-creek-hotel/"
     },
     {
-        "address": "8 Arco Lane\r\nHeatherton VIC 3202",
+        "address": "8 Arco Lane\nHeatherton VIC 3202",
         "categories": [
-            {
-                "tag": "Bar"
-            },
             {
                 "tag": "EventVenue"
             },
@@ -493,6 +512,9 @@
             },
             {
                 "tag": "Pub"
+            },
+            {
+                "tag": "Bar"
             }
         ],
         "city": "Heatherton, VIC",
@@ -500,7 +522,7 @@
         "url": "https://beat.com.au/directory/arcobar/"
     },
     {
-        "address": "212 Mt Dandenong Road\r\nCroydon VIC 3136",
+        "address": "212 Mt Dandenong Road\nCroydon VIC 3136",
         "categories": [
             {
                 "tag": "EventVenue"
@@ -511,7 +533,18 @@
         "url": "https://beat.com.au/directory/ariettes-concert-lounge/"
     },
     {
-        "address": "92/94 Elizabeth St\r\nMelbourne VIC 3000",
+        "address": "488 Swanston St\nCarlton VIC 3053",
+        "categories": [
+            {
+                "tag": "EventVenue"
+            }
+        ],
+        "city": "Carlton, VIC",
+        "name": "Arrow on Swanston",
+        "url": "https://beat.com.au/directory/arrow-on-swanston/"
+    },
+    {
+        "address": "92/94 Elizabeth St\nMelbourne VIC 3000",
         "categories": [
             {
                 "contents": "",
@@ -523,7 +556,7 @@
         "url": "https://beat.com.au/directory/art-masterclass/"
     },
     {
-        "address": "100 St Kilda Rd\r\nMelbourne VIC 3004",
+        "address": "100 St Kilda Rd\nMelbourne VIC 3004",
         "categories": [
             {
                 "tag": "LiveMusic"
@@ -537,7 +570,7 @@
         "url": "https://beat.com.au/directory/arts-centre-melbourne/"
     },
     {
-        "address": "521 Queensberry St\r\nNorth Melbourne VIC 3051",
+        "address": "521 Queensberry St\nNorth Melbourne VIC 3051",
         "categories": [
             {
                 "tag": "TheatreVenue"
@@ -548,7 +581,7 @@
         "url": "https://beat.com.au/directory/arts-house/"
     },
     {
-        "address": "447 Mt Alexander Rd\r\nAscot Vale VIC 3032",
+        "address": "447 Mt Alexander Rd\nAscot Vale VIC 3032",
         "categories": [
             {
                 "tag": "Bar"
@@ -565,7 +598,33 @@
         "url": "https://beat.com.au/directory/ascot-vale-hotel/"
     },
     {
-        "address": "Level 1/198 Gertrude St\r\nFitzroy VIC 3065",
+        "address": "31 Tattersalls Lane",
+        "categories": [
+            {
+                "contents": "",
+                "tag": "OtherVenue"
+            }
+        ],
+        "city": "Melbourne",
+        "name": "Aster",
+        "url": "https://beat.com.au/directory/aster/"
+    },
+    {
+        "address": "31 Tattersall Lane, 3000",
+        "categories": [
+            {
+                "tag": "Bar"
+            },
+            {
+                "tag": "EventVenue"
+            }
+        ],
+        "city": "Melbourne",
+        "name": "Aster",
+        "url": "https://beat.com.au/directory/aster-2/"
+    },
+    {
+        "address": "Level 1/198 Gertrude St\nFitzroy VIC 3065",
         "categories": [
             {
                 "contents": "",
@@ -577,7 +636,7 @@
         "url": "https://beat.com.au/directory/at-the-above/"
     },
     {
-        "address": "188 Collins St\r\nMelbourne VIC 3000",
+        "address": "188 Collins St\nMelbourne VIC 3000",
         "categories": [
             {
                 "tag": "TheatreVenue"
@@ -588,7 +647,7 @@
         "url": "https://beat.com.au/directory/athenaeum-theatre/"
     },
     {
-        "address": "30 Chambers St\r\nFootscray VIC 3011",
+        "address": "30 Chambers St\nFootscray VIC 3011",
         "categories": [
             {
                 "tag": "Bar"
@@ -599,7 +658,7 @@
         "url": "https://beat.com.au/directory/baby-snakes-bar/"
     },
     {
-        "address": "25 Easey St\r\nCollingwood VIC 3066",
+        "address": "25 Easey St\nCollingwood VIC 3066",
         "categories": [
             {
                 "tag": "EventVenue"
@@ -610,7 +669,7 @@
         "url": "https://beat.com.au/directory/backwoods-gallery/"
     },
     {
-        "address": "46 Johnston St\r\nFitzroy VIC 3065",
+        "address": "46 Johnston St\nFitzroy VIC 3065",
         "categories": [
             {
                 "tag": "Bar"
@@ -621,7 +680,7 @@
         "url": "https://beat.com.au/directory/bad-decisions-bar/"
     },
     {
-        "address": "2 Coverlid Pl\r\nMelbourne VIC 3000",
+        "address": "2 Coverlid Pl\nMelbourne VIC 3000",
         "categories": [
             {
                 "tag": "Bar"
@@ -632,7 +691,7 @@
         "url": "https://beat.com.au/directory/ballers-clubhouse/"
     },
     {
-        "address": "204 Broadway\r\nReservoir VIC 3073",
+        "address": "204 Broadway\nReservoir VIC 3073",
         "categories": [
             {
                 "tag": "Bar"
@@ -643,7 +702,7 @@
         "url": "https://beat.com.au/directory/bar-204/"
     },
     {
-        "address": "303 High St\r\nNorthcote VIC 3070",
+        "address": "303 High St\nNorthcote VIC 3070",
         "categories": [
             {
                 "tag": "Bar"
@@ -657,7 +716,7 @@
         "url": "https://beat.com.au/directory/bar-303/"
     },
     {
-        "address": "61 High St\r\nNorthcote VIC 3070",
+        "address": "61 High St\nNorthcote VIC 3070",
         "categories": [
             {
                 "tag": "Bar"
@@ -668,7 +727,7 @@
         "url": "https://beat.com.au/directory/bar-61/"
     },
     {
-        "address": "317 Brunswick St\r\nFitzroy VIC 3065",
+        "address": "317 Brunswick St\nFitzroy VIC 3065",
         "categories": [
             {
                 "tag": "Bar"
@@ -682,7 +741,7 @@
         "url": "https://beat.com.au/directory/bar-open/"
     },
     {
-        "address": "653 Sydney Rd\r\nBrunswick VIC 3056",
+        "address": "653 Sydney Rd\nBrunswick VIC 3056",
         "categories": [
             {
                 "tag": "Bar"
@@ -696,7 +755,7 @@
         "url": "https://beat.com.au/directory/bar-oussou/"
     },
     {
-        "address": "24 Crossley St\r\nMelbourne VIC 3000",
+        "address": "24 Crossley St\nMelbourne VIC 3000",
         "categories": [
             {
                 "tag": "Bar"
@@ -731,7 +790,7 @@
         "url": "https://beat.com.au/directory/barton-fink/"
     },
     {
-        "address": "509 Moorabool St\r\nSouth Geelong VIC 3220",
+        "address": "509 Moorabool St\nSouth Geelong VIC 3220",
         "categories": [
             {
                 "tag": "Pub"
@@ -742,7 +801,7 @@
         "url": "https://beat.com.au/directory/barwon-club-hotel/"
     },
     {
-        "address": "40 Collins Rd\r\nDromana VIC 3936",
+        "address": "40 Collins Rd\nDromana VIC 3936",
         "categories": [
             {
                 "tag": "Brewery"
@@ -753,7 +812,7 @@
         "url": "https://beat.com.au/directory/bass-flinders-distillery/"
     },
     {
-        "address": "302 Brunswick St\r\nFitzroy VIC 3065",
+        "address": "302 Brunswick St\nFitzroy VIC 3065",
         "categories": [
             {
                 "tag": "Bar"
@@ -767,7 +826,7 @@
         "url": "https://beat.com.au/directory/baxters-lot/"
     },
     {
-        "address": "48 Kirwana Grove\r\nMontmorency VIC 3094",
+        "address": "48 Kirwana Grove\nMontmorency VIC 3094",
         "categories": [
             {
                 "contents": "Record Store",
@@ -779,7 +838,7 @@
         "url": "https://beat.com.au/directory/beat-tank-productions-recording-studio/"
     },
     {
-        "address": "Federation Square \r\nMelbourne VIC 3000",
+        "address": "Federation Square \nMelbourne VIC 3000",
         "categories": [
             {
                 "tag": "Bar"
@@ -790,13 +849,30 @@
         "url": "https://beat.com.au/directory/beer-deluxe/"
     },
     {
-        "address": "125 Johnston St\r\nCollingwood VIC 3066",
+        "address": "2270 Portarlington Road\nBellarine VIC 3222",
         "categories": [
+            {
+                "tag": "EventVenue"
+            },
             {
                 "tag": "LiveMusic"
             },
             {
+                "tag": "Brewery"
+            }
+        ],
+        "city": "Bellarine, VIC",
+        "name": "Bellarine Estate",
+        "url": "https://beat.com.au/directory/bellarine-estate/"
+    },
+    {
+        "address": "125 Johnston St\nCollingwood VIC 3066",
+        "categories": [
+            {
                 "tag": "Pub"
+            },
+            {
+                "tag": "LiveMusic"
             }
         ],
         "city": "Collingwood, VIC",
@@ -804,7 +880,7 @@
         "url": "https://beat.com.au/directory/bendigo-hotel/"
     },
     {
-        "address": "Shop 3, Driver Lane\r\nMelbourne VIC 3000",
+        "address": "Shop 3, Driver Lane\nMelbourne VIC 3000",
         "categories": [
             {
                 "tag": "Bar"
@@ -834,12 +910,12 @@
                 "tag": "OtherVenue"
             }
         ],
-        "city": null,
+        "city": "Brunswick, VIC",
         "name": "Bergy Bandroom",
         "url": "https://beat.com.au/directory/bergy-bandroom/"
     },
     {
-        "address": "45 Sturt St\r\nSouthbank VIC 3006",
+        "address": "45 Sturt St\nSouthbank VIC 3006",
         "categories": [
             {
                 "contents": "Café",
@@ -851,7 +927,7 @@
         "url": "https://beat.com.au/directory/betwixt-cafe-bar/"
     },
     {
-        "address": "11 Singers Ln, \r\nMelbourne VIC 3000",
+        "address": "11 Singers Ln, \nMelbourne VIC 3000",
         "categories": [
             {
                 "tag": "Bar"
@@ -877,7 +953,18 @@
         "url": "https://beat.com.au/directory/birrarung-marr/"
     },
     {
-        "address": "153 Gertrude St\r\nFitzroy VIC 3065",
+        "address": "42-44 Main Street\nBirregurra VIC 3242",
+        "categories": [
+            {
+                "tag": "EventVenue"
+            }
+        ],
+        "city": "Birregurra, VIC",
+        "name": "Birregurra Mechanics Hall",
+        "url": "https://beat.com.au/directory/birregurra-mechanics-hall/"
+    },
+    {
+        "address": "153 Gertrude St\nFitzroy VIC 3065",
         "categories": [
             {
                 "tag": "Pub"
@@ -888,7 +975,7 @@
         "url": "https://beat.com.au/directory/bistro-sousou/"
     },
     {
-        "address": "364 Chapel St\r\nSouth Yarra VIC 3141",
+        "address": "364 Chapel St\nSouth Yarra VIC 3141",
         "categories": [
             {
                 "tag": "Bar"
@@ -899,18 +986,18 @@
         "url": "https://beat.com.au/directory/black-magic-bar/"
     },
     {
-        "address": "282 Collins St\r\nMelbourne VIC 3000",
+        "address": "282 Collins St\nMelbourne VIC 3000",
         "categories": [
             {
                 "tag": "EventVenue"
             }
         ],
-        "city": "Melbourne",
+        "city": "VIC",
         "name": "Block Arcade",
         "url": "https://beat.com.au/directory/block-arcade/"
     },
     {
-        "address": "380 Russell St\r\nMelbourne VIC 3000",
+        "address": "380 Russell St\nMelbourne VIC 3000",
         "categories": [
             {
                 "tag": "Bar"
@@ -921,7 +1008,7 @@
         "url": "https://beat.com.au/directory/blue-moon-karaoke-bar/"
     },
     {
-        "address": "2/4 College St\r\nSydney NSW 2000",
+        "address": "2/4 College St\nSydney NSW 2000",
         "categories": [
             {
                 "tag": "Bar"
@@ -932,7 +1019,7 @@
         "url": "https://beat.com.au/directory/bodhi-restaurant-bar/"
     },
     {
-        "address": "245 Johnston St\r\nAbbotsford VIC 3067",
+        "address": "245 Johnston St\nAbbotsford VIC 3067",
         "categories": [
             {
                 "tag": "LiveMusic"
@@ -946,7 +1033,7 @@
         "url": "https://beat.com.au/directory/bodriggy-brewing-company/"
     },
     {
-        "address": "303 Sydney Rd\r\nBrunswick VIC 3056",
+        "address": "303 Sydney Rd\nBrunswick VIC 3056",
         "categories": [
             {
                 "tag": "Bar"
@@ -960,7 +1047,7 @@
         "url": "https://beat.com.au/directory/bombay-rock/"
     },
     {
-        "address": "68 Little Collins St\r\nMelbourne VIC 3000",
+        "address": "68 Little Collins St\nMelbourne VIC 3000",
         "categories": [
             {
                 "tag": "Bar"
@@ -977,13 +1064,13 @@
         "url": "https://beat.com.au/directory/boney/"
     },
     {
-        "address": "579 Little Collins St\r\nMelbourne VIC 3000",
+        "address": "579 Little Collins St\nMelbourne VIC 3000",
         "categories": [
             {
-                "tag": "Pub"
+                "tag": "LiveMusic"
             },
             {
-                "tag": "LiveMusic"
+                "tag": "Pub"
             }
         ],
         "city": "Melbourne, VIC",
@@ -991,7 +1078,7 @@
         "url": "https://beat.com.au/directory/bottom-end/"
     },
     {
-        "address": "501 Bourke St\r\nMelbourne VIC 3000",
+        "address": "501 Bourke St\nMelbourne VIC 3000",
         "categories": [
             {
                 "tag": "EventVenue"
@@ -1005,7 +1092,7 @@
         "url": "https://beat.com.au/directory/bourke-street-courtyard/"
     },
     {
-        "address": "33 Princess Street\r\nSt Albans VIC 3021",
+        "address": "33 Princess Street\nSt Albans VIC 3021",
         "categories": [
             {
                 "tag": "TheatreVenue"
@@ -1016,7 +1103,7 @@
         "url": "https://beat.com.au/directory/bowery-theatre/"
     },
     {
-        "address": "470 Station St\r\nBox Hill VIC 3128",
+        "address": "470 Station St\nBox Hill VIC 3128",
         "categories": [
             {
                 "contents": "",
@@ -1028,7 +1115,7 @@
         "url": "https://beat.com.au/directory/box-hill-community-arts-centre/"
     },
     {
-        "address": "121 Great Alpine Road\r\nBright VIC 3741",
+        "address": "121 Great Alpine Road\nBright VIC 3741",
         "categories": [
             {
                 "tag": "Brewery"
@@ -1039,7 +1126,7 @@
         "url": "https://beat.com.au/directory/bright-brewery/"
     },
     {
-        "address": "42 Johnston St\r\nFitzroy VIC 3065",
+        "address": "42 Johnston St\nFitzroy VIC 3065",
         "categories": [
             {
                 "tag": "Bar"
@@ -1053,13 +1140,13 @@
         "url": "https://beat.com.au/directory/brothers-public-house/"
     },
     {
-        "address": "585 Lonsdale St\r\nMelbourne VIC 3000",
+        "address": "585 Lonsdale St\nMelbourne VIC 3000",
         "categories": [
             {
-                "tag": "Club"
+                "tag": "LiveMusic"
             },
             {
-                "tag": "LiveMusic"
+                "tag": "Club"
             }
         ],
         "city": "Melbourne, VIC",
@@ -1067,7 +1154,7 @@
         "url": "https://beat.com.au/directory/brown-alley/"
     },
     {
-        "address": "250 Flinders Ln\r\nMelbourne VIC 3000",
+        "address": "250 Flinders Ln\nMelbourne VIC 3000",
         "categories": [
             {
                 "contents": "",
@@ -1079,7 +1166,7 @@
         "url": "https://beat.com.au/directory/brunetti/"
     },
     {
-        "address": "316 Sydney Rd\r\nBrunswick VIC 3056",
+        "address": "316 Sydney Rd\nBrunswick VIC 3056",
         "categories": [
             {
                 "tag": "Bar"
@@ -1096,7 +1183,7 @@
         "url": "https://beat.com.au/directory/brunswick-artists-bar/"
     },
     {
-        "address": "314 Sydney Rd\r\nBrunswick VIC 3056",
+        "address": "314 Sydney Rd\nBrunswick VIC 3056",
         "categories": [
             {
                 "tag": "Bar"
@@ -1110,7 +1197,7 @@
         "url": "https://beat.com.au/directory/brunswick-ballroom/"
     },
     {
-        "address": "313 Sydney Rd\r\nBrunswick VIC 3056",
+        "address": "313 Sydney Rd\nBrunswick VIC 3056",
         "categories": [
             {
                 "tag": "Bar"
@@ -1124,7 +1211,7 @@
         "url": "https://beat.com.au/directory/brunswick-green/"
     },
     {
-        "address": "270 Sydney Rd\r\nBrunswick VIC 3056",
+        "address": "270 Sydney Rd\nBrunswick VIC 3056",
         "categories": [
             {
                 "tag": "EventVenue"
@@ -1138,7 +1225,7 @@
         "url": "https://beat.com.au/directory/brunswick-mechanics-institute/"
     },
     {
-        "address": "214 Sydney Rd\r\nBrunswick VIC 3056",
+        "address": "214 Sydney Rd\nBrunswick VIC 3056",
         "categories": [
             {
                 "contents": "",
@@ -1150,7 +1237,7 @@
         "url": "https://beat.com.au/directory/brunswick-uniting-church/"
     },
     {
-        "address": "2 Patrick NE Dr\r\nNarre Warren VIC 3805",
+        "address": "2 Patrick NE Dr\nNarre Warren VIC 3805",
         "categories": [
             {
                 "tag": "TheatreVenue"
@@ -1161,7 +1248,7 @@
         "url": "https://beat.com.au/directory/bunjil-place/"
     },
     {
-        "address": "118 Little Collins St\r\nMelbourne VIC 3000",
+        "address": "118 Little Collins St\nMelbourne VIC 3000",
         "categories": [
             {
                 "contents": "",
@@ -1173,7 +1260,51 @@
         "url": "https://beat.com.au/directory/burma-lane/"
     },
     {
-        "address": "11 Rainbow Alley\r\nMelbourne VIC 3000",
+        "address": "209 High St\nPrahran VIC 3181",
+        "categories": [
+            {
+                "tag": "Bar"
+            },
+            {
+                "tag": "Club"
+            },
+            {
+                "tag": "EventVenue"
+            },
+            {
+                "tag": "Pub"
+            }
+        ],
+        "city": null,
+        "name": "Burner Bar",
+        "url": "https://beat.com.au/directory/burner-bar/"
+    },
+    {
+        "address": "Cnr Glenfern Road and Matson Drive\nUpwey VIC 3158",
+        "categories": [
+            {
+                "tag": "EventVenue"
+            },
+            {
+                "tag": "LiveMusic"
+            },
+            {
+                "tag": "FestivalVenue"
+            },
+            {
+                "tag": "TheatreVenue"
+            },
+            {
+                "contents": "Galleries",
+                "tag": "OtherVenue"
+            }
+        ],
+        "city": "Upwey, VIC",
+        "name": "Burrinja Cultural Centre",
+        "url": "https://beat.com.au/directory/burrinja-cultural-centre/"
+    },
+    {
+        "address": "11 Rainbow Alley\nMelbourne VIC 3000",
         "categories": [
             {
                 "tag": "Bar"
@@ -1184,7 +1315,7 @@
         "url": "https://beat.com.au/directory/cabinet-bar-balcony/"
     },
     {
-        "address": "614 High St\r\nThornbury VIC 3071",
+        "address": "614 High St\nThornbury VIC 3071",
         "categories": [
             {
                 "tag": "Bar"
@@ -1201,7 +1332,7 @@
         "url": "https://beat.com.au/directory/cactus-room/"
     },
     {
-        "address": "711 High St\r\nThornbury VIC 3071",
+        "address": "711 High St\nThornbury VIC 3071",
         "categories": [
             {
                 "tag": "Bar"
@@ -1215,7 +1346,7 @@
         "url": "https://beat.com.au/directory/cafe-gummo/"
     },
     {
-        "address": "23-25 Hardware Ln\r\nMelbourne VIC 3000",
+        "address": "23-25 Hardware Ln\nMelbourne VIC 3000",
         "categories": [
             {
                 "tag": "Bar"
@@ -1237,7 +1368,7 @@
         "url": "https://beat.com.au/directory/captain-baxter/"
     },
     {
-        "address": "1 Victor Rd\r\nBentleigh East VIC 3165",
+        "address": "1 Victor Rd\nBentleigh East VIC 3165",
         "categories": [
             {
                 "tag": "LiveMusic"
@@ -1248,7 +1379,7 @@
         "url": "https://beat.com.au/directory/caravan-music-club/"
     },
     {
-        "address": "24 Thompson St\r\nAbbotsford VIC 3067",
+        "address": "24 Thompson St\nAbbotsford VIC 3067",
         "categories": [
             {
                 "tag": "Bar"
@@ -1262,7 +1393,7 @@
         "url": "https://beat.com.au/directory/carlton-brewhouse/"
     },
     {
-        "address": "180 Palmerston St\r\nCarlton VIC 3053",
+        "address": "180 Palmerston St\nCarlton VIC 3053",
         "categories": [
             {
                 "contents": "",
@@ -1274,7 +1405,7 @@
         "url": "https://beat.com.au/directory/carlton-church-of-all-nations/"
     },
     {
-        "address": "65 Berwick-Cranbourne Rd\r\nCranbourne East VIC 3977",
+        "address": "65 Berwick-Cranbourne Rd\nCranbourne East VIC 3977",
         "categories": [
             {
                 "tag": "LiveMusic"
@@ -1285,7 +1416,7 @@
         "url": "https://beat.com.au/directory/casey-radio/"
     },
     {
-        "address": "4 St Georges Rd\r\nElsternwick VIC 3185",
+        "address": "4 St Georges Rd\nElsternwick VIC 3185",
         "categories": [
             {
                 "tag": "Pub"
@@ -1296,7 +1427,7 @@
         "url": "https://beat.com.au/directory/caulfield-rsl/"
     },
     {
-        "address": "80 Smith St\r\nCollingwood VIC 3066",
+        "address": "80 Smith St\nCollingwood VIC 3066",
         "categories": [
             {
                 "tag": "Bar"
@@ -1307,7 +1438,7 @@
         "url": "https://beat.com.au/directory/caz-reitops-dirty-secrets/"
     },
     {
-        "address": "148 Burke Rd\r\nMalvern East VIC 3145",
+        "address": "148 Burke Rd\nMalvern East VIC 3145",
         "categories": [
             {
                 "contents": "",
@@ -1319,7 +1450,7 @@
         "url": "https://beat.com.au/directory/central-park-malvern-east/"
     },
     {
-        "address": "Stewart St &, Roberts St\r\nBrunswick East VIC 3057",
+        "address": "Stewart St &, Roberts St\nBrunswick East VIC 3057",
         "categories": [
             {
                 "contents": "",
@@ -1331,13 +1462,13 @@
         "url": "https://beat.com.au/directory/ceres-community-environment-park/"
     },
     {
-        "address": "105 Queen St\r\nMelbourne VIC 3000",
+        "address": "105 Queen St\nMelbourne VIC 3000",
         "categories": [
             {
-                "tag": "Club"
+                "tag": "Bar"
             },
             {
-                "tag": "Bar"
+                "tag": "Club"
             }
         ],
         "city": "Melbourne, VIC",
@@ -1345,7 +1476,7 @@
         "url": "https://beat.com.au/directory/chaise-lounge/"
     },
     {
-        "address": "12 Little Chapel St\r\nPrahran VIC 3181",
+        "address": "12 Little Chapel St\nPrahran VIC 3181",
         "categories": [
             {
                 "tag": "EventVenue"
@@ -1359,7 +1490,7 @@
         "url": "https://beat.com.au/directory/chapel-off-chapel/"
     },
     {
-        "address": "27 Weston St\r\nBrunswick VIC 3056",
+        "address": "27 Weston St\nBrunswick VIC 3056",
         "categories": [
             {
                 "tag": "Bar"
@@ -1373,7 +1504,7 @@
         "url": "https://beat.com.au/directory/charles-weston-hotel/"
     },
     {
-        "address": "386 Chapel St\r\nSouth Yarra VIC 3141",
+        "address": "386 Chapel St\nSouth Yarra VIC 3141",
         "categories": [
             {
                 "tag": "Bar"
@@ -1387,7 +1518,7 @@
         "url": "https://beat.com.au/directory/chasers-nightclub/"
     },
     {
-        "address": "Springvale Rd & Wells Rd\r\nAspendale Gardens VIC 3196",
+        "address": "Springvale Rd & Wells Rd\nAspendale Gardens VIC 3196",
         "categories": [
             {
                 "tag": "Bar"
@@ -1407,7 +1538,7 @@
         "url": "https://beat.com.au/directory/chelsea-heights-hotel/"
     },
     {
-        "address": "68 Little Collins Street\r\nMelbourne VIC 3000",
+        "address": "68 Little Collins Street\nMelbourne VIC 3000",
         "categories": [
             {
                 "tag": "Bar"
@@ -1421,7 +1552,7 @@
         "url": "https://beat.com.au/directory/cherry-bar/"
     },
     {
-        "address": "53 Balmain Street\r\nCremorne 3121",
+        "address": "53 Balmain Street\nCremorne 3121",
         "categories": [
             {
                 "tag": "Pub"
@@ -1432,7 +1563,7 @@
         "url": "https://beat.com.au/directory/cherry-tree-hotel/"
     },
     {
-        "address": "3 Union St\r\nBrunswick VIC 3056",
+        "address": "3 Union St\nBrunswick VIC 3056",
         "categories": [
             {
                 "contents": "",
@@ -1444,7 +1575,7 @@
         "url": "https://beat.com.au/directory/ciao-mamma/"
     },
     {
-        "address": "146 Sussex St\r\nPascoe Vale VIC 3044",
+        "address": "146 Sussex St\nPascoe Vale VIC 3044",
         "categories": [
             {
                 "contents": "",
@@ -1456,7 +1587,7 @@
         "url": "https://beat.com.au/directory/ciccio-pizza/"
     },
     {
-        "address": "380 Lygon St\r\nCarlton VIC 3053",
+        "address": "380 Lygon St\nCarlton VIC 3053",
         "categories": [
             {
                 "tag": "TheatreVenue"
@@ -1467,7 +1598,7 @@
         "url": "https://beat.com.au/directory/cinema-nova/"
     },
     {
-        "address": "9 Gordon Street\r\nElsternwick VIC 3185",
+        "address": "9 Gordon Street\nElsternwick VIC 3185",
         "categories": [
             {
                 "tag": "LiveMusic"
@@ -1478,13 +1609,13 @@
         "url": "https://beat.com.au/directory/classic-southside/"
     },
     {
-        "address": "89 Queens Parade\r\nClifton Hill VIC 3068",
+        "address": "89 Queens Parade\nClifton Hill VIC 3068",
         "categories": [
             {
-                "tag": "Pub"
+                "tag": "Brewery"
             },
             {
-                "tag": "Brewery"
+                "tag": "Pub"
             }
         ],
         "city": "Clifton Hill, VIC",
@@ -1492,7 +1623,7 @@
         "url": "https://beat.com.au/directory/clifton-hill-brewpub/"
     },
     {
-        "address": "750 Mt Alexander Road\r\nMoonee Ponds VIC 3039",
+        "address": "750 Mt Alexander Road\nMoonee Ponds VIC 3039",
         "categories": [
             {
                 "contents": "",
@@ -1504,7 +1635,7 @@
         "url": "https://beat.com.au/directory/clocktower-centre/"
     },
     {
-        "address": "89 Olinda-Monbulk Rd\r\nOlinda VIC 3788",
+        "address": "89 Olinda-Monbulk Rd\nOlinda VIC 3788",
         "categories": [
             {
                 "contents": "",
@@ -1516,7 +1647,7 @@
         "url": "https://beat.com.au/directory/cloudehill-gardens/"
     },
     {
-        "address": "127 Dorcas St\r\nSouth Melbourne VIC 3205",
+        "address": "127 Dorcas St\nSouth Melbourne VIC 3205",
         "categories": [
             {
                 "tag": "Club"
@@ -1530,7 +1661,7 @@
         "url": "https://beat.com.au/directory/club-pandora/"
     },
     {
-        "address": "1st Floor/14 Raglan St\r\nNorth Melbourne VIC 3051",
+        "address": "1st Floor/14 Raglan St\nNorth Melbourne VIC 3051",
         "categories": [
             {
                 "tag": "LiveMusic"
@@ -1541,7 +1672,7 @@
         "url": "https://beat.com.au/directory/club-voltaire/"
     },
     {
-        "address": "Level 3, Crown Entertainment Complex\r\n8 Whiteman Street\r\nSouthbank VIC 3006",
+        "address": "Level 3, Crown Entertainment Complex\n8 Whiteman Street\nSouthbank VIC 3006",
         "categories": [
             {
                 "tag": "Club"
@@ -1552,7 +1683,7 @@
         "url": "https://beat.com.au/directory/co/"
     },
     {
-        "address": "323 Sydney Rd\r\nCoburg VIC 3058",
+        "address": "323 Sydney Rd\nCoburg VIC 3058",
         "categories": [
             {
                 "tag": "Club"
@@ -1563,7 +1694,7 @@
         "url": "https://beat.com.au/directory/coburg-rsl-club/"
     },
     {
-        "address": "18 St Heliers St\r\nAbbotsford VIC 3067",
+        "address": "18 St Heliers St\nAbbotsford VIC 3067",
         "categories": [
             {
                 "tag": "FestivalVenue"
@@ -1574,7 +1705,7 @@
         "url": "https://beat.com.au/directory/collingwood-childrens-farm/"
     },
     {
-        "address": "35 Johnston St\r\nCollingwood VIC 3066",
+        "address": "35 Johnston St\nCollingwood VIC 3066",
         "categories": [
             {
                 "tag": "EventVenue"
@@ -1585,7 +1716,7 @@
         "url": "https://beat.com.au/directory/collingwood-yards/"
     },
     {
-        "address": "229 Queensberry St\r\nCarlton VIC 3053",
+        "address": "229 Queensberry St\nCarlton VIC 3053",
         "categories": [
             {
                 "tag": "Bar"
@@ -1599,16 +1730,16 @@
         "url": "https://beat.com.au/directory/colour-club/"
     },
     {
-        "address": "Level 1 & 2\r\n231 Bourke Street\r\nMelbourne VIC 3000",
+        "address": "Level 1 & 2\n231 Bourke Street\nMelbourne VIC 3000",
         "categories": [
-            {
-                "tag": "Bar"
-            },
             {
                 "tag": "EventVenue"
             },
             {
                 "tag": "TheatreVenue"
+            },
+            {
+                "tag": "Bar"
             }
         ],
         "city": "VIC",
@@ -1616,7 +1747,7 @@
         "url": "https://beat.com.au/directory/comedy-republic/"
     },
     {
-        "address": "240 Exhibition St\r\nMelbourne VIC 3000",
+        "address": "240 Exhibition St\nMelbourne VIC 3000",
         "categories": [
             {
                 "tag": "TheatreVenue"
@@ -1627,7 +1758,7 @@
         "url": "https://beat.com.au/directory/comedy-theatre/"
     },
     {
-        "address": "319 Lygon St\r\nBrunswick East VIC 3057",
+        "address": "319 Lygon St\nBrunswick East VIC 3057",
         "categories": [
             {
                 "tag": "LiveMusic"
@@ -1638,7 +1769,7 @@
         "url": "https://beat.com.au/directory/compass-pizza/"
     },
     {
-        "address": "139 Smith St\r\nFitzroy VIC 3065",
+        "address": "139 Smith St\nFitzroy VIC 3065",
         "categories": [
             {
                 "tag": "Bar"
@@ -1652,7 +1783,7 @@
         "url": "https://beat.com.au/directory/copacabana-international/"
     },
     {
-        "address": "57 Swan St\r\nRichmond VIC 3121",
+        "address": "57 Swan St\nRichmond VIC 3121",
         "categories": [
             {
                 "tag": "Bar"
@@ -1666,7 +1797,7 @@
         "url": "https://beat.com.au/directory/corner-hotel/"
     },
     {
-        "address": "140 Lygon St\r\nBrunswick East VIC 3057",
+        "address": "140 Lygon St\nBrunswick East VIC 3057",
         "categories": [
             {
                 "tag": "Bar"
@@ -1683,7 +1814,21 @@
         "url": "https://beat.com.au/directory/creature-bar/"
     },
     {
-        "address": "16-22 Cross St\r\nBrunswick East VIC 3057",
+        "address": "319 Brunswick St\nFitzroy VIC 3065",
+        "categories": [
+            {
+                "tag": "Bar"
+            },
+            {
+                "tag": "LiveMusic"
+            }
+        ],
+        "city": "Fitzroy, VIC",
+        "name": "Creatures of Habit Bar & Bandroom",
+        "url": "https://beat.com.au/directory/creatures-of-habit-bar-bandroom/"
+    },
+    {
+        "address": "16-22 Cross St\nBrunswick East VIC 3057",
         "categories": [
             {
                 "tag": "LiveMusic"
@@ -1694,16 +1839,16 @@
         "url": "https://beat.com.au/directory/cross-street-music-hall/"
     },
     {
-        "address": "833 Sydney Rd\r\nBrunswick VIC 3056",
+        "address": "833 Sydney Rd\nBrunswick VIC 3056",
         "categories": [
+            {
+                "tag": "Bar"
+            },
             {
                 "tag": "EventVenue"
             },
             {
                 "tag": "LiveMusic"
-            },
-            {
-                "tag": "Bar"
             }
         ],
         "city": "Brunswick, VIC",
@@ -1711,7 +1856,7 @@
         "url": "https://beat.com.au/directory/culture-club/"
     },
     {
-        "address": "408 Flinders Ln\r\nMelbourne VIC 3000",
+        "address": "408 Flinders Ln\nMelbourne VIC 3000",
         "categories": [
             {
                 "tag": "Bar"
@@ -1725,7 +1870,7 @@
         "url": "https://beat.com.au/directory/curious/"
     },
     {
-        "address": "161 Nelson Pl\r\nWilliamstown VIC 3016",
+        "address": "161 Nelson Pl\nWilliamstown VIC 3016",
         "categories": [
             {
                 "tag": "LiveMusic"
@@ -1739,7 +1884,7 @@
         "url": "https://beat.com.au/directory/customs-house-hotel/"
     },
     {
-        "address": "Cnr Bell St and St Georges Rd\r\nPreston VIC 3072",
+        "address": "Cnr Bell St and St Georges Rd\nPreston VIC 3072",
         "categories": [
             {
                 "tag": "TheatreVenue"
@@ -1750,7 +1895,7 @@
         "url": "https://beat.com.au/directory/darebin-arts-entertainment-centre/"
     },
     {
-        "address": "2 Burke Square\r\nDaylesford VIC 3460",
+        "address": "2 Burke Square\nDaylesford VIC 3460",
         "categories": [
             {
                 "tag": "Pub"
@@ -1761,7 +1906,7 @@
         "url": "https://beat.com.au/directory/daylesford-hotel/"
     },
     {
-        "address": "595 Mt Alexander Rd\r\nMoonee Ponds VIC 3039",
+        "address": "595 Mt Alexander Rd\nMoonee Ponds VIC 3039",
         "categories": [
             {
                 "tag": "Bar"
@@ -1772,7 +1917,7 @@
         "url": "https://beat.com.au/directory/deluxe-bar-lounge/"
     },
     {
-        "address": "715 Plenty Road\r\nReservoir VIC 3073",
+        "address": "715 Plenty Road\nReservoir VIC 3073",
         "categories": [
             {
                 "tag": "LiveMusic"
@@ -1787,7 +1932,7 @@
         "url": "https://beat.com.au/directory/desert-highways/"
     },
     {
-        "address": "Dandenong Rd\r\nWindsor VIC 3181",
+        "address": "Dandenong Rd\nWindsor VIC 3181",
         "categories": [
             {
                 "tag": "TheatreVenue"
@@ -1798,7 +1943,19 @@
         "url": "https://beat.com.au/directory/developing-dancers-melbourne/"
     },
     {
-        "address": "14-22 Lauderdale Rd\r\nNarre Warren VIC 3805",
+        "address": "417 St Kilda Rd, Melbourne VIC 3004",
+        "categories": [
+            {
+                "contents": "",
+                "tag": "OtherVenue"
+            }
+        ],
+        "city": "Melbourne",
+        "name": "Dingo Ate My Taco",
+        "url": "https://beat.com.au/directory/dingo-ate-my-taco/"
+    },
+    {
+        "address": "14-22 Lauderdale Rd\nNarre Warren VIC 3805",
         "categories": [
             {
                 "tag": "Club"
@@ -1809,7 +1966,7 @@
         "url": "https://beat.com.au/directory/empire-nightclub/"
     },
     {
-        "address": "54 Acland St\r\nSt Kilda VIC 3182",
+        "address": "54 Acland St\nSt Kilda VIC 3182",
         "categories": [
             {
                 "tag": "Bar"
@@ -1820,7 +1977,7 @@
         "url": "https://beat.com.au/directory/dogs-bar/"
     },
     {
-        "address": "274 Johnston St\r\nAbbotsford VIC 3067",
+        "address": "274 Johnston St\nAbbotsford VIC 3067",
         "categories": [
             {
                 "tag": "Bar"
@@ -1840,13 +1997,13 @@
         "url": "https://beat.com.au/directory/dr-morse/"
     },
     {
-        "address": "442 Nicholson St\r\nFitzroy North VIC 3068",
+        "address": "442 Nicholson St\nFitzroy North VIC 3068",
         "categories": [
             {
-                "tag": "Pub"
+                "tag": "Bar"
             },
             {
-                "tag": "Bar"
+                "tag": "Pub"
             }
         ],
         "city": "Fitzroy North, VIC",
@@ -1854,7 +2011,7 @@
         "url": "https://beat.com.au/directory/dr-freeman/"
     },
     {
-        "address": "23 Vernon St\r\nSouth Kingsville VIC 3015",
+        "address": "23 Vernon St\nSouth Kingsville VIC 3015",
         "categories": [
             {
                 "tag": "Bar"
@@ -1871,7 +2028,7 @@
         "url": "https://beat.com.au/directory/dukkah/"
     },
     {
-        "address": "92 Burke Road \r\nEast Malvern VIC 3145",
+        "address": "92 Burke Road \nEast Malvern VIC 3145",
         "categories": [
             {
                 "tag": "EventVenue"
@@ -1889,7 +2046,7 @@
         "url": "https://beat.com.au/directory/duldig-studio/"
     },
     {
-        "address": "127-149 Nicholson St\r\nBrunswick East VIC 3057",
+        "address": "127-149 Nicholson St\nBrunswick East VIC 3057",
         "categories": [
             {
                 "contents": "",
@@ -1901,7 +2058,7 @@
         "url": "https://beat.com.au/directory/east-brunswick-village/"
     },
     {
-        "address": "Stanley Grose Dr\r\nMalvern East VIC 3145",
+        "address": "Stanley Grose Dr\nMalvern East VIC 3145",
         "categories": [
             {
                 "tag": "LiveMusic"
@@ -1915,7 +2072,7 @@
         "url": "https://beat.com.au/directory/east-malvern-rsl/"
     },
     {
-        "address": "168 Chesterville Rd\r\nCheltenham VIC 3192",
+        "address": "168 Chesterville Rd\nCheltenham VIC 3192",
         "categories": [
             {
                 "tag": "Bar"
@@ -1926,7 +2083,7 @@
         "url": "https://beat.com.au/directory/eddies-bandroom/"
     },
     {
-        "address": "108 Smith St\r\nCollingwood VIC 3066",
+        "address": "108 Smith St\nCollingwood VIC 3066",
         "categories": [
             {
                 "tag": "Bar"
@@ -1943,7 +2100,7 @@
         "url": "https://beat.com.au/directory/eden/"
     },
     {
-        "address": "681 Sydney Rd\r\nBrunswick VIC 3056",
+        "address": "681 Sydney Rd\nBrunswick VIC 3056",
         "categories": [
             {
                 "tag": "LiveMusic"
@@ -1957,7 +2114,7 @@
         "url": "https://beat.com.au/directory/edinburgh-castle-hotel/"
     },
     {
-        "address": "578 Brunswick Street\r\nFitzroy North VIC 3068",
+        "address": "578 Brunswick Street\nFitzroy North VIC 3068",
         "categories": [
             {
                 "contents": "",
@@ -1969,7 +2126,7 @@
         "url": "https://beat.com.au/directory/edinburgh-gardens/"
     },
     {
-        "address": "49-51 Glen Huntly Rd\r\nElwood VIC 3184",
+        "address": "49-51 Glen Huntly Rd\nElwood VIC 3184",
         "categories": [
             {
                 "contents": "",
@@ -1981,7 +2138,7 @@
         "url": "https://beat.com.au/directory/elwood-lounge/"
     },
     {
-        "address": "60 Lygon St\r\nBrunswick East VIC 3057",
+        "address": "60 Lygon St\nBrunswick East VIC 3057",
         "categories": [
             {
                 "contents": "",
@@ -1993,7 +2150,7 @@
         "url": "https://beat.com.au/directory/etta/"
     },
     {
-        "address": "351 Brunswick St\r\nFitzroy VIC 3065",
+        "address": "351 Brunswick St\nFitzroy VIC 3065",
         "categories": [
             {
                 "tag": "Bar"
@@ -2007,7 +2164,7 @@
         "url": "https://beat.com.au/directory/evelyn-hotel/"
     },
     {
-        "address": "230/232 Gertrude St\r\nFitzroy VIC 3065",
+        "address": "230/232 Gertrude St\nFitzroy VIC 3065",
         "categories": [
             {
                 "tag": "Bar"
@@ -2018,7 +2175,7 @@
         "url": "https://beat.com.au/directory/evies-disco-diner/"
     },
     {
-        "address": "14 Corrs Ln\r\nMelbourne VIC 3000",
+        "address": "14 Corrs Ln\nMelbourne VIC 3000",
         "categories": [
             {
                 "tag": "Bar"
@@ -2035,7 +2192,7 @@
         "url": "https://beat.com.au/directory/fad-gallery/"
     },
     {
-        "address": "Level 1/79 Bourke St\r\nMelbourne VIC 3000",
+        "address": "Level 1/79 Bourke St\nMelbourne VIC 3000",
         "categories": [
             {
                 "contents": "",
@@ -2047,7 +2204,7 @@
         "url": "https://beat.com.au/directory/fancy-hanks/"
     },
     {
-        "address": "Corner of Swanston Street & Flinders Street\r\nMelbourne VIC 3000",
+        "address": "Corner of Swanston Street & Flinders Street\nMelbourne VIC 3000",
         "categories": [
             {
                 "contents": "",
@@ -2059,7 +2216,7 @@
         "url": "https://beat.com.au/directory/federation-square/"
     },
     {
-        "address": "31 Tattersalls Ln\r\nMelbourne VIC 3000",
+        "address": "31 Tattersalls Ln\nMelbourne VIC 3000",
         "categories": [
             {
                 "tag": "Bar"
@@ -2076,7 +2233,7 @@
         "url": "https://beat.com.au/directory/ferdydurke/"
     },
     {
-        "address": "1130 Burwood Hwy\r\nFerntree Gully VIC 3156",
+        "address": "1130 Burwood Hwy\nFerntree Gully VIC 3156",
         "categories": [
             {
                 "tag": "Bar"
@@ -2087,7 +2244,7 @@
         "url": "https://beat.com.au/directory/ferntree-gully-hotel/"
     },
     {
-        "address": "300 Dudley St\r\nWest Melbourne VIC 3003",
+        "address": "300 Dudley St\nWest Melbourne VIC 3003",
         "categories": [
             {
                 "tag": "LiveMusic"
@@ -2098,7 +2255,7 @@
         "url": "https://beat.com.au/directory/festival-hall/"
     },
     {
-        "address": "267 Little Collins St\r\nMelbourne VIC 3000",
+        "address": "267 Little Collins St\nMelbourne VIC 3000",
         "categories": [
             {
                 "tag": "Bar"
@@ -2112,7 +2269,7 @@
         "url": "https://beat.com.au/directory/fika-island/"
     },
     {
-        "address": "979-985 Nepean Hwy\r\nMoorabbin VIC 3189",
+        "address": "979-985 Nepean Hwy\nMoorabbin VIC 3189",
         "categories": [
             {
                 "tag": "LiveMusic"
@@ -2123,7 +2280,7 @@
         "url": "https://beat.com.au/directory/flying-saucer-club/"
     },
     {
-        "address": "45 Moreland Street\r\nFootscray VIC 3011",
+        "address": "45 Moreland Street\nFootscray VIC 3011",
         "categories": [
             {
                 "contents": "",
@@ -2135,13 +2292,13 @@
         "url": "https://beat.com.au/directory/footscray-community-arts/"
     },
     {
-        "address": "45 Flinders Ln\r\nMelbourne VIC 3000",
+        "address": "45 Flinders Ln\nMelbourne VIC 3000",
         "categories": [
             {
-                "tag": "TheatreVenue"
+                "tag": "EventVenue"
             },
             {
-                "tag": "EventVenue"
+                "tag": "TheatreVenue"
             }
         ],
         "city": "Melbourne, VIC",
@@ -2149,7 +2306,7 @@
         "url": "https://beat.com.au/directory/fortyfivedownstairs/"
     },
     {
-        "address": "154 Flinders St\r\nMelbourne VIC 3000",
+        "address": "154 Flinders St\nMelbourne VIC 3000",
         "categories": [
             {
                 "tag": "LiveMusic"
@@ -2160,7 +2317,7 @@
         "url": "https://beat.com.au/directory/forum-melbourne/"
     },
     {
-        "address": "63 Wellington St\r\nCollingwood VIC 3066",
+        "address": "63 Wellington St\nCollingwood VIC 3066",
         "categories": [
             {
                 "contents": "Galleries",
@@ -2172,7 +2329,21 @@
         "url": "https://beat.com.au/directory/fox-galleries/"
     },
     {
-        "address": "Shop 16R, Level 1/1 Freshwater Pl\r\nSouthbank VIC 3006",
+        "address": "222-224 High St\nNorthcote VIC 3070",
+        "categories": [
+            {
+                "tag": "Bar"
+            },
+            {
+                "tag": "Club"
+            }
+        ],
+        "city": "Northcote, VIC",
+        "name": "Francesca's Bar",
+        "url": "https://beat.com.au/directory/francescas-bar/"
+    },
+    {
+        "address": "Shop 16R, Level 1/1 Freshwater Pl\nSouthbank VIC 3006",
         "categories": [
             {
                 "tag": "LiveMusic"
@@ -2183,7 +2354,7 @@
         "url": "https://beat.com.au/directory/frankie-upstairs-nadi-studios/"
     },
     {
-        "address": "27-37 Davey St\r\nFrankston VIC 3199",
+        "address": "27-37 Davey St\nFrankston VIC 3199",
         "categories": [
             {
                 "tag": "EventVenue"
@@ -2194,7 +2365,7 @@
         "url": "https://beat.com.au/directory/frankston-arts-centre/"
     },
     {
-        "address": "Cnr Yuille & Williams Streets\r\nFrankston VIC 3199",
+        "address": "Cnr Yuille & Williams Streets\nFrankston VIC 3199",
         "categories": [
             {
                 "tag": "EventVenue"
@@ -2219,7 +2390,7 @@
         "url": "https://beat.com.au/directory/freddie-wimpoles/"
     },
     {
-        "address": "703- 707 Plenty Rd\r\nReservoir VIC 3073\r\nWurundjeri Land",
+        "address": "703- 707 Plenty Rd\nReservoir VIC 3073\nWurundjeri Land",
         "categories": [
             {
                 "tag": "Brewery"
@@ -2230,7 +2401,7 @@
         "url": "https://beat.com.au/directory/future-mountain-brewing-blending/"
     },
     {
-        "address": "484 Smith St\r\nCollingwood VIC 3066",
+        "address": "484 Smith St\nCollingwood VIC 3066",
         "categories": [
             {
                 "tag": "Bar"
@@ -2247,7 +2418,7 @@
         "url": "https://beat.com.au/directory/gasometer-hotel/"
     },
     {
-        "address": "21 Graham St\r\nAlbert Park VIC 3206",
+        "address": "21 Graham St\nAlbert Park VIC 3206",
         "categories": [
             {
                 "tag": "TheatreVenue"
@@ -2258,7 +2429,7 @@
         "url": "https://beat.com.au/directory/gasworks-arts-park/"
     },
     {
-        "address": "2 Geddes Ln\r\nMelbourne VIC 3000",
+        "address": "2 Geddes Ln\nMelbourne VIC 3000",
         "categories": [
             {
                 "tag": "LiveMusic"
@@ -2269,7 +2440,7 @@
         "url": "https://beat.com.au/directory/geddes-lane-ballroom/"
     },
     {
-        "address": "289 Wellington St\r\nCollingwood VIC 3066",
+        "address": "289 Wellington St\nCollingwood VIC 3066",
         "categories": [
             {
                 "tag": "Bar"
@@ -2283,7 +2454,7 @@
         "url": "https://beat.com.au/directory/gem-bar/"
     },
     {
-        "address": "12a/45 William St\r\nMelbourne VIC 3000",
+        "address": "12a/45 William St\nMelbourne VIC 3000",
         "categories": [
             {
                 "tag": "FestivalVenue"
@@ -2297,7 +2468,7 @@
         "url": "https://beat.com.au/directory/general-assembly-melbourne/"
     },
     {
-        "address": "1 George Ln\r\nSt Kilda VIC 3182",
+        "address": "1 George Ln\nSt Kilda VIC 3182",
         "categories": [
             {
                 "tag": "Bar"
@@ -2314,7 +2485,7 @@
         "url": "https://beat.com.au/directory/george-lane/"
     },
     {
-        "address": "120 Johnston St\r\nFitzroy VIC 3065",
+        "address": "120 Johnston St\nFitzroy VIC 3065",
         "categories": [
             {
                 "tag": "Bar"
@@ -2325,7 +2496,7 @@
         "url": "https://beat.com.au/directory/georges-bar/"
     },
     {
-        "address": "4/1-5 Hamlet St\r\nCheltenham Vic 3192",
+        "address": "4/1-5 Hamlet St\nCheltenham Vic 3192",
         "categories": [
             {
                 "contents": "",
@@ -2337,7 +2508,7 @@
         "url": "https://beat.com.au/directory/gintonica/"
     },
     {
-        "address": "393 Brunswick St\r\nFitzroy VIC 3065",
+        "address": "393 Brunswick St\nFitzroy VIC 3065",
         "categories": [
             {
                 "tag": "Club"
@@ -2348,7 +2519,7 @@
         "url": "https://beat.com.au/directory/glamorama/"
     },
     {
-        "address": "Level 2/267 Little Collins St\r\nMelbourne VIC 3000",
+        "address": "Level 2/267 Little Collins St\nMelbourne VIC 3000",
         "categories": [
             {
                 "tag": "Bar"
@@ -2359,16 +2530,16 @@
         "url": "https://beat.com.au/directory/glamp-cocktail-bar/"
     },
     {
-        "address": "6 Ash Court\r\nGlenroy VIC 3046",
+        "address": "6 Ash Court\nGlenroy VIC 3046",
         "categories": [
-            {
-                "tag": "Club"
-            },
             {
                 "tag": "EventVenue"
             },
             {
                 "tag": "LiveMusic"
+            },
+            {
+                "tag": "Club"
             }
         ],
         "city": "Glenroy, VIC",
@@ -2376,7 +2547,7 @@
         "url": "https://beat.com.au/directory/glenroy-bowls-club/"
     },
     {
-        "address": "241 Hawthorn Rd\r\nCaulfield North VIC 3161",
+        "address": "241 Hawthorn Rd\nCaulfield North VIC 3161",
         "categories": [
             {
                 "contents": "Galleries",
@@ -2388,7 +2559,7 @@
         "url": "https://beat.com.au/directory/glimmer-gallery/"
     },
     {
-        "address": "Level 1 Globe Alley\r\nMelbourne VIC 3000",
+        "address": "Level 1 Globe Alley\nMelbourne VIC 3000",
         "categories": [
             {
                 "tag": "LiveMusic"
@@ -2399,11 +2570,8 @@
         "url": "https://beat.com.au/directory/globe-alley/"
     },
     {
-        "address": "238 Clarendon St\r\nSouth Melbourne VIC 3205",
+        "address": "238 Clarendon St\nSouth Melbourne VIC 3205",
         "categories": [
-            {
-                "tag": "Pub"
-            },
             {
                 "tag": "Bar"
             },
@@ -2412,6 +2580,9 @@
             },
             {
                 "tag": "EventVenue"
+            },
+            {
+                "tag": "Pub"
             }
         ],
         "city": "South Melbourne, VIC",
@@ -2419,7 +2590,7 @@
         "url": "https://beat.com.au/directory/golden-gate-hotel/"
     },
     {
-        "address": "Basement / 389 Lonsdale Street\r\nMelbourne VIC 3000",
+        "address": "Basement / 389 Lonsdale Street\nMelbourne VIC 3000",
         "categories": [
             {
                 "tag": "Bar"
@@ -2430,7 +2601,7 @@
         "url": "https://beat.com.au/directory/golden-monkey/"
     },
     {
-        "address": "Level 2/79 Bourke St\r\nMelbourne VIC 3000",
+        "address": "Level 2/79 Bourke St\nMelbourne VIC 3000",
         "categories": [
             {
                 "tag": "Bar"
@@ -2444,16 +2615,16 @@
         "url": "https://beat.com.au/directory/good-heavens/"
     },
     {
-        "address": "147 Commercial Rd\r\nSouth Yarra VIC 3141",
+        "address": "147 Commercial Rd\nSouth Yarra VIC 3141",
         "categories": [
+            {
+                "tag": "EventVenue"
+            },
             {
                 "tag": "Bar"
             },
             {
                 "tag": "Club"
-            },
-            {
-                "tag": "EventVenue"
             }
         ],
         "city": "VIC",
@@ -2461,7 +2632,7 @@
         "url": "https://beat.com.au/directory/good-things-bar/"
     },
     {
-        "address": "114 Smith St\r\nCollingwood VIC 3066",
+        "address": "114 Smith St\nCollingwood VIC 3066",
         "categories": [
             {
                 "tag": "Bar"
@@ -2478,7 +2649,7 @@
         "url": "https://beat.com.au/directory/grace-darling-hotel/"
     },
     {
-        "address": "124 Main St\r\nMornington VIC 3931",
+        "address": "124 Main St\nMornington VIC 3931",
         "categories": [
             {
                 "tag": "Bar"
@@ -2495,7 +2666,36 @@
         "url": "https://beat.com.au/directory/grand-hotel-mornington/"
     },
     {
-        "address": "125 Smith St\r\nFitzroy VIC 3065",
+        "address": "420 Little Collins Street, Melbourne, 3000",
+        "categories": [
+            {
+                "contents": "",
+                "tag": "OtherVenue"
+            }
+        ],
+        "city": "Melbourne, VIC",
+        "name": "Gravity Club",
+        "url": "https://beat.com.au/directory/gravity-club/"
+    },
+    {
+        "address": "20 Booker St\nSpotswood VIC 3015",
+        "categories": [
+            {
+                "tag": "Bar"
+            },
+            {
+                "tag": "EventVenue"
+            },
+            {
+                "tag": "LiveMusic"
+            }
+        ],
+        "city": "Spotswood, VIC",
+        "name": "Grazeland",
+        "url": "https://beat.com.au/directory/grazeland/"
+    },
+    {
+        "address": "125 Smith St\nFitzroy VIC 3065",
         "categories": [
             {
                 "tag": "Bar"
@@ -2512,13 +2712,13 @@
         "url": "https://beat.com.au/directory/grumpys-green/"
     },
     {
-        "address": "100 St Kilda Rd\r\nMelbourne VIC 3004",
+        "address": "100 St Kilda Rd\nMelbourne VIC 3004",
         "categories": [
             {
-                "tag": "TheatreVenue"
+                "tag": "LiveMusic"
             },
             {
-                "tag": "LiveMusic"
+                "tag": "TheatreVenue"
             }
         ],
         "city": "Melbourne, VIC",
@@ -2526,7 +2726,7 @@
         "url": "https://beat.com.au/directory/hamer-hall-arts-centre-melbourne/"
     },
     {
-        "address": "670 Plenty Rd\r\nPreston VIC 3072",
+        "address": "670 Plenty Rd\nPreston VIC 3072",
         "categories": [
             {
                 "tag": "Bar"
@@ -2537,7 +2737,7 @@
         "url": "https://beat.com.au/directory/hardout/"
     },
     {
-        "address": "63 Johnston St\r\nFitzroy VIC 3065",
+        "address": "63 Johnston St\nFitzroy VIC 3065",
         "categories": [
             {
                 "tag": "TheatreVenue"
@@ -2548,7 +2748,7 @@
         "url": "https://beat.com.au/directory/harehole-melbourne/"
     },
     {
-        "address": "71 Collins St\r\nMelbourne VIC 3000",
+        "address": "71 Collins St\nMelbourne VIC 3000",
         "categories": [
             {
                 "tag": "Bar"
@@ -2559,7 +2759,7 @@
         "url": "https://beat.com.au/directory/harley-house-bar-and-grill/"
     },
     {
-        "address": "447 Church St\r\nRichmond VIC 3121",
+        "address": "447 Church St\nRichmond VIC 3121",
         "categories": [
             {
                 "tag": "Bar"
@@ -2570,7 +2770,7 @@
         "url": "https://beat.com.au/directory/harlow/"
     },
     {
-        "address": "360 Burwood Rd\r\nHawthorn VIC 3122",
+        "address": "360 Burwood Rd\nHawthorn VIC 3122",
         "categories": [
             {
                 "tag": "EventVenue"
@@ -2581,7 +2781,7 @@
         "url": "https://beat.com.au/directory/hawthorn-arts-centre/"
     },
     {
-        "address": "7 Templestowe Rd\r\nBulleen VIC 3105",
+        "address": "7 Templestowe Rd\nBulleen VIC 3105",
         "categories": [
             {
                 "contents": "",
@@ -2593,7 +2793,7 @@
         "url": "https://beat.com.au/directory/heide-museum-of-modern-art/"
     },
     {
-        "address": "188 Bourke St\r\nMelbourne VIC 3000",
+        "address": "188 Bourke St\nMelbourne VIC 3000",
         "categories": [
             {
                 "tag": "Bar"
@@ -2607,7 +2807,7 @@
         "url": "https://beat.com.au/directory/heroes-karaoke-rooftop-bar/"
     },
     {
-        "address": "105 Latrobe Parade\r\nDromana VIC 3936",
+        "address": "105 Latrobe Parade\nDromana VIC 3936",
         "categories": [
             {
                 "contents": "",
@@ -2619,7 +2819,7 @@
         "url": "https://beat.com.au/directory/heronswood-house-gardens/"
     },
     {
-        "address": "Buley St\r\nHawthorn East VIC 3123",
+        "address": "Buley St\nHawthorn East VIC 3123",
         "categories": [
             {
                 "tag": "LiveMusic"
@@ -2630,22 +2830,22 @@
         "url": "https://beat.com.au/directory/hideout-music/"
     },
     {
-        "address": "817 High Street\r\nReservoir VIC 3073",
+        "address": "817 High Street\nReservoir VIC 3073",
         "categories": [
             {
-                "tag": "TheatreVenue"
+                "tag": "EventVenue"
             },
             {
                 "tag": "Bar"
-            },
-            {
-                "tag": "EventVenue"
             },
             {
                 "tag": "LiveMusic"
             },
             {
                 "tag": "Pub"
+            },
+            {
+                "tag": "TheatreVenue"
             },
             {
                 "contents": "Café",
@@ -2675,7 +2875,7 @@
         "url": "https://beat.com.au/directory/high-note/"
     },
     {
-        "address": "MR5/3 Southgate Ave\r\nSouthbank VIC 3006",
+        "address": "MR5/3 Southgate Ave\nSouthbank VIC 3006",
         "categories": [
             {
                 "tag": "Bar"
@@ -2689,7 +2889,7 @@
         "url": "https://beat.com.au/directory/hophaus-bar-bistro/"
     },
     {
-        "address": "397 Little Lonsdale St\r\nMelbourne VIC 3000",
+        "address": "397 Little Lonsdale St\nMelbourne VIC 3000",
         "categories": [
             {
                 "tag": "Bar"
@@ -2703,7 +2903,7 @@
         "url": "https://beat.com.au/directory/horse-bazaar/"
     },
     {
-        "address": "11 The Esplanade\r\nSt Kilda VIC 3182",
+        "address": "11 The Esplanade\nSt Kilda VIC 3182",
         "categories": [
             {
                 "tag": "Bar"
@@ -2734,7 +2934,7 @@
         "url": "https://beat.com.au/directory/hotel-railway/"
     },
     {
-        "address": "28 Napier St\r\nFootscray VIC 3011",
+        "address": "28 Napier St\nFootscray VIC 3011",
         "categories": [
             {
                 "tag": "Pub"
@@ -2745,7 +2945,7 @@
         "url": "https://beat.com.au/directory/hotel-westwood/"
     },
     {
-        "address": "222 Macaulay Rd\r\nNorth Melbourne VIC 3051",
+        "address": "222 Macaulay Rd\nNorth Melbourne VIC 3051",
         "categories": [
             {
                 "contents": "",
@@ -2757,7 +2957,7 @@
         "url": "https://beat.com.au/directory/house-of-usher-funeral-services/"
     },
     {
-        "address": "7-11 Dawson St\r\nBrunswick VIC 3056",
+        "address": "7-11 Dawson St\nBrunswick VIC 3056",
         "categories": [
             {
                 "tag": "Bar"
@@ -2771,7 +2971,7 @@
         "url": "https://beat.com.au/directory/howler/"
     },
     {
-        "address": "19 Harding St\r\nCoburg VIC 3058",
+        "address": "19 Harding St\nCoburg VIC 3058",
         "categories": [
             {
                 "tag": "LiveMusic"
@@ -2782,7 +2982,19 @@
         "url": "https://beat.com.au/directory/hume-blues-club/"
     },
     {
-        "address": "2 Francis Cres\r\nFerntree Gully VIC 3156",
+        "address": "https://eastland.qicre.com/Eat/Restaurants/Hungry#/profile?location={32FFBD9D-F4AB-4A9C-95A2-79744E12B77E}",
+        "categories": [
+            {
+                "contents": "Café",
+                "tag": "OtherVenue"
+            }
+        ],
+        "city": null,
+        "name": "Hungry 4 Success Cafe at Eastland",
+        "url": "https://beat.com.au/directory/hungry-4-success-cafe-at-eastland/"
+    },
+    {
+        "address": "2 Francis Cres\nFerntree Gully VIC 3156",
         "categories": [
             {
                 "tag": "LiveMusic"
@@ -2796,7 +3008,7 @@
         "url": "https://beat.com.au/directory/ifti-community-hub/"
     },
     {
-        "address": "180 Holmes Road\r\nAberfeldie VIC 3040",
+        "address": "180 Holmes Road\nAberfeldie VIC 3040",
         "categories": [
             {
                 "contents": "Galleries",
@@ -2808,18 +3020,18 @@
         "url": "https://beat.com.au/directory/incinerator-gallery/"
     },
     {
-        "address": "60 King St\r\nMelbourne VIC 3000",
+        "address": "60 King St\nMelbourne VIC 3000",
         "categories": [
             {
                 "tag": "Bar"
             }
         ],
-        "city": "Melbourne",
+        "city": "VIC",
         "name": "Inflation Entertainment Complex",
         "url": "https://beat.com.au/directory/inflation-entertainment-complex/"
     },
     {
-        "address": "375 Inkerman Street\r\nSt Kilda East VIC 3183",
+        "address": "375 Inkerman Street\nSt Kilda East VIC 3183",
         "categories": [
             {
                 "tag": "Pub"
@@ -2830,7 +3042,7 @@
         "url": "https://beat.com.au/directory/inkerman-hotel/"
     },
     {
-        "address": "316-334 Maroondah Hwy\r\nHealesville VIC 3777",
+        "address": "316-334 Maroondah Hwy\nHealesville VIC 3777",
         "categories": [
             {
                 "tag": "Brewery"
@@ -2841,7 +3053,7 @@
         "url": "https://beat.com.au/directory/innocent-bystander/"
     },
     {
-        "address": "269 Swan Street\r\nRichmond VIC 3121",
+        "address": "269 Swan Street\nRichmond VIC 3121",
         "categories": [
             {
                 "tag": "Bar"
@@ -2855,7 +3067,7 @@
         "url": "https://beat.com.au/directory/jimmy-hornet/"
     },
     {
-        "address": "Olympic Blvd\r\nMelbourne VIC 3001",
+        "address": "Olympic Blvd\nMelbourne VIC 3001",
         "categories": [
             {
                 "tag": "EventVenue"
@@ -2866,7 +3078,7 @@
         "url": "https://beat.com.au/directory/john-cain-arena/"
     },
     {
-        "address": "17 Chapel St\r\nWindsor VIC 3181",
+        "address": "17 Chapel St\nWindsor VIC 3181",
         "categories": [
             {
                 "tag": "Bar"
@@ -2877,7 +3089,7 @@
         "url": "https://beat.com.au/directory/john-doe/"
     },
     {
-        "address": "157-159 Greville Street\r\nPrahran VIC 3181",
+        "address": "157-159 Greville Street\nPrahran VIC 3181",
         "categories": [
             {
                 "tag": "Bar"
@@ -2897,7 +3109,7 @@
         "url": "https://beat.com.au/directory/jonos-piano-bar/"
     },
     {
-        "address": "101 Johnston St\r\nCollingwood VIC 3066",
+        "address": "101 Johnston St\nCollingwood VIC 3066",
         "categories": [
             {
                 "contents": "",
@@ -2909,7 +3121,7 @@
         "url": "https://beat.com.au/directory/just-another-agency/"
     },
     {
-        "address": "79-81 Franklin St\r\nMelbourne VIC 3000",
+        "address": "79-81 Franklin St\nMelbourne VIC 3000",
         "categories": [
             {
                 "contents": "",
@@ -2933,7 +3145,7 @@
         "url": "https://beat.com.au/directory/kaiju-cantina/"
     },
     {
-        "address": "56 Johnston St\r\nFitzroy VIC 3065",
+        "address": "56 Johnston St\nFitzroy VIC 3065",
         "categories": [
             {
                 "tag": "Bar"
@@ -2947,7 +3159,7 @@
         "url": "https://beat.com.au/directory/kanela-bar/"
     },
     {
-        "address": "1 Kerwick Street\r\nRedbank QLD 4301",
+        "address": "1 Kerwick Street\nRedbank QLD 4301",
         "categories": [
             {
                 "tag": "Pub"
@@ -2958,7 +3170,7 @@
         "url": "https://beat.com.au/directory/kerwick-hotel/"
     },
     {
-        "address": "186 High St\r\nKew VIC 3101",
+        "address": "186 High St\nKew VIC 3101",
         "categories": [
             {
                 "tag": "TheatreVenue"
@@ -2972,7 +3184,7 @@
         "url": "https://beat.com.au/directory/kew-court-house/"
     },
     {
-        "address": "376 Brunswick St\r\nFitzroy VIC 3065",
+        "address": "376 Brunswick St\nFitzroy VIC 3065",
         "categories": [
             {
                 "tag": "Bar"
@@ -2983,7 +3195,7 @@
         "url": "https://beat.com.au/directory/bimbo/"
     },
     {
-        "address": "43 Hardware Ln\r\nMelbourne VIC 3000",
+        "address": "43 Hardware Ln\nMelbourne VIC 3000",
         "categories": [
             {
                 "tag": "Club"
@@ -3000,7 +3212,7 @@
         "url": "https://beat.com.au/directory/khokolat-bar/"
     },
     {
-        "address": "3 Harris Street\r\nFootscray VIC 3011",
+        "address": "3 Harris Street\nFootscray VIC 3011",
         "categories": [
             {
                 "tag": "EventVenue"
@@ -3014,7 +3226,7 @@
         "url": "https://beat.com.au/directory/kindred-studios/"
     },
     {
-        "address": "979-985 Nepean Hwy\r\nMoorabbin VIC 3189",
+        "address": "979-985 Nepean Hwy\nMoorabbin VIC 3189",
         "categories": [
             {
                 "tag": "EventVenue"
@@ -3025,7 +3237,7 @@
         "url": "https://beat.com.au/directory/kingston-city-hall/"
     },
     {
-        "address": "577 Little Bourke St\r\nMelbourne VIC 3000",
+        "address": "577 Little Bourke St\nMelbourne VIC 3000",
         "categories": [
             {
                 "tag": "Bar"
@@ -3039,7 +3251,7 @@
         "url": "https://beat.com.au/directory/la-di-da/"
     },
     {
-        "address": "349 Drummond St \r\nCarlton VIC 3053",
+        "address": "349 Drummond St \nCarlton VIC 3053",
         "categories": [
             {
                 "tag": "TheatreVenue"
@@ -3050,7 +3262,7 @@
         "url": "https://beat.com.au/directory/la-mama-theatre/"
     },
     {
-        "address": "197A Brunswick St\r\nFitzroy VIC 3065",
+        "address": "197A Brunswick St\nFitzroy VIC 3065",
         "categories": [
             {
                 "tag": "Bar"
@@ -3064,7 +3276,7 @@
         "url": "https://beat.com.au/directory/labour-in-vain/"
     },
     {
-        "address": "50 Johnston St\r\nFitzroy VIC 3065",
+        "address": "50 Johnston St\nFitzroy VIC 3065",
         "categories": [
             {
                 "tag": "Bar"
@@ -3081,7 +3293,7 @@
         "url": "https://beat.com.au/directory/laundry-bar/"
     },
     {
-        "address": "926 High St\r\nArmadale VIC 3143",
+        "address": "926 High St\nArmadale VIC 3143",
         "categories": [
             {
                 "tag": "EventVenue"
@@ -3092,7 +3304,7 @@
         "url": "https://beat.com.au/directory/le-plonc/"
     },
     {
-        "address": "1 Church St\r\nRichmond VIC 3121",
+        "address": "1 Church St\nRichmond VIC 3121",
         "categories": [
             {
                 "tag": "Pub"
@@ -3103,7 +3315,7 @@
         "url": "https://beat.com.au/directory/leadbeater-hotel/"
     },
     {
-        "address": "675 Glenferrie Rd\r\nHawthorn VIC 3122",
+        "address": "675 Glenferrie Rd\nHawthorn VIC 3122",
         "categories": [
             {
                 "tag": "LiveMusic"
@@ -3114,7 +3326,18 @@
         "url": "https://beat.com.au/directory/lido-jazz-room/"
     },
     {
-        "address": "26 Acland St\r\nSt Kilda VIC 3182",
+        "address": "185 Timor St\nWarrnambool VIC 3280",
+        "categories": [
+            {
+                "tag": "TheatreVenue"
+            }
+        ],
+        "city": "Warrnambool, VIC",
+        "name": "Lighthouse Theatre",
+        "url": "https://beat.com.au/directory/lighthouse-theatre/"
+    },
+    {
+        "address": "26 Acland St\nSt Kilda VIC 3182",
         "categories": [
             {
                 "contents": "",
@@ -3126,7 +3349,7 @@
         "url": "https://beat.com.au/directory/linden-new-art/"
     },
     {
-        "address": "221 Swanston St\r\nGeelong VIC 3220",
+        "address": "221 Swanston St\nGeelong VIC 3220",
         "categories": [
             {
                 "tag": "Brewery"
@@ -3137,7 +3360,7 @@
         "url": "https://beat.com.au/directory/little-creatures-brewery/"
     },
     {
-        "address": "1/401 Swanston St\r\nMelbourne VIC 3000",
+        "address": "1/401 Swanston St\nMelbourne VIC 3000",
         "categories": [
             {
                 "tag": "Bar"
@@ -3151,7 +3374,18 @@
         "url": "https://beat.com.au/directory/little-jax/"
     },
     {
-        "address": "3 Hilton Street\r\nClifton Hill 3068",
+        "address": "223 Barkly St\nFootscray VIC 3011",
+        "categories": [
+            {
+                "tag": "Bar"
+            }
+        ],
+        "city": "Footscray, VIC",
+        "name": "Littlefoot Bar",
+        "url": "https://beat.com.au/directory/littlefoot-bar/"
+    },
+    {
+        "address": "3 Hilton Street\nClifton Hill 3068",
         "categories": [
             {
                 "tag": "Bar"
@@ -3165,7 +3399,7 @@
         "url": "https://beat.com.au/directory/local-brewing-co-taproom/"
     },
     {
-        "address": "318 St Georges Rd\r\nFitzroy North VIC 3068",
+        "address": "318 St Georges Rd\nFitzroy North VIC 3068",
         "categories": [
             {
                 "tag": "EventVenue"
@@ -3176,7 +3410,7 @@
         "url": "https://beat.com.au/directory/longplay/"
     },
     {
-        "address": "23 Meyers Pl\r\nMelbourne VIC 3000",
+        "address": "23 Meyers Pl\nMelbourne VIC 3000",
         "categories": [
             {
                 "tag": "Bar"
@@ -3193,7 +3427,7 @@
         "url": "https://beat.com.au/directory/loop-project-space-bar/"
     },
     {
-        "address": "211 Barkly Street\r\nSt Kilda VIC 3182",
+        "address": "211 Barkly Street\nSt Kilda VIC 3182",
         "categories": [
             {
                 "tag": "Bar"
@@ -3204,7 +3438,7 @@
         "url": "https://beat.com.au/directory/lost/"
     },
     {
-        "address": "179 Chapel St\r\nWindsor VIC 3181",
+        "address": "179 Chapel St\nWindsor VIC 3181",
         "categories": [
             {
                 "tag": "Bar"
@@ -3221,7 +3455,7 @@
         "url": "https://beat.com.au/directory/lucky-coq/"
     },
     {
-        "address": "719 High St\r\nThornbury VIC 3071",
+        "address": "719 High St\nThornbury VIC 3071",
         "categories": [
             {
                 "tag": "Bar"
@@ -3232,7 +3466,7 @@
         "url": "https://beat.com.au/directory/lucky-schmuck/"
     },
     {
-        "address": "225 Johnston St\r\nAbbotsford VIC 3067",
+        "address": "225 Johnston St\nAbbotsford VIC 3067",
         "categories": [
             {
                 "tag": "Bar"
@@ -3243,7 +3477,7 @@
         "url": "https://beat.com.au/directory/lulie-tavern/"
     },
     {
-        "address": "61 Glen Eira Rd\r\nRipponlea VIC 3185",
+        "address": "61 Glen Eira Rd\nRipponlea VIC 3185",
         "categories": [
             {
                 "tag": "EventVenue"
@@ -3254,7 +3488,7 @@
         "url": "https://beat.com.au/directory/lyrebird-lounge/"
     },
     {
-        "address": "The Coopers Malthouse, 113 Sturt St\r\nSouthbank VIC 3006",
+        "address": "The Coopers Malthouse, 113 Sturt St\nSouthbank VIC 3006",
         "categories": [
             {
                 "tag": "TheatreVenue"
@@ -3265,7 +3499,7 @@
         "url": "https://beat.com.au/directory/malthouse-theatre/"
     },
     {
-        "address": "42A Albert Street\r\nFootscray VIC 3011",
+        "address": "42A Albert Street\nFootscray VIC 3011",
         "categories": [
             {
                 "tag": "Bar"
@@ -3299,7 +3533,7 @@
         "url": "https://beat.com.au/directory/mantra-studio/"
     },
     {
-        "address": "Olympic Blvd\r\nMelbourne VIC 3001",
+        "address": "Olympic Blvd\nMelbourne VIC 3001",
         "categories": [
             {
                 "tag": "LiveMusic"
@@ -3310,7 +3544,7 @@
         "url": "https://beat.com.au/directory/margaret-court-arena/"
     },
     {
-        "address": "1 Mark St\r\nFitzroy North VIC 3068",
+        "address": "1 Mark St\nFitzroy North VIC 3068",
         "categories": [
             {
                 "tag": "EventVenue"
@@ -3321,7 +3555,7 @@
         "url": "https://beat.com.au/directory/mark-street-hall/"
     },
     {
-        "address": "740 Bourke St\r\nDocklands VIC 3008",
+        "address": "740 Bourke St\nDocklands VIC 3008",
         "categories": [
             {
                 "tag": "EventVenue"
@@ -3335,7 +3569,7 @@
         "url": "https://beat.com.au/directory/marvel-stadium/"
     },
     {
-        "address": "667 Warrigal Rd\r\nChadstone VIC 3148",
+        "address": "667 Warrigal Rd\nChadstone VIC 3148",
         "categories": [
             {
                 "tag": "Bar"
@@ -3349,7 +3583,7 @@
         "url": "https://beat.com.au/directory/matthew-flinders-hotel/"
     },
     {
-        "address": "UNSW Sydney\r\nBarker St\r\nKensington NSW 2052",
+        "address": "UNSW Sydney\nBarker St\nKensington NSW 2052",
         "categories": [
             {
                 "tag": "FestivalVenue"
@@ -3363,7 +3597,7 @@
         "url": "https://beat.com.au/directory/matzah-productions/"
     },
     {
-        "address": "125 Swanston St\r\nMelbourne VIC 3000",
+        "address": "125 Swanston St\nMelbourne VIC 3000",
         "categories": [
             {
                 "tag": "LiveMusic"
@@ -3374,7 +3608,19 @@
         "url": "https://beat.com.au/directory/max-watts-melbourne/"
     },
     {
-        "address": "390 McClelland Drive\r\nLangwarrin VIC 3910",
+        "address": "125 Swanston St, Melbourne VIC 3000",
+        "categories": [
+            {
+                "contents": "",
+                "tag": "OtherVenue"
+            }
+        ],
+        "city": "Melbourne",
+        "name": "Max Watt’s",
+        "url": "https://beat.com.au/directory/max-watts/"
+    },
+    {
+        "address": "390 McClelland Drive\nLangwarrin VIC 3910",
         "categories": [
             {
                 "contents": "Café",
@@ -3390,7 +3636,7 @@
         "url": "https://beat.com.au/directory/mcclelland-sculpture-park-gallery/"
     },
     {
-        "address": "195 Little Collins St\r\nMelbourne VIC 3000",
+        "address": "195 Little Collins St\nMelbourne VIC 3000",
         "categories": [
             {
                 "contents": "",
@@ -3402,7 +3648,7 @@
         "url": "https://beat.com.au/directory/meatmaiden/"
     },
     {
-        "address": "Olympic Blvd\r\nMelbourne VIC 3001",
+        "address": "Olympic Blvd\nMelbourne VIC 3001",
         "categories": [
             {
                 "tag": "LiveMusic"
@@ -3413,16 +3659,16 @@
         "url": "https://beat.com.au/directory/melbourne-arena/"
     },
     {
-        "address": "1 Convention Centre Place\r\nSouth Wharf VIC 3006",
+        "address": "1 Convention Centre Place\nSouth Wharf VIC 3006",
         "categories": [
-            {
-                "tag": "TheatreVenue"
-            },
             {
                 "tag": "EventVenue"
             },
             {
                 "tag": "LiveMusic"
+            },
+            {
+                "tag": "TheatreVenue"
             }
         ],
         "city": "Melbourne, VIC",
@@ -3430,7 +3676,7 @@
         "url": "https://beat.com.au/directory/melbourne-convention-exhibition-centre-mcec/"
     },
     {
-        "address": "3 Blackwood Street\r\nNorth Melbourne VIC 3051",
+        "address": "3 Blackwood Street\nNorth Melbourne VIC 3051",
         "categories": [
             {
                 "contents": "",
@@ -3442,7 +3688,7 @@
         "url": "https://beat.com.au/directory/melbourne-meat-market/"
     },
     {
-        "address": "31 Sturt St\r\nSouthbank VIC 3006",
+        "address": "31 Sturt St\nSouthbank VIC 3006",
         "categories": [
             {
                 "tag": "LiveMusic"
@@ -3465,7 +3711,7 @@
         "url": "https://beat.com.au/directory/melbourne-showgrounds/"
     },
     {
-        "address": "90-130 Swanston St\r\nMelbourne VIC 3000",
+        "address": "90-130 Swanston St\nMelbourne VIC 3000",
         "categories": [
             {
                 "tag": "EventVenue"
@@ -3479,7 +3725,7 @@
         "url": "https://beat.com.au/directory/melbourne-town-hall/"
     },
     {
-        "address": "Elliott Ave\r\nParkville VIC 3052",
+        "address": "Elliott Ave\nParkville VIC 3052",
         "categories": [
             {
                 "contents": "",
@@ -3491,7 +3737,7 @@
         "url": "https://beat.com.au/directory/melbourne-zoo/"
     },
     {
-        "address": "88 Acland St\r\nSt Kilda VIC 3182",
+        "address": "88 Acland St\nSt Kilda VIC 3182",
         "categories": [
             {
                 "tag": "LiveMusic"
@@ -3502,7 +3748,7 @@
         "url": "https://beat.com.au/directory/memo-music-hall/"
     },
     {
-        "address": "65-71 Monbulk Road\r\nBelgrave VIC 3160",
+        "address": "65-71 Monbulk Road\nBelgrave VIC 3160",
         "categories": [
             {
                 "tag": "Bar"
@@ -3522,7 +3768,7 @@
         "url": "https://beat.com.au/directory/micawber-tavern/"
     },
     {
-        "address": "4 Springvale Rd\r\nAspendale Gardens VIC 3195",
+        "address": "4 Springvale Rd\nAspendale Gardens VIC 3195",
         "categories": [
             {
                 "contents": "",
@@ -3534,7 +3780,19 @@
         "url": "https://beat.com.au/directory/michelangelos-italian-restaurant/"
     },
     {
-        "address": "2/401 Swanston St\r\nMelbourne VIC 3004",
+        "address": "Ground Floor/2 Mill Pl, Melbourne VIC 3000",
+        "categories": [
+            {
+                "contents": "",
+                "tag": "OtherVenue"
+            }
+        ],
+        "city": "VIC",
+        "name": "Mill Place Merchants",
+        "url": "https://beat.com.au/directory/mill-place-merchants/"
+    },
+    {
+        "address": "2/401 Swanston St\nMelbourne VIC 3004",
         "categories": [
             {
                 "tag": "Bar"
@@ -3548,7 +3806,19 @@
         "url": "https://beat.com.au/directory/miscellania/"
     },
     {
-        "address": "581 Sydney Rd\r\nBrunswick VIC 3056",
+        "address": "30 Chambers St, Footscray, 3011",
+        "categories": [
+            {
+                "contents": "",
+                "tag": "OtherVenue"
+            }
+        ],
+        "city": "Footscray",
+        "name": "Misfits",
+        "url": "https://beat.com.au/directory/misfits/"
+    },
+    {
+        "address": "581 Sydney Rd\nBrunswick VIC 3056",
         "categories": [
             {
                 "tag": "Bar"
@@ -3559,7 +3829,7 @@
         "url": "https://beat.com.au/directory/miss-moses/"
     },
     {
-        "address": "1/70 Commercial Pl\r\nEltham VIC 3095",
+        "address": "1/70 Commercial Pl\nEltham VIC 3095",
         "categories": [
             {
                 "tag": "Bar"
@@ -3577,7 +3847,7 @@
         "url": "https://beat.com.au/directory/missing-gorilla/"
     },
     {
-        "address": "717 Flinders St\r\nDocklands VIC 3008",
+        "address": "717 Flinders St\nDocklands VIC 3008",
         "categories": [
             {
                 "tag": "EventVenue"
@@ -3588,12 +3858,8 @@
         "url": "https://beat.com.au/directory/mission-to-seafarers/"
     },
     {
-        "address": "7 Hillcrest Avenue\r\nEltham VIC 3095",
+        "address": "7 Hillcrest Avenue\nEltham VIC 3095",
         "categories": [
-            {
-                "contents": "Galleries",
-                "tag": "OtherVenue"
-            },
             {
                 "tag": "EventVenue"
             },
@@ -3602,6 +3868,10 @@
             },
             {
                 "tag": "FestivalVenue"
+            },
+            {
+                "contents": "Galleries",
+                "tag": "OtherVenue"
             }
         ],
         "city": "Eltham, VIC",
@@ -3609,7 +3879,7 @@
         "url": "https://beat.com.au/directory/montsalvat-arts-centre/"
     },
     {
-        "address": "76a Cove Hill Rd\r\nBridgewater TAS 7030",
+        "address": "76a Cove Hill Rd\nBridgewater TAS 7030",
         "categories": [
             {
                 "tag": "Bar"
@@ -3629,7 +3899,7 @@
         "url": "https://beat.com.au/directory/moo-brew-brewery/"
     },
     {
-        "address": "120 Exhibition St\r\nMelbourne VIC 3000",
+        "address": "120 Exhibition St\nMelbourne VIC 3000",
         "categories": [
             {
                 "tag": "Bar"
@@ -3646,7 +3916,7 @@
         "url": "https://beat.com.au/directory/morris-house/"
     },
     {
-        "address": "163 Chapel St\r\nWindsor VIC 3181",
+        "address": "163 Chapel St\nWindsor VIC 3181",
         "categories": [
             {
                 "tag": "Bar"
@@ -3668,13 +3938,13 @@
         "url": "https://beat.com.au/directory/mpavilion/"
     },
     {
-        "address": "160 Hoddle St\r\nAbbotsford VIC 3067",
+        "address": "160 Hoddle St\nAbbotsford VIC 3067",
         "categories": [
             {
-                "tag": "Bar"
+                "tag": "LiveMusic"
             },
             {
-                "tag": "LiveMusic"
+                "tag": "Bar"
             }
         ],
         "city": "Abbotsford, VIC",
@@ -3682,7 +3952,7 @@
         "url": "https://beat.com.au/directory/mr-boogie-man-bar/"
     },
     {
-        "address": "Shop 4/21 Thompson Rd\r\nPatterson Lakes VIC 3197",
+        "address": "Shop 4/21 Thompson Rd\nPatterson Lakes VIC 3197",
         "categories": [
             {
                 "contents": "Café",
@@ -3694,7 +3964,7 @@
         "url": "https://beat.com.au/directory/mr-patterson-cafe/"
     },
     {
-        "address": "67 Beach St\r\nPort Melbourne VIC 3207",
+        "address": "67 Beach St\nPort Melbourne VIC 3207",
         "categories": [
             {
                 "tag": "Pub"
@@ -3705,7 +3975,19 @@
         "url": "https://beat.com.au/directory/mr-lawrence/"
     },
     {
-        "address": "1359 Sydney Rd\r\nFawkner VIC 3060",
+        "address": "860 Ferntree Gully Rd, Wheelers Hill, Victoria",
+        "categories": [
+            {
+                "contents": "Galleries",
+                "tag": "OtherVenue"
+            }
+        ],
+        "city": null,
+        "name": "Museum of Australian Photography (MAPh)",
+        "url": "https://beat.com.au/directory/museum-of-australian-photography-maph/"
+    },
+    {
+        "address": "1359 Sydney Rd\nFawkner VIC 3060",
         "categories": [
             {
                 "contents": "",
@@ -3717,7 +3999,7 @@
         "url": "https://beat.com.au/directory/musicland-fawkner-music-complex/"
     },
     {
-        "address": "791 Sydney Rd\r\nBrunswick VIC 3056",
+        "address": "791 Sydney Rd\nBrunswick VIC 3056",
         "categories": [
             {
                 "tag": "Club"
@@ -3728,7 +4010,7 @@
         "url": "https://beat.com.au/directory/my-aeon/"
     },
     {
-        "address": "Factory 1\r\n10-12 Moreland Road\r\nBrunswick East VIC 3057",
+        "address": "Factory 1\n10-12 Moreland Road\nBrunswick East VIC 3057",
         "categories": [
             {
                 "contents": "",
@@ -3740,7 +4022,7 @@
         "url": "https://beat.com.au/directory/mycelium-studios/"
     },
     {
-        "address": "10 St Huberts Rd\r\nColdstream VIC 3770",
+        "address": "10 St Huberts Rd\nColdstream VIC 3770",
         "categories": [
             {
                 "tag": "Brewery"
@@ -3751,7 +4033,7 @@
         "url": "https://beat.com.au/directory/napoleone-cider/"
     },
     {
-        "address": "5 Broken Bay Rd\r\nEttalong Beach NSW 2257",
+        "address": "5 Broken Bay Rd\nEttalong Beach NSW 2257",
         "categories": [
             {
                 "tag": "Bar"
@@ -3786,7 +4068,7 @@
         "url": "https://beat.com.au/directory/neuw-denim/"
     },
     {
-        "address": "64 Smith St\r\nCollingwood VIC 3000",
+        "address": "64 Smith St\nCollingwood VIC 3000",
         "categories": [
             {
                 "tag": "Bar"
@@ -3800,7 +4082,7 @@
         "url": "https://beat.com.au/directory/new-guernica/"
     },
     {
-        "address": "4 Market St\r\nNewport VIC 3015",
+        "address": "4 Market St\nNewport VIC 3015",
         "categories": [
             {
                 "tag": "EventVenue"
@@ -3811,7 +4093,7 @@
         "url": "https://beat.com.au/directory/newport-bowling-club/"
     },
     {
-        "address": "180 St Kilda Rd\r\nMelbourne VIC 3006",
+        "address": "180 St Kilda Rd\nMelbourne VIC 3006",
         "categories": [
             {
                 "tag": "EventVenue"
@@ -3822,7 +4104,7 @@
         "url": "https://beat.com.au/directory/ngv-national-gallery-of-victoria/"
     },
     {
-        "address": "136 Johnston St\r\nCollingwood VIC 3066",
+        "address": "136 Johnston St\nCollingwood VIC 3066",
         "categories": [
             {
                 "tag": "Bar"
@@ -3836,7 +4118,7 @@
         "url": "https://beat.com.au/directory/nighthawks/"
     },
     {
-        "address": "420 Sydney Rd\r\nBrunswick VIC 3056",
+        "address": "420 Sydney Rd\nBrunswick VIC 3056",
         "categories": [
             {
                 "tag": "Bar"
@@ -3853,7 +4135,7 @@
         "url": "https://beat.com.au/directory/penny-black/"
     },
     {
-        "address": "296 Rae St\r\nFitzroy North VIC 3068",
+        "address": "296 Rae St\nFitzroy North VIC 3068",
         "categories": [
             {
                 "tag": "Pub"
@@ -3864,7 +4146,7 @@
         "url": "https://beat.com.au/directory/north-fitzroy-arms-hotel/"
     },
     {
-        "address": "301 High St\r\nNorthcote VIC 3070",
+        "address": "301 High St\nNorthcote VIC 3070",
         "categories": [
             {
                 "tag": "Bar"
@@ -3881,7 +4163,7 @@
         "url": "https://beat.com.au/directory/northcote-social-club/"
     },
     {
-        "address": "216 High St\r\nNorthcote VIC 3070",
+        "address": "216 High St\nNorthcote VIC 3070",
         "categories": [
             {
                 "tag": "TheatreVenue"
@@ -3892,7 +4174,7 @@
         "url": "https://beat.com.au/directory/northcote-theatre/"
     },
     {
-        "address": "189 High St\r\nNorthcote VIC 3070",
+        "address": "189 High St\nNorthcote VIC 3070",
         "categories": [
             {
                 "tag": "EventVenue"
@@ -3909,7 +4191,7 @@
         "url": "https://beat.com.au/directory/northcote-town-hall/"
     },
     {
-        "address": "260-262 Ferntree Gully Rd\r\nNotting Hill VIC 3168",
+        "address": "260-262 Ferntree Gully Rd\nNotting Hill VIC 3168",
         "categories": [
             {
                 "tag": "LiveMusic"
@@ -3923,7 +4205,7 @@
         "url": "https://beat.com.au/directory/notting-hill-hotel/"
     },
     {
-        "address": "95-97 Drummond St\r\nOakleigh VIC 3166",
+        "address": "95-97 Drummond St\nOakleigh VIC 3166",
         "categories": [
             {
                 "tag": "Bar"
@@ -3943,7 +4225,7 @@
         "url": "https://beat.com.au/directory/oakleigh-lounge/"
     },
     {
-        "address": "95-97 Drummond St\r\nOakleigh VIC 3166",
+        "address": "95-97 Drummond St\nOakleigh VIC 3166",
         "categories": [
             {
                 "tag": "Pub"
@@ -3954,7 +4236,19 @@
         "url": "https://beat.com.au/directory/oakleigh-carnegie-rsl/"
     },
     {
-        "address": "66B Johnston Street\r\nCollingwood VIC 3066",
+        "address": "267 Swan St, Richmond VIC 3121",
+        "categories": [
+            {
+                "contents": "",
+                "tag": "OtherVenue"
+            }
+        ],
+        "city": "Richmond, VIC",
+        "name": "Odeon Richmond",
+        "url": "https://beat.com.au/directory/odeon-richmond/"
+    },
+    {
+        "address": "66B Johnston Street\nCollingwood VIC 3066",
         "categories": [
             {
                 "contents": "",
@@ -3966,7 +4260,7 @@
         "url": "https://beat.com.au/directory/off-the-kerb-gallery/"
     },
     {
-        "address": "74-76 Johnston St\r\nFitzroy VIC 3065",
+        "address": "74-76 Johnston St\nFitzroy VIC 3065",
         "categories": [
             {
                 "tag": "Bar"
@@ -3980,7 +4274,7 @@
         "url": "https://beat.com.au/directory/old-bar/"
     },
     {
-        "address": "34 Homestead Rd\r\nBerwick VIC 3806",
+        "address": "34 Homestead Rd\nBerwick VIC 3806",
         "categories": [
             {
                 "contents": "",
@@ -3992,7 +4286,7 @@
         "url": "https://beat.com.au/directory/old-cheese-factory/"
     },
     {
-        "address": "384 Brunswick St\r\nFitzroy VIC 3065",
+        "address": "384 Brunswick St\nFitzroy VIC 3065",
         "categories": [
             {
                 "tag": "Bar"
@@ -4003,7 +4297,7 @@
         "url": "https://beat.com.au/directory/old-plates-record-bar/"
     },
     {
-        "address": "104 High St\r\nPreston VIC 3072",
+        "address": "104 High St\nPreston VIC 3072",
         "categories": [
             {
                 "tag": "Bar"
@@ -4017,7 +4311,7 @@
         "url": "https://beat.com.au/directory/oliva-social/"
     },
     {
-        "address": "123 Queens Parade\r\nClifton Hill VIC 3068",
+        "address": "123 Queens Parade\nClifton Hill VIC 3068",
         "categories": [
             {
                 "tag": "Bar"
@@ -4028,7 +4322,7 @@
         "url": "https://beat.com.au/directory/one2three-bar/"
     },
     {
-        "address": "161 High St\r\nPrahran VIC 3181",
+        "address": "161 High St\nPrahran VIC 3181",
         "categories": [
             {
                 "tag": "Bar"
@@ -4045,7 +4339,7 @@
         "url": "https://beat.com.au/directory/onesixone/"
     },
     {
-        "address": "483 North Rd\r\nOrmond VIC 3204",
+        "address": "483 North Rd\nOrmond VIC 3204",
         "categories": [
             {
                 "tag": "Bar"
@@ -4062,7 +4356,7 @@
         "url": "https://beat.com.au/directory/ontop-bar/"
     },
     {
-        "address": "204 High St\r\nNorthcote VIC 3070",
+        "address": "204 High St\nNorthcote VIC 3070",
         "categories": [
             {
                 "tag": "Bar"
@@ -4076,7 +4370,7 @@
         "url": "https://beat.com.au/directory/open-studio/"
     },
     {
-        "address": "162 Victoria St\r\nPotts Point NSW 2011",
+        "address": "162 Victoria St\nPotts Point NSW 2011",
         "categories": [
             {
                 "contents": "",
@@ -4088,7 +4382,7 @@
         "url": "https://beat.com.au/directory/original-backpackers/"
     },
     {
-        "address": "210 Tallarook-Pyalong Rd\r\nTallarook VIC 3659",
+        "address": "210 Tallarook-Pyalong Rd\nTallarook VIC 3659",
         "categories": [
             {
                 "tag": "LiveMusic"
@@ -4099,7 +4393,7 @@
         "url": "https://beat.com.au/directory/our-friends-farm/"
     },
     {
-        "address": "Toorak Rd & Chapel St\r\nSouth Yarra VIC 3141",
+        "address": "Toorak Rd & Chapel St\nSouth Yarra VIC 3141",
         "categories": [
             {
                 "tag": "TheatreVenue"
@@ -4124,7 +4418,7 @@
         "url": "https://beat.com.au/directory/palace-foreshore/"
     },
     {
-        "address": "Cnr Lower Esplanade and Cavell St\r\nSt Kilda VIC 3182",
+        "address": "Cnr Lower Esplanade and Cavell St\nSt Kilda VIC 3182",
         "categories": [
             {
                 "tag": "EventVenue"
@@ -4138,7 +4432,7 @@
         "url": "https://beat.com.au/directory/palais-theatre/"
     },
     {
-        "address": "111 Main Rd\r\nHepburn Springs VIC 3461",
+        "address": "111 Main Rd\nHepburn Springs VIC 3461",
         "categories": [
             {
                 "tag": "Bar"
@@ -4158,7 +4452,7 @@
         "url": "https://beat.com.au/directory/palais-hepburn/"
     },
     {
-        "address": "401 Little Bourke St\r\nMelbourne VIC 3000",
+        "address": "401 Little Bourke St\nMelbourne VIC 3000",
         "categories": [
             {
                 "tag": "Bar"
@@ -4169,8 +4463,14 @@
         "url": "https://beat.com.au/directory/palermo/"
     },
     {
-        "address": "6 Goldie Pl\r\nMelbourne VIC 3000",
+        "address": "6 Goldie Pl\nMelbourne VIC 3000",
         "categories": [
+            {
+                "tag": "Club"
+            },
+            {
+                "tag": "EventVenue"
+            },
             {
                 "tag": "LiveMusic"
             }
@@ -4180,7 +4480,7 @@
         "url": "https://beat.com.au/directory/paris-cat-jazz-club/"
     },
     {
-        "address": "40 Cumberland Rd\r\nPascoe Vale VIC 3044",
+        "address": "40 Cumberland Rd\nPascoe Vale VIC 3044",
         "categories": [
             {
                 "tag": "LiveMusic"
@@ -4194,7 +4494,7 @@
         "url": "https://beat.com.au/directory/pascoe-vale-rsl/"
     },
     {
-        "address": "268 Carlisle St\r\nBalaclava VIC 3183",
+        "address": "268 Carlisle St\nBalaclava VIC 3183",
         "categories": [
             {
                 "tag": "Bar"
@@ -4208,7 +4508,7 @@
         "url": "https://beat.com.au/directory/pause-bar/"
     },
     {
-        "address": "177 Greville St\r\nPrahran VIC 3181",
+        "address": "177 Greville St\nPrahran VIC 3181",
         "categories": [
             {
                 "tag": "Bar"
@@ -4222,7 +4522,7 @@
         "url": "https://beat.com.au/directory/pawn-co/"
     },
     {
-        "address": "196 Brunswick St\r\nFitzroy VIC 3065",
+        "address": "196 Brunswick St\nFitzroy VIC 3065",
         "categories": [
             {
                 "tag": "Pub"
@@ -4233,7 +4533,7 @@
         "url": "https://beat.com.au/directory/perseverance-hotel/"
     },
     {
-        "address": "530 Little Collins Street\r\nMelbourne VIC 3000",
+        "address": "530 Little Collins Street\nMelbourne VIC 3000",
         "categories": [
             {
                 "tag": "EventVenue"
@@ -4258,7 +4558,7 @@
         "url": "https://beat.com.au/directory/pica-port-melbourne-industrial-centre-for-the-arts/"
     },
     {
-        "address": "1 Davey St\r\nFrankston VIC 3199",
+        "address": "1 Davey St\nFrankston VIC 3199",
         "categories": [
             {
                 "tag": "LiveMusic"
@@ -4269,7 +4569,7 @@
         "url": "https://beat.com.au/directory/pier-bandroom/"
     },
     {
-        "address": "508 Nepean Hwy\r\nFrankston VIC 3199",
+        "address": "508 Nepean Hwy\nFrankston VIC 3199",
         "categories": [
             {
                 "tag": "LiveMusic"
@@ -4283,7 +4583,7 @@
         "url": "https://beat.com.au/directory/pier-hotel/"
     },
     {
-        "address": "Federation Wharf, 15-19 Federation Drive\r\nMelbourne VIC 3000",
+        "address": "Federation Wharf, 15-19 Federation Drive\nMelbourne VIC 3000",
         "categories": [
             {
                 "tag": "Bar"
@@ -4294,7 +4594,7 @@
         "url": "https://beat.com.au/directory/pilgrim-bar/"
     },
     {
-        "address": "6/63A The Terrace\r\nOcean Grove VIC 3226",
+        "address": "6/63A The Terrace\nOcean Grove VIC 3226",
         "categories": [
             {
                 "tag": "LiveMusic"
@@ -4305,13 +4605,13 @@
         "url": "https://beat.com.au/directory/piping-hot-chicken-and-burger-grill/"
     },
     {
-        "address": "82, Rear of, Nelson Pl\r\nWilliamstown VIC 3016",
+        "address": "82, Rear of, Nelson Pl\nWilliamstown VIC 3016",
         "categories": [
             {
-                "tag": "Pub"
+                "tag": "LiveMusic"
             },
             {
-                "tag": "LiveMusic"
+                "tag": "Pub"
             }
         ],
         "city": "Williamstown, VIC",
@@ -4319,7 +4619,7 @@
         "url": "https://beat.com.au/directory/pirates-tavern/"
     },
     {
-        "address": "93 Little Malop St\r\nGeelong VIC 3220",
+        "address": "93 Little Malop St\nGeelong VIC 3220",
         "categories": [
             {
                 "tag": "Pub"
@@ -4330,7 +4630,7 @@
         "url": "https://beat.com.au/directory/pistol-petes-food-n-blues/"
     },
     {
-        "address": "Vault 7 and 8 Banana Alley\r\nMelbourne VIC 3004",
+        "address": "Vault 7 and 8 Banana Alley\nMelbourne VIC 3004",
         "categories": [
             {
                 "tag": "Club"
@@ -4341,7 +4641,7 @@
         "url": "https://beat.com.au/directory/platform-one/"
     },
     {
-        "address": "191 Collins St\r\nMelbourne VIC 3000",
+        "address": "191 Collins St\nMelbourne VIC 3000",
         "categories": [
             {
                 "tag": "EventVenue"
@@ -4352,7 +4652,7 @@
         "url": "https://beat.com.au/directory/plaza-ballroom/"
     },
     {
-        "address": "1 Convention Centre Pl\r\nSouth Wharf VIC 3006",
+        "address": "1 Convention Centre Pl\nSouth Wharf VIC 3006",
         "categories": [
             {
                 "tag": "TheatreVenue"
@@ -4363,8 +4663,11 @@
         "url": "https://beat.com.au/directory/plenary-theatre/"
     },
     {
-        "address": "267 Swan Street\r\nRichmond VIC 3121",
+        "address": "267 Swan Street\nRichmond VIC 3121",
         "categories": [
+            {
+                "tag": "LiveMusic"
+            },
             {
                 "tag": "Bar"
             },
@@ -4373,9 +4676,6 @@
             },
             {
                 "tag": "EventVenue"
-            },
-            {
-                "tag": "LiveMusic"
             }
         ],
         "city": "Richmond, VIC",
@@ -4383,7 +4683,7 @@
         "url": "https://beat.com.au/directory/pome/"
     },
     {
-        "address": "229-231 Sydney Rd\r\nCoburg VIC 3058",
+        "address": "229-231 Sydney Rd\nCoburg VIC 3058",
         "categories": [
             {
                 "tag": "LiveMusic"
@@ -4397,7 +4697,7 @@
         "url": "https://beat.com.au/directory/post-office-hotel/"
     },
     {
-        "address": "1/86-88 Hopkins St\r\nFootscray VIC 3011",
+        "address": "1/86-88 Hopkins St\nFootscray VIC 3011",
         "categories": [
             {
                 "tag": "Bar"
@@ -4431,7 +4731,7 @@
         "url": "https://beat.com.au/directory/prince-alfred-hotel/"
     },
     {
-        "address": "29 Fitzroy St\r\nSt Kilda VIC 3182",
+        "address": "29 Fitzroy St\nSt Kilda VIC 3182",
         "categories": [
             {
                 "tag": "Bar"
@@ -4448,7 +4748,7 @@
         "url": "https://beat.com.au/directory/prince-bandroom/"
     },
     {
-        "address": "3488 Warburton Hwy\r\nWarburton VIC 3799",
+        "address": "3488 Warburton Hwy\nWarburton VIC 3799",
         "categories": [
             {
                 "tag": "EventVenue"
@@ -4459,7 +4759,7 @@
         "url": "https://beat.com.au/directory/projekt-3488/"
     },
     {
-        "address": "17 Little Pier St\r\nDarling Harbour NSW 2000",
+        "address": "17 Little Pier St\nDarling Harbour NSW 2000",
         "categories": [
             {
                 "tag": "Bar"
@@ -4479,7 +4779,7 @@
         "url": "https://beat.com.au/directory/pumphouse-sydney/"
     },
     {
-        "address": "43 Little Bourke St\r\nMelbourne VIC 3000",
+        "address": "43 Little Bourke St\nMelbourne VIC 3000",
         "categories": [
             {
                 "tag": "Bar"
@@ -4490,7 +4790,43 @@
         "url": "https://beat.com.au/directory/punch-lane/"
     },
     {
-        "address": "Corner of Elizabeth & Victoria Street\r\nMelbourne VIC 3000",
+        "address": "2 Peel St\nCollingwood VIC 3066",
+        "categories": [
+            {
+                "tag": "EventVenue"
+            }
+        ],
+        "city": "Collingwood, VIC",
+        "name": "QQQ ST. Park",
+        "url": "https://beat.com.au/directory/qqq-st-park/"
+    },
+    {
+        "address": "345 Victoria St\nBrunswick VIC 3056",
+        "categories": [
+            {
+                "tag": "Bar"
+            }
+        ],
+        "city": "Brunswick, VIC",
+        "name": "Quad Club",
+        "url": "https://beat.com.au/directory/quad-club/"
+    },
+    {
+        "address": "345 Victoria St, Brunswick, VIC 3056",
+        "categories": [
+            {
+                "tag": "EventVenue"
+            },
+            {
+                "tag": "LiveMusic"
+            }
+        ],
+        "city": "Brunswick",
+        "name": "Quadraphonic Club",
+        "url": "https://beat.com.au/directory/quadraphonic-club/"
+    },
+    {
+        "address": "Corner of Elizabeth & Victoria Street\nMelbourne VIC 3000",
         "categories": [
             {
                 "contents": "",
@@ -4502,21 +4838,21 @@
         "url": "https://beat.com.au/directory/queen-vic-market/"
     },
     {
-        "address": "Level 1/243 Swanston St\r\nMelbourne VIC 3000",
+        "address": "Level 1/243 Swanston St\nMelbourne VIC 3000",
         "categories": [
             {
-                "tag": "Bar"
+                "tag": "Club"
             },
             {
-                "tag": "Club"
+                "tag": "Bar"
             }
         ],
-        "city": "VIC",
+        "city": "Melbourne",
         "name": "Radar Bar & Nightclub",
         "url": "https://beat.com.au/directory/radar-bar-nightclub/"
     },
     {
-        "address": "357 Brunswick St\r\nFitzroy VIC 3065",
+        "address": "357 Brunswick St\nFitzroy VIC 3065",
         "categories": [
             {
                 "tag": "Bar"
@@ -4530,13 +4866,13 @@
         "url": "https://beat.com.au/directory/radio-bar/"
     },
     {
-        "address": "206 Tyler St\r\nPreston VIC 3072",
+        "address": "206 Tyler St\nPreston VIC 3072",
         "categories": [
             {
-                "tag": "Bar"
+                "tag": "EventVenue"
             },
             {
-                "tag": "EventVenue"
+                "tag": "Bar"
             }
         ],
         "city": "Preston, VIC",
@@ -4544,13 +4880,13 @@
         "url": "https://beat.com.au/directory/ragtime-tavern/"
     },
     {
-        "address": "163 Toorak Rd\r\nSouth Yarra VIC 3141",
+        "address": "163 Toorak Rd\nSouth Yarra VIC 3141",
         "categories": [
             {
-                "tag": "LiveMusic"
+                "tag": "Bar"
             },
             {
-                "tag": "Bar"
+                "tag": "LiveMusic"
             }
         ],
         "city": "South Yarra, VIC",
@@ -4558,7 +4894,7 @@
         "url": "https://beat.com.au/directory/rah-bar/"
     },
     {
-        "address": "800 Nicholson St\r\nFitzroy North VIC 3068",
+        "address": "800 Nicholson St\nFitzroy North VIC 3068",
         "categories": [
             {
                 "tag": "Bar"
@@ -4572,7 +4908,7 @@
         "url": "https://beat.com.au/directory/railway-hotel/"
     },
     {
-        "address": "280 Ferrars St\r\nSouth Melbourne VIC 3205",
+        "address": "280 Ferrars St\nSouth Melbourne VIC 3205",
         "categories": [
             {
                 "tag": "Pub"
@@ -4583,7 +4919,7 @@
         "url": "https://beat.com.au/directory/railway-hotel-south-melbourne/"
     },
     {
-        "address": "93 Plenty Rd\r\nPreston VIC 3072",
+        "address": "93 Plenty Rd\nPreston VIC 3072",
         "categories": [
             {
                 "tag": "Bar"
@@ -4594,7 +4930,7 @@
         "url": "https://beat.com.au/directory/rebel-rebel/"
     },
     {
-        "address": "859a Sydney Rd\r\nBrunswick VIC 3056",
+        "address": "859a Sydney Rd\nBrunswick VIC 3056",
         "categories": [
             {
                 "tag": "Bar"
@@ -4608,7 +4944,7 @@
         "url": "https://beat.com.au/directory/red-betty/"
     },
     {
-        "address": "27 McKillop St\r\nMelbourne VIC 3000",
+        "address": "27 McKillop St\nMelbourne VIC 3000",
         "categories": [
             {
                 "contents": "",
@@ -4620,7 +4956,7 @@
         "url": "https://beat.com.au/directory/red-spice-qv/"
     },
     {
-        "address": "Rear, 2 Chapel St\r\nSt Kilda East VIC 3183",
+        "address": "Rear, 2 Chapel St\nSt Kilda East VIC 3183",
         "categories": [
             {
                 "tag": "TheatreVenue"
@@ -4631,7 +4967,7 @@
         "url": "https://beat.com.au/directory/red-stitch-actors-theatre/"
     },
     {
-        "address": "191 Collins St\r\nMelbourne VIC 3000",
+        "address": "191 Collins St\nMelbourne VIC 3000",
         "categories": [
             {
                 "tag": "TheatreVenue"
@@ -4656,13 +4992,13 @@
         "url": "https://beat.com.au/directory/republica/"
     },
     {
-        "address": "280 Sydney Rd\r\nBrunswick VIC 3056",
+        "address": "280 Sydney Rd\nBrunswick VIC 3056",
         "categories": [
             {
-                "tag": "Pub"
+                "tag": "LiveMusic"
             },
             {
-                "tag": "LiveMusic"
+                "tag": "Pub"
             }
         ],
         "city": "Brunswick, VIC",
@@ -4670,7 +5006,7 @@
         "url": "https://beat.com.au/directory/retreat-hotel/"
     },
     {
-        "address": "30A Colbert Rd\r\nCampbellfield VIC 3061",
+        "address": "30A Colbert Rd\nCampbellfield VIC 3061",
         "categories": [
             {
                 "contents": "Café",
@@ -4682,7 +5018,7 @@
         "url": "https://beat.com.au/directory/reverence-coffee-roasters/"
     },
     {
-        "address": "229 Chapel St\r\nPrahran VIC 3181",
+        "address": "229 Chapel St\nPrahran VIC 3181",
         "categories": [
             {
                 "contents": "",
@@ -4694,7 +5030,7 @@
         "url": "https://beat.com.au/directory/revolver-upstairs/"
     },
     {
-        "address": "333 Bridge Road\r\nRichmond VIC 3121",
+        "address": "333 Bridge Road\nRichmond VIC 3121",
         "categories": [
             {
                 "contents": "",
@@ -4706,7 +5042,7 @@
         "url": "https://beat.com.au/directory/richmond-town-hall/"
     },
     {
-        "address": "666 Sydney Rd\r\nBrunswick VIC 3056",
+        "address": "666 Sydney Rd\nBrunswick VIC 3056",
         "categories": [
             {
                 "tag": "Bar"
@@ -4717,7 +5053,7 @@
         "url": "https://beat.com.au/directory/ringo-barr/"
     },
     {
-        "address": "192 Hotham St\r\nElsternwick VIC 3185",
+        "address": "192 Hotham St\nElsternwick VIC 3185",
         "categories": [
             {
                 "contents": "",
@@ -4729,7 +5065,7 @@
         "url": "https://beat.com.au/directory/rippon-lea-estate/"
     },
     {
-        "address": "2 Raglan Street\r\nSouth Melbourne VIC 3205",
+        "address": "2 Raglan Street\nSouth Melbourne VIC 3205",
         "categories": [
             {
                 "tag": "Pub"
@@ -4740,7 +5076,7 @@
         "url": "https://beat.com.au/directory/rising-sun-hotel/"
     },
     {
-        "address": "878-880 Maroondah Highway\r\nColdstream VIC 3770",
+        "address": "878-880 Maroondah Highway\nColdstream VIC 3770",
         "categories": [
             {
                 "tag": "Bar"
@@ -4754,7 +5090,7 @@
         "url": "https://beat.com.au/directory/rochford-concert-lounge/"
     },
     {
-        "address": "Olympic Blvd\r\nMelbourne VIC 3001",
+        "address": "Olympic Blvd\nMelbourne VIC 3001",
         "categories": [
             {
                 "tag": "LiveMusic"
@@ -4765,7 +5101,7 @@
         "url": "https://beat.com.au/directory/rod-laver-arena/"
     },
     {
-        "address": "253 Esplanade\r\nBrighton VIC 3186",
+        "address": "253 Esplanade\nBrighton VIC 3186",
         "categories": [
             {
                 "tag": "Club"
@@ -4776,7 +5112,7 @@
         "url": "https://beat.com.au/directory/royal-brighton-yacht-club/"
     },
     {
-        "address": "9 Nicholson St\r\nCarlton VIC 3053",
+        "address": "9 Nicholson St\nCarlton VIC 3053",
         "categories": [
             {
                 "tag": "EventVenue"
@@ -4790,7 +5126,7 @@
         "url": "https://beat.com.au/directory/royal-exhibition-building/"
     },
     {
-        "address": "873 Mt Alexander Rd\r\nEssendon VIC 3040",
+        "address": "873 Mt Alexander Rd\nEssendon VIC 3040",
         "categories": [
             {
                 "tag": "Bar"
@@ -4804,7 +5140,7 @@
         "url": "https://beat.com.au/directory/royal-hotel-essendon/"
     },
     {
-        "address": "770 Esplanade\r\nMornington VIC 3931",
+        "address": "770 Esplanade\nMornington VIC 3931",
         "categories": [
             {
                 "tag": "LiveMusic"
@@ -4818,7 +5154,7 @@
         "url": "https://beat.com.au/directory/royal-hotel-mornington/"
     },
     {
-        "address": "629 Bourke St\r\nMelbourne VIC 3000",
+        "address": "629 Bourke St\nMelbourne VIC 3000",
         "categories": [
             {
                 "tag": "Bar"
@@ -4832,7 +5168,7 @@
         "url": "https://beat.com.au/directory/royal-melbourne-hotel/"
     },
     {
-        "address": "442 Nicholson St\r\nFitzroy North VIC 3068",
+        "address": "442 Nicholson St\nFitzroy North VIC 3068",
         "categories": [
             {
                 "tag": "Pub"
@@ -4843,7 +5179,7 @@
         "url": "https://beat.com.au/directory/royal-oak-hotel/"
     },
     {
-        "address": "36 Phoenix St Brunswick\r\nMelbourne VIC 3056",
+        "address": "36 Phoenix St Brunswick\nMelbourne VIC 3056",
         "categories": [
             {
                 "tag": "Club"
@@ -4860,7 +5196,7 @@
         "url": "https://beat.com.au/directory/rubix-warehouse/"
     },
     {
-        "address": "145 Marine Parade\r\nSan Remo VIC 3925",
+        "address": "145 Marine Parade\nSan Remo VIC 3925",
         "categories": [
             {
                 "tag": "Pub"
@@ -4871,7 +5207,7 @@
         "url": "https://beat.com.au/directory/san-remo-hotel/"
     },
     {
-        "address": "14 Meyers Pl\r\nMelbourne VIC 3000",
+        "address": "14 Meyers Pl\nMelbourne VIC 3000",
         "categories": [
             {
                 "contents": "",
@@ -4883,7 +5219,7 @@
         "url": "https://beat.com.au/directory/san-telmo/"
     },
     {
-        "address": "630 South Rd\r\nMoorabbin VIC 3189",
+        "address": "630 South Rd\nMoorabbin VIC 3189",
         "categories": [
             {
                 "tag": "Bar"
@@ -4900,7 +5236,19 @@
         "url": "https://beat.com.au/directory/sandbelt-club-hotel/"
     },
     {
-        "address": "6R Broughton St\r\nSeaford VIC 3198",
+        "address": "28 Victoria St\nCoburg VIC 3058",
+        "categories": [
+            {
+                "contents": "",
+                "tag": "OtherVenue"
+            }
+        ],
+        "city": "Coburg, VIC",
+        "name": "Schoolhouse Studios",
+        "url": "https://beat.com.au/directory/schoolhouse-studios/"
+    },
+    {
+        "address": "6R Broughton St\nSeaford VIC 3198",
         "categories": [
             {
                 "tag": "EventVenue"
@@ -4911,7 +5259,7 @@
         "url": "https://beat.com.au/directory/seaford-community-centre/"
     },
     {
-        "address": "82 Nelson Pl\r\nWilliamstown VIC 3016",
+        "address": "82 Nelson Pl\nWilliamstown VIC 3016",
         "categories": [
             {
                 "contents": "",
@@ -4923,7 +5271,7 @@
         "url": "https://beat.com.au/directory/seaworks-maritime-precinct/"
     },
     {
-        "address": "27-29 Tattersalls Ln\r\nMelbourne VIC 3000",
+        "address": "27-29 Tattersalls Ln\nMelbourne VIC 3000",
         "categories": [
             {
                 "tag": "Bar"
@@ -4937,7 +5285,7 @@
         "url": "https://beat.com.au/directory/section-8/"
     },
     {
-        "address": "744 High St\r\nThornbury VIC 3071",
+        "address": "744 High St\nThornbury VIC 3071",
         "categories": [
             {
                 "tag": "Bar"
@@ -4948,7 +5296,7 @@
         "url": "https://beat.com.au/directory/shotkickers/"
     },
     {
-        "address": "60 Smith Street\r\nCollingwood VIC 3066",
+        "address": "60 Smith Street\nCollingwood VIC 3066",
         "categories": [
             {
                 "tag": "Bar"
@@ -4962,7 +5310,7 @@
         "url": "https://beat.com.au/directory/sibar/"
     },
     {
-        "address": "501-505 Main Street\r\nMordialloc VIC 3195",
+        "address": "501-505 Main Street\nMordialloc VIC 3195",
         "categories": [
             {
                 "tag": "Bar"
@@ -4973,7 +5321,7 @@
         "url": "https://beat.com.au/directory/side-street-lounge/"
     },
     {
-        "address": "Kings Domain Gardens, Linlithgow Ave\r\nMelbourne VIC 3000",
+        "address": "Kings Domain Gardens, Linlithgow Ave\nMelbourne VIC 3000",
         "categories": [
             {
                 "tag": "LiveMusic"
@@ -4987,7 +5335,7 @@
         "url": "https://beat.com.au/directory/sidney-myer-music-bowl/"
     },
     {
-        "address": "271-273 Albert St\r\nBrunswick VIC 3056",
+        "address": "271-273 Albert St\nBrunswick VIC 3056",
         "categories": [
             {
                 "tag": "EventVenue"
@@ -4998,7 +5346,7 @@
         "url": "https://beat.com.au/directory/small-time-group/"
     },
     {
-        "address": "01 Rosamond Road\r\nMaribyrnong VIC 3032",
+        "address": "01 Rosamond Road\nMaribyrnong VIC 3032",
         "categories": [
             {
                 "tag": "Pub"
@@ -5009,7 +5357,21 @@
         "url": "https://beat.com.au/directory/smokehouse-101/"
     },
     {
-        "address": "123 Queens Parade\r\nClifton Hill VIC 3068",
+        "address": "21-25 Croft Alley, Melbourne VIC 3000",
+        "categories": [
+            {
+                "tag": "Bar"
+            },
+            {
+                "tag": "Club"
+            }
+        ],
+        "city": "Melbourne",
+        "name": "Solace",
+        "url": "https://beat.com.au/directory/solace/"
+    },
+    {
+        "address": "123 Queens Parade\nClifton Hill VIC 3068",
         "categories": [
             {
                 "tag": "Bar"
@@ -5023,7 +5385,7 @@
         "url": "https://beat.com.au/directory/some-velvet-morning/"
     },
     {
-        "address": "647 Plenty Rd\r\nPreston VIC 3072",
+        "address": "647 Plenty Rd\nPreston VIC 3072",
         "categories": [
             {
                 "contents": "",
@@ -5035,7 +5397,7 @@
         "url": "https://beat.com.au/directory/sonnys-bottega/"
     },
     {
-        "address": "1648 Burwood Hwy\r\nBelgrave VIC 3160",
+        "address": "1648 Burwood Hwy\nBelgrave VIC 3160",
         "categories": [
             {
                 "tag": "LiveMusic"
@@ -5049,7 +5411,7 @@
         "url": "https://beat.com.au/directory/sooki-lounge/"
     },
     {
-        "address": "1625 Point Nepean Rd\r\nCapel Sound VIC 3940",
+        "address": "1625 Point Nepean Rd\nCapel Sound VIC 3940",
         "categories": [
             {
                 "tag": "Bar"
@@ -5066,7 +5428,7 @@
         "url": "https://beat.com.au/directory/sound-bar/"
     },
     {
-        "address": "224 McKinnon Road\r\nMcKinnon VIC 3204",
+        "address": "224 McKinnon Road\nMcKinnon VIC 3204",
         "categories": [
             {
                 "contents": "",
@@ -5078,7 +5440,7 @@
         "url": "https://beat.com.au/directory/sound-gallery/"
     },
     {
-        "address": "1/11 McDougall Rd\r\nSunbury VIC 3429",
+        "address": "1/11 McDougall Rd\nSunbury VIC 3429",
         "categories": [
             {
                 "tag": "Bar"
@@ -5089,7 +5451,7 @@
         "url": "https://beat.com.au/directory/sound-system-studios/"
     },
     {
-        "address": "9-15 Templestowe Road\r\nBulleen VIC 3105",
+        "address": "9-15 Templestowe Road\nBulleen VIC 3105",
         "categories": [
             {
                 "tag": "EventVenue"
@@ -5103,7 +5465,7 @@
         "url": "https://beat.com.au/directory/soundgarden-music-club/"
     },
     {
-        "address": "140 Southbank Blvd\r\nSouthbank VIC 3006",
+        "address": "140 Southbank Blvd\nSouthbank VIC 3006",
         "categories": [
             {
                 "tag": "TheatreVenue"
@@ -5114,7 +5476,7 @@
         "url": "https://beat.com.au/directory/southbank-theatre/"
     },
     {
-        "address": "522 Flinders St\r\nMelbourne VIC 3000",
+        "address": "522 Flinders St\nMelbourne VIC 3000",
         "categories": [
             {
                 "tag": "TheatreVenue"
@@ -5125,7 +5487,24 @@
         "url": "https://beat.com.au/directory/speakeasy-theatre/"
     },
     {
-        "address": "66 Fitzroy St\r\nSt Kilda VIC 3182",
+        "address": "87 Bourke St\nMelbourne VIC 3000",
+        "categories": [
+            {
+                "tag": "EventVenue"
+            },
+            {
+                "tag": "LiveMusic"
+            },
+            {
+                "tag": "Pub"
+            }
+        ],
+        "city": "Melbourne, VIC",
+        "name": "Springrock Public Bar",
+        "url": "https://beat.com.au/directory/springrock-public-bar/"
+    },
+    {
+        "address": "66 Fitzroy St\nSt Kilda VIC 3182",
         "categories": [
             {
                 "tag": "EventVenue"
@@ -5136,7 +5515,7 @@
         "url": "https://beat.com.au/directory/st-kilda-sports-club/"
     },
     {
-        "address": "81 Pitt St\r\nEltham VIC 3095",
+        "address": "81 Pitt St\nEltham VIC 3095",
         "categories": [
             {
                 "contents": "",
@@ -5148,7 +5527,7 @@
         "url": "https://beat.com.au/directory/st-margarets-anglican-church/"
     },
     {
-        "address": "2/5 Lynton Pl\r\nScoresby VIC 3178",
+        "address": "2/5 Lynton Pl\nScoresby VIC 3178",
         "categories": [
             {
                 "contents": "",
@@ -5160,7 +5539,7 @@
         "url": "https://beat.com.au/directory/stanley-burgers/"
     },
     {
-        "address": "328 Swanston St\r\nMelbourne VIC 3000",
+        "address": "328 Swanston St\nMelbourne VIC 3000",
         "categories": [
             {
                 "contents": "",
@@ -5172,7 +5551,7 @@
         "url": "https://beat.com.au/directory/state-library-victoria/"
     },
     {
-        "address": "133 Sydney Rd\r\nBrunswick VIC 3056",
+        "address": "133 Sydney Rd\nBrunswick VIC 3056",
         "categories": [
             {
                 "tag": "Bar"
@@ -5186,7 +5565,7 @@
         "url": "https://beat.com.au/directory/stay-gold/"
     },
     {
-        "address": "185 Lonsdale St\r\nMelbourne VIC 3000",
+        "address": "185 Lonsdale St\nMelbourne VIC 3000",
         "categories": [
             {
                 "tag": "Bar"
@@ -5197,7 +5576,7 @@
         "url": "https://beat.com.au/directory/storyville/"
     },
     {
-        "address": "11b/60 Fitzroy St\r\nSt Kilda VIC 3182",
+        "address": "11b/60 Fitzroy St\nSt Kilda VIC 3182",
         "categories": [
             {
                 "contents": "Galleries",
@@ -5209,7 +5588,7 @@
         "url": "https://beat.com.au/directory/stranger-gallery-studio/"
     },
     {
-        "address": "116 Willoughby Rd\r\nCrows Nest NSW 2065",
+        "address": "116 Willoughby Rd\nCrows Nest NSW 2065",
         "categories": [
             {
                 "contents": "",
@@ -5221,7 +5600,7 @@
         "url": "https://beat.com.au/directory/street-market/"
     },
     {
-        "address": "Flinders Ct\r\nMelbourne VIC 3000",
+        "address": "Flinders Ct\nMelbourne VIC 3000",
         "categories": [
             {
                 "tag": "Club"
@@ -5232,10 +5611,16 @@
         "url": "https://beat.com.au/directory/sub-club/"
     },
     {
-        "address": "56 Johnston Street\r\nFitzroy VIC 3065",
+        "address": "56 Johnston Street\nFitzroy VIC 3065",
         "categories": [
             {
                 "tag": "Bar"
+            },
+            {
+                "tag": "EventVenue"
+            },
+            {
+                "tag": "LiveMusic"
             }
         ],
         "city": "Fitzroy, VIC",
@@ -5243,7 +5628,7 @@
         "url": "https://beat.com.au/directory/sugar-glider/"
     },
     {
-        "address": "212 Bay Trail\r\nMordialloc VIC 3195",
+        "address": "212 Bay Trail\nMordialloc VIC 3195",
         "categories": [
             {
                 "tag": "Club"
@@ -5254,7 +5639,7 @@
         "url": "https://beat.com.au/directory/sunnyboy-beach-club/"
     },
     {
-        "address": "744 High St\r\nThornbury VIC 3071",
+        "address": "744 High St\nThornbury VIC 3071",
         "categories": [
             {
                 "tag": "Bar"
@@ -5268,7 +5653,7 @@
         "url": "https://beat.com.au/directory/swamplands-bar/"
     },
     {
-        "address": "153 Commercial Rd\r\nSouth Yarra VIC 3141",
+        "address": "153 Commercial Rd\nSouth Yarra VIC 3141",
         "categories": [
             {
                 "tag": "Bar"
@@ -5279,7 +5664,7 @@
         "url": "https://beat.com.au/directory/talk-to-me-bar/"
     },
     {
-        "address": "426 Chapel St.\r\nSouth Yarra VIC 3141",
+        "address": "426 Chapel St.\nSouth Yarra VIC 3141",
         "categories": [
             {
                 "tag": "LiveMusic"
@@ -5293,7 +5678,7 @@
         "url": "https://beat.com.au/directory/temperance-hotel/"
     },
     {
-        "address": "34 Breese St\r\nBrunswick VIC 3056",
+        "address": "34 Breese St\nBrunswick VIC 3056",
         "categories": [
             {
                 "tag": "Bar"
@@ -5303,8 +5688,8 @@
             }
         ],
         "city": "Brunswick, VIC",
-        "name": "Tempo Rubato",
-        "url": "https://beat.com.au/directory/tempo-rubato-2/"
+        "name": "Tempo Rubato, Brunswick",
+        "url": "https://beat.com.au/directory/tempo-rubato-brunswick/"
     },
     {
         "address": "172 York St, South Melbourne VIC 3205",
@@ -5321,7 +5706,7 @@
         "url": "https://beat.com.au/directory/the-albion-rooftop-club/"
     },
     {
-        "address": "24 Block Pl\r\nMelbourne VIC 3000",
+        "address": "24 Block Pl\nMelbourne VIC 3000",
         "categories": [
             {
                 "tag": "LiveMusic"
@@ -5332,7 +5717,7 @@
         "url": "https://beat.com.au/directory/the-basement-discs/"
     },
     {
-        "address": "80 Lygon St\r\nBrunswick East VIC 3057",
+        "address": "80 Lygon St\nBrunswick East VIC 3057",
         "categories": [
             {
                 "tag": "Bar"
@@ -5346,7 +5731,7 @@
         "url": "https://beat.com.au/directory/the-b-east/"
     },
     {
-        "address": "68 Sydney Rd\r\nBrunswick VIC 3056",
+        "address": "68 Sydney Rd\nBrunswick VIC 3056",
         "categories": [
             {
                 "tag": "Bar"
@@ -5357,7 +5742,7 @@
         "url": "https://beat.com.au/directory/the-bergy-seltzer/"
     },
     {
-        "address": "23 S Wharf Promenade\r\nSouth Wharf VIC 3006",
+        "address": "23 S Wharf Promenade\nSouth Wharf VIC 3006",
         "categories": [
             {
                 "tag": "Bar"
@@ -5371,7 +5756,7 @@
         "url": "https://beat.com.au/directory/the-boatbuilders-yard/"
     },
     {
-        "address": "83 Brunswick St\r\nFitzroy VIC 3065",
+        "address": "83 Brunswick St\nFitzroy VIC 3065",
         "categories": [
             {
                 "tag": "EventVenue"
@@ -5382,27 +5767,27 @@
         "url": "https://beat.com.au/directory/the-burrow/"
     },
     {
-        "address": "5 Carson Place\r\nMelbourne VIC 3000",
+        "address": "5 Carson Place\nMelbourne VIC 3000",
         "categories": [
-            {
-                "tag": "TheatreVenue"
-            },
-            {
-                "tag": "FestivalVenue"
-            },
             {
                 "tag": "Bar"
             },
             {
                 "tag": "EventVenue"
+            },
+            {
+                "tag": "FestivalVenue"
+            },
+            {
+                "tag": "TheatreVenue"
             }
         ],
-        "city": "Melbourne",
+        "city": "VIC",
         "name": "The Butterfly Club",
         "url": "https://beat.com.au/directory/the-butterfly-club/"
     },
     {
-        "address": "113 Swanston St\r\nMelbourne VIC 3000",
+        "address": "113 Swanston St\nMelbourne VIC 3000",
         "categories": [
             {
                 "tag": "TheatreVenue"
@@ -5413,7 +5798,7 @@
         "url": "https://beat.com.au/directory/the-capitol-rmit/"
     },
     {
-        "address": "193 Bourke St\r\nMelbourne VIC 3000",
+        "address": "193 Bourke St\nMelbourne VIC 3000",
         "categories": [
             {
                 "tag": "Bar"
@@ -5430,7 +5815,7 @@
         "url": "https://beat.com.au/directory/the-carlton/"
     },
     {
-        "address": "228 Langridge St\r\nAbbotsford VIC 3067",
+        "address": "228 Langridge St\nAbbotsford VIC 3067",
         "categories": [
             {
                 "tag": "Pub"
@@ -5441,7 +5826,7 @@
         "url": "https://beat.com.au/directory/the-carringbush-hotel/"
     },
     {
-        "address": "30 Gertrude St\r\nFitzroy VIC 3065",
+        "address": "30 Gertrude St\nFitzroy VIC 3065",
         "categories": [
             {
                 "tag": "Bar"
@@ -5455,13 +5840,13 @@
         "url": "https://beat.com.au/directory/the-catfish/"
     },
     {
-        "address": "26 Errol St\r\nNorth Melbourne VIC 3051",
+        "address": "26 Errol St\nNorth Melbourne VIC 3051",
         "categories": [
             {
-                "tag": "Bar"
+                "tag": "Club"
             },
             {
-                "tag": "Club"
+                "tag": "Bar"
             }
         ],
         "city": "North Melbourne, VIC",
@@ -5469,7 +5854,7 @@
         "url": "https://beat.com.au/directory/the-comics-lounge/"
     },
     {
-        "address": "282 Exhibition St\r\nMelbourne VIC 3000",
+        "address": "282 Exhibition St\nMelbourne VIC 3000",
         "categories": [
             {
                 "tag": "Pub"
@@ -5494,7 +5879,21 @@
         "url": "https://beat.com.au/directory/the-cornerstone/"
     },
     {
-        "address": "170 Riverend Rd\r\nBangholme VIC 3175",
+        "address": "High St & Cosmo Rd\nTrentham VIC 3458",
+        "categories": [
+            {
+                "tag": "LiveMusic"
+            },
+            {
+                "tag": "Pub"
+            }
+        ],
+        "city": "Trentham, VIC",
+        "name": "The Cosmopolitan Hotel",
+        "url": "https://beat.com.au/directory/the-cosmopolitan-hotel/"
+    },
+    {
+        "address": "170 Riverend Rd\nBangholme VIC 3175",
         "categories": [
             {
                 "tag": "EventVenue"
@@ -5505,7 +5904,7 @@
         "url": "https://beat.com.au/directory/the-craft-co-farm/"
     },
     {
-        "address": "127 Russell St\r\nMelbourne VIC 3000",
+        "address": "127 Russell St\nMelbourne VIC 3000",
         "categories": [
             {
                 "tag": "Brewery"
@@ -5516,7 +5915,7 @@
         "url": "https://beat.com.au/directory/the-crafty-squire/"
     },
     {
-        "address": "21 Croft Alley\r\nMelbourne VIC 3000",
+        "address": "21 Croft Alley\nMelbourne VIC 3000",
         "categories": [
             {
                 "tag": "EventVenue"
@@ -5527,7 +5926,7 @@
         "url": "https://beat.com.au/directory/the-croft-institute/"
     },
     {
-        "address": "14 Fitzroy Street\r\nSt Kilda VIC 3182",
+        "address": "14 Fitzroy Street\nSt Kilda VIC 3182",
         "categories": [
             {
                 "tag": "Bar"
@@ -5538,7 +5937,7 @@
         "url": "https://beat.com.au/directory/the-cross/"
     },
     {
-        "address": "607 High St\r\nThornbury VIC 3071",
+        "address": "607 High St\nThornbury VIC 3071",
         "categories": [
             {
                 "tag": "LiveMusic"
@@ -5549,7 +5948,7 @@
         "url": "https://beat.com.au/directory/the-croxton/"
     },
     {
-        "address": "29 Lygon St\r\nCarlton VIC 3053",
+        "address": "29 Lygon St\nCarlton VIC 3053",
         "categories": [
             {
                 "tag": "Bar"
@@ -5563,7 +5962,7 @@
         "url": "https://beat.com.au/directory/the-curtin/"
     },
     {
-        "address": "440 Docklands Drive\r\nDocklands VIC 3008",
+        "address": "440 Docklands Drive\nDocklands VIC 3008",
         "categories": [
             {
                 "contents": "",
@@ -5575,7 +5974,7 @@
         "url": "https://beat.com.au/directory/the-district-docklands/"
     },
     {
-        "address": "65 Peel St\r\nWest Melbourne VIC 3003",
+        "address": "65 Peel St\nWest Melbourne VIC 3003",
         "categories": [
             {
                 "tag": "LiveMusic"
@@ -5589,7 +5988,7 @@
         "url": "https://beat.com.au/directory/the-drunken-poet/"
     },
     {
-        "address": "94-96 Bourke St\r\nMelbourne VIC 3000",
+        "address": "94-96 Bourke St\nMelbourne VIC 3000",
         "categories": [
             {
                 "tag": "LiveMusic"
@@ -5603,7 +6002,7 @@
         "url": "https://beat.com.au/directory/the-elephant-and-wheelbarrow/"
     },
     {
-        "address": "191 Beaufort St\r\nPerth WA 6000",
+        "address": "191 Beaufort St\nPerth WA 6000",
         "categories": [
             {
                 "contents": "",
@@ -5629,7 +6028,7 @@
         "url": "https://beat.com.au/directory/the-emerald-hotel/"
     },
     {
-        "address": "233 Lonsdale St\r\nMelbourne VIC 3000",
+        "address": "233 Lonsdale St\nMelbourne VIC 3000",
         "categories": [
             {
                 "tag": "Bar"
@@ -5643,7 +6042,7 @@
         "url": "https://beat.com.au/directory/the-emerald-peacock/"
     },
     {
-        "address": "145 Commercial Rd\r\nSouth Yarra",
+        "address": "145 Commercial Rd\nSouth Yarra",
         "categories": [
             {
                 "tag": "Bar"
@@ -5685,7 +6084,7 @@
         "url": "https://beat.com.au/directory/the-fifth-province/"
     },
     {
-        "address": "243/245 Gertrude St\r\nFitzroy VIC 3065",
+        "address": "243/245 Gertrude St\nFitzroy VIC 3065",
         "categories": [
             {
                 "tag": "Bar"
@@ -5699,7 +6098,7 @@
         "url": "https://beat.com.au/directory/the-fitzroy-beer-garden/"
     },
     {
-        "address": "251 St Georges Rd\r\nFitzroy North VIC 3068",
+        "address": "251 St Georges Rd\nFitzroy North VIC 3068",
         "categories": [
             {
                 "tag": "Bar"
@@ -5716,7 +6115,7 @@
         "url": "https://beat.com.au/directory/the-fitzroy-pinnacle/"
     },
     {
-        "address": "351 Wellington St\r\nCollingwood VIC 3066",
+        "address": "351 Wellington St\nCollingwood VIC 3066",
         "categories": [
             {
                 "tag": "Bar"
@@ -5733,7 +6132,7 @@
         "url": "https://beat.com.au/directory/the-fox-hotel/"
     },
     {
-        "address": "2 Malthouse Ln\r\nMelbourne VIC 3000",
+        "address": "2 Malthouse Ln\nMelbourne VIC 3000",
         "categories": [
             {
                 "contents": "",
@@ -5745,7 +6144,7 @@
         "url": "https://beat.com.au/directory/the-french-brasserie/"
     },
     {
-        "address": "34 Inkerman St\r\nSt Kilda VIC 3182",
+        "address": "34 Inkerman St\nSt Kilda VIC 3182",
         "categories": [
             {
                 "tag": "LiveMusic"
@@ -5759,7 +6158,7 @@
         "url": "https://beat.com.au/directory/the-fyrefly/"
     },
     {
-        "address": "189 Simmons Reef Rd\r\nBlackwood VIC 3458",
+        "address": "189 Simmons Reef Rd\nBlackwood VIC 3458",
         "categories": [
             {
                 "contents": "",
@@ -5785,7 +6184,7 @@
         "url": "https://beat.com.au/directory/the-george-lounge/"
     },
     {
-        "address": "162-168 Collins St\r\nMelbourne VIC 3000",
+        "address": "162-168 Collins St\nMelbourne VIC 3000",
         "categories": [
             {
                 "tag": "Bar"
@@ -5796,7 +6195,21 @@
         "url": "https://beat.com.au/directory/the-george-on-collins/"
     },
     {
-        "address": "19-21 Melrose Street \r\nSandringham VIC 3191",
+        "address": "942 Sydney Rd\nCoburg North VIC 3058",
+        "categories": [
+            {
+                "tag": "Bar"
+            },
+            {
+                "tag": "Pub"
+            }
+        ],
+        "city": "Coburg North, VIC",
+        "name": "The Graveyard Bar",
+        "url": "https://beat.com.au/directory/the-graveyard-bar/"
+    },
+    {
+        "address": "19-21 Melrose Street \nSandringham VIC 3191",
         "categories": [
             {
                 "tag": "Pub"
@@ -5807,7 +6220,7 @@
         "url": "https://beat.com.au/directory/the-hobson-stores/"
     },
     {
-        "address": "20 Johnston Street\r\nCollingwood VIC 3066",
+        "address": "20 Johnston Street\nCollingwood VIC 3066",
         "categories": [
             {
                 "tag": "LiveMusic"
@@ -5818,7 +6231,7 @@
         "url": "https://beat.com.au/directory/the-horn-african-cafe-restaurant/"
     },
     {
-        "address": "48 Exhibition Walk\r\nClayton VIC 3800",
+        "address": "48 Exhibition Walk\nClayton VIC 3800",
         "categories": [
             {
                 "tag": "TheatreVenue"
@@ -5829,7 +6242,7 @@
         "url": "https://beat.com.au/directory/the-ian-potter-centre-for-performing-arts/"
     },
     {
-        "address": "1/19 Meyers Pl\r\nMelbourne VIC 3000",
+        "address": "1/19 Meyers Pl\nMelbourne VIC 3000",
         "categories": [
             {
                 "tag": "TheatreVenue"
@@ -5840,7 +6253,7 @@
         "url": "https://beat.com.au/directory/the-improv-conspiracy/"
     },
     {
-        "address": "5-7 Louvain St\r\nCoburg North VIC 3058",
+        "address": "5-7 Louvain St\nCoburg North VIC 3058",
         "categories": [
             {
                 "tag": "EventVenue"
@@ -5851,7 +6264,7 @@
         "url": "https://beat.com.au/directory/the-industrique/"
     },
     {
-        "address": "27 Leslie St\r\nBrunswick VIC 3056",
+        "address": "27 Leslie St\nBrunswick VIC 3056",
         "categories": [
             {
                 "tag": "LiveMusic"
@@ -5862,7 +6275,7 @@
         "url": "https://beat.com.au/directory/the-jazzlab/"
     },
     {
-        "address": "192 Wellington Parade\r\nEast Melbourne VIC 3002",
+        "address": "192 Wellington Parade\nEast Melbourne VIC 3002",
         "categories": [
             {
                 "contents": "Galleries",
@@ -5874,7 +6287,7 @@
         "url": "https://beat.com.au/directory/the-johnston-collection/"
     },
     {
-        "address": "35 Elizabeth St\r\nMelbourne VIC 3000",
+        "address": "35 Elizabeth St\nMelbourne VIC 3000",
         "categories": [
             {
                 "tag": "Bar"
@@ -5885,7 +6298,7 @@
         "url": "https://beat.com.au/directory/the-joint/"
     },
     {
-        "address": "Unit 1/188 Plenty Rd\r\nPreston VIC 3072",
+        "address": "Unit 1/188 Plenty Rd\nPreston VIC 3072",
         "categories": [
             {
                 "tag": "Bar"
@@ -5896,7 +6309,7 @@
         "url": "https://beat.com.au/directory/the-keys/"
     },
     {
-        "address": "164A Tennyson St\r\nElwood VIC 3184",
+        "address": "164A Tennyson St\nElwood VIC 3184",
         "categories": [
             {
                 "tag": "EventVenue"
@@ -5907,7 +6320,7 @@
         "url": "https://beat.com.au/directory/the-king-of-tonga/"
     },
     {
-        "address": "238 Victoria St\r\nNorth Melbourne VIC 3051",
+        "address": "238 Victoria St\nNorth Melbourne VIC 3051",
         "categories": [
             {
                 "tag": "LiveMusic"
@@ -5918,7 +6331,7 @@
         "url": "https://beat.com.au/directory/the-last-chance-rock-roll-bar/"
     },
     {
-        "address": "91 Cardigan St\r\nCarlton VIC 3053",
+        "address": "91 Cardigan St\nCarlton VIC 3053",
         "categories": [
             {
                 "tag": "Pub"
@@ -5929,7 +6342,7 @@
         "url": "https://beat.com.au/directory/the-lincoln/"
     },
     {
-        "address": "188 Collins St\r\nMelbourne VIC 3000",
+        "address": "188 Collins St\nMelbourne VIC 3000",
         "categories": [
             {
                 "tag": "EventVenue"
@@ -5971,7 +6384,7 @@
         "url": "https://beat.com.au/directory/the-local-taphouse/"
     },
     {
-        "address": "225 Nicholson St\r\nBrunswick East VIC 3057",
+        "address": "225 Nicholson St\nBrunswick East VIC 3057",
         "categories": [
             {
                 "tag": "Pub"
@@ -5985,7 +6398,7 @@
         "url": "https://beat.com.au/directory/the-lomond-hotel/"
     },
     {
-        "address": "212 Little Collins St\r\nMelbourne VIC 3000",
+        "address": "212 Little Collins St\nMelbourne VIC 3000",
         "categories": [
             {
                 "tag": "Bar"
@@ -5996,7 +6409,7 @@
         "url": "https://beat.com.au/directory/the-luwow/"
     },
     {
-        "address": "1/48 Clifton St\r\nPrahran VIC 3181",
+        "address": "1/48 Clifton St\nPrahran VIC 3181",
         "categories": [
             {
                 "tag": "EventVenue"
@@ -6007,7 +6420,7 @@
         "url": "https://beat.com.au/directory/the-mc-showroom/"
     },
     {
-        "address": "135 Flinders Ln\r\nMelbourne VIC 3000",
+        "address": "135 Flinders Ln\nMelbourne VIC 3000",
         "categories": [
             {
                 "tag": "Bar"
@@ -6018,18 +6431,18 @@
         "url": "https://beat.com.au/directory/the-meatball-and-wine-bar/"
     },
     {
-        "address": "15 Gilbert Road\r\nPreston VIC 3072",
+        "address": "15 Gilbert Road\nPreston VIC 3072",
         "categories": [
             {
                 "tag": "Bar"
             }
         ],
         "city": "Preston, VIC",
-        "name": "The Merri Clan",
-        "url": "https://beat.com.au/directory/the-merri-clan/"
+        "name": "The Merri Bar",
+        "url": "https://beat.com.au/directory/the-merri-bar/"
     },
     {
-        "address": "111 High St\r\nNorthcote VIC 3070",
+        "address": "111 High St\nNorthcote VIC 3070",
         "categories": [
             {
                 "tag": "LiveMusic"
@@ -6040,7 +6453,7 @@
         "url": "https://beat.com.au/directory/the-merri-creek-tavern/"
     },
     {
-        "address": "238 Whitehall St\r\nYarraville VIC 3013",
+        "address": "238 Whitehall St\nYarraville VIC 3013",
         "categories": [
             {
                 "tag": "Pub"
@@ -6051,7 +6464,7 @@
         "url": "https://beat.com.au/directory/the-mersh/"
     },
     {
-        "address": "690-694 Mt Alexander Rd\r\nMoonee Ponds VIC 3039",
+        "address": "690-694 Mt Alexander Rd\nMoonee Ponds VIC 3039",
         "categories": [
             {
                 "tag": "Pub"
@@ -6062,7 +6475,7 @@
         "url": "https://beat.com.au/directory/the-mighty-moonee-ponds/"
     },
     {
-        "address": "70 Commercial Pl\r\nEltham VIC 3095",
+        "address": "70 Commercial Pl\nEltham VIC 3095",
         "categories": [
             {
                 "tag": "Bar"
@@ -6073,24 +6486,24 @@
         "url": "https://beat.com.au/directory/the-missing-gorilla-bar/"
     },
     {
-        "address": "120 Lygon St\r\nBrunswick East VIC 3057",
+        "address": "120 Lygon St\nBrunswick East VIC 3057",
         "categories": [
             {
                 "tag": "Bar"
             }
         ],
-        "city": "VIC",
+        "city": "Brunswick",
         "name": "The Moldy Fig",
         "url": "https://beat.com.au/directory/the-moldy-fig/"
     },
     {
-        "address": "118 Elgin St\r\nCarlton VIC 3053",
+        "address": "118 Elgin St\nCarlton VIC 3053",
         "categories": [
             {
-                "tag": "TheatreVenue"
+                "tag": "EventVenue"
             },
             {
-                "tag": "EventVenue"
+                "tag": "TheatreVenue"
             }
         ],
         "city": "Carlton, VIC",
@@ -6098,7 +6511,7 @@
         "url": "https://beat.com.au/directory/the-motley-bauhaus/"
     },
     {
-        "address": "20 Carlisle St\r\nSt Kilda VIC 3182",
+        "address": "20 Carlisle St\nSt Kilda VIC 3182",
         "categories": [
             {
                 "tag": "TheatreVenue"
@@ -6109,7 +6522,7 @@
         "url": "https://beat.com.au/directory/the-national-theatre-melbourne/"
     },
     {
-        "address": "243 Main St\r\nLilydale VIC 3140",
+        "address": "243 Main St\nLilydale VIC 3140",
         "categories": [
             {
                 "contents": "",
@@ -6121,7 +6534,7 @@
         "url": "https://beat.com.au/directory/the-new-yorker-bar/"
     },
     {
-        "address": "137-141 Johnston St\r\nFitzroy VIC 3065",
+        "address": "137-141 Johnston St\nFitzroy VIC 3065",
         "categories": [
             {
                 "tag": "Bar"
@@ -6141,7 +6554,7 @@
         "url": "https://beat.com.au/directory/night-cat/"
     },
     {
-        "address": "228 Nicholson St\r\nFootscray VIC 3011",
+        "address": "228 Nicholson St\nFootscray VIC 3011",
         "categories": [
             {
                 "tag": "Bar"
@@ -6153,6 +6566,18 @@
         "city": "Footscray, VIC",
         "name": "The Night Heron",
         "url": "https://beat.com.au/directory/the-night-heron/"
+    },
+    {
+        "address": "11 Acacia Pl\nAbbotsford VIC 3067",
+        "categories": [
+            {
+                "contents": "",
+                "tag": "OtherVenue"
+            }
+        ],
+        "city": "Abbotsford, VIC",
+        "name": "The Open Space",
+        "url": "https://beat.com.au/directory/the-open-space/"
     },
     {
         "address": "505-507 City Rd, South Melbourne VIC 3205",
@@ -6169,7 +6594,7 @@
         "url": "https://beat.com.au/directory/the-palace-hotel/"
     },
     {
-        "address": "Level 3, Crown Melbourne\r\n8 Whiteman Street\r\nSouthbank VIC 3006",
+        "address": "Level 3, Crown Melbourne\n8 Whiteman Street\nSouthbank VIC 3006",
         "categories": [
             {
                 "contents": "",
@@ -6181,7 +6606,7 @@
         "url": "https://beat.com.au/directory/290256/"
     },
     {
-        "address": "420 Sydney Rd\r\nBrunswick VIC 3056",
+        "address": "420 Sydney Rd\nBrunswick VIC 3056",
         "categories": [
             {
                 "tag": "Bar"
@@ -6198,7 +6623,7 @@
         "url": "https://beat.com.au/directory/the-penny-black/"
     },
     {
-        "address": "12-14 Napier Street\r\nEssendon VIC 3040",
+        "address": "12-14 Napier Street\nEssendon VIC 3040",
         "categories": [
             {
                 "contents": "",
@@ -6210,7 +6635,7 @@
         "url": "https://beat.com.au/directory/the-pepper-tree-essendon/"
     },
     {
-        "address": "135 Victoria Parade\r\nCollingwood VIC 3066",
+        "address": "135 Victoria Parade\nCollingwood VIC 3066",
         "categories": [
             {
                 "tag": "Pub"
@@ -6221,7 +6646,44 @@
         "url": "https://beat.com.au/directory/the-prince-patrick/"
     },
     {
-        "address": "101 Lygon St\r\nBrunswick East VIC 3057",
+        "address": "299 Brunswick St\nFitzroy VIC 3065",
+        "categories": [
+            {
+                "tag": "Bar"
+            },
+            {
+                "tag": "LiveMusic"
+            },
+            {
+                "tag": "Pub"
+            }
+        ],
+        "city": "Fitzroy, VIC",
+        "name": "The Provincial Hotel",
+        "url": "https://beat.com.au/directory/the-provincial-hotel/"
+    },
+    {
+        "address": "376 Brunswick St, Fitzroy",
+        "categories": [
+            {
+                "tag": "Bar"
+            },
+            {
+                "tag": "Club"
+            },
+            {
+                "tag": "LiveMusic"
+            },
+            {
+                "tag": "Pub"
+            }
+        ],
+        "city": "Fitzroy",
+        "name": "The Punters Club",
+        "url": "https://beat.com.au/directory/the-punters-club/"
+    },
+    {
+        "address": "101 Lygon St\nBrunswick East VIC 3057",
         "categories": [
             {
                 "tag": "Bar"
@@ -6238,7 +6700,7 @@
         "url": "https://beat.com.au/directory/the-quarry-hotel/"
     },
     {
-        "address": "271 Racecourse Rd\r\nFlemington VIC 3031",
+        "address": "271 Racecourse Rd\nFlemington VIC 3031",
         "categories": [
             {
                 "tag": "Pub"
@@ -6249,7 +6711,7 @@
         "url": "https://beat.com.au/directory/the-quiet-man-irish-pub/"
     },
     {
-        "address": "3/1545 Burwood Hwy\r\nTecoma VIC 3160",
+        "address": "3/1545 Burwood Hwy\nTecoma VIC 3160",
         "categories": [
             {
                 "tag": "Pub"
@@ -6260,7 +6722,7 @@
         "url": "https://beat.com.au/directory/the-railyard-saloon/"
     },
     {
-        "address": "27 St David St\r\nFitzroy VIC 3065",
+        "address": "27 St David St\nFitzroy VIC 3065",
         "categories": [
             {
                 "tag": "Bar"
@@ -6277,7 +6739,7 @@
         "url": "https://beat.com.au/directory/the-rainbow-hotel/"
     },
     {
-        "address": "Shop 6 / 672 Glenferrie Rd\r\nHawthorn VIC 3122",
+        "address": "Shop 6 / 672 Glenferrie Rd\nHawthorn VIC 3122",
         "categories": [
             {
                 "tag": "Bar"
@@ -6291,7 +6753,7 @@
         "url": "https://beat.com.au/directory/the-resistance-bar-and-cafe/"
     },
     {
-        "address": "182 Johnston St\r\nFitzroy VIC 3065",
+        "address": "182 Johnston St\nFitzroy VIC 3065",
         "categories": [
             {
                 "tag": "Pub"
@@ -6302,7 +6764,7 @@
         "url": "https://beat.com.au/directory/the-rochester/"
     },
     {
-        "address": "201 Brunswick Street\r\nFitzroy VIC 3065",
+        "address": "201 Brunswick Street\nFitzroy VIC 3065",
         "categories": [
             {
                 "tag": "Bar"
@@ -6319,7 +6781,7 @@
         "url": "https://beat.com.au/directory/the-rooks-return/"
     },
     {
-        "address": "60 Rose St\r\nFitzroy VIC 3065",
+        "address": "60 Rose St\nFitzroy VIC 3065",
         "categories": [
             {
                 "contents": "",
@@ -6331,7 +6793,19 @@
         "url": "https://beat.com.au/directory/rose-street-market/"
     },
     {
-        "address": "36 Johnston St\r\nFitzroy VIC 3065",
+        "address": "379-399 Whitehorse Rd\nNunawading VIC 3131",
+        "categories": [
+            {
+                "contents": "",
+                "tag": "OtherVenue"
+            }
+        ],
+        "city": "Nunawading, VIC",
+        "name": "The Round",
+        "url": "https://beat.com.au/directory/the-round-2/"
+    },
+    {
+        "address": "36 Johnston St\nFitzroy VIC 3065",
         "categories": [
             {
                 "tag": "Pub"
@@ -6342,17 +6816,8 @@
         "url": "https://beat.com.au/directory/the-shady-lady/"
     },
     {
-        "address": "365 Purves Road\r\nMain Ridge VIC 3928",
+        "address": "365 Purves Road\nMain Ridge VIC 3928",
         "categories": [
-            {
-                "tag": "Bar"
-            },
-            {
-                "tag": "EventVenue"
-            },
-            {
-                "tag": "LiveMusic"
-            },
             {
                 "tag": "Pub"
             },
@@ -6361,6 +6826,15 @@
             },
             {
                 "tag": "TheatreVenue"
+            },
+            {
+                "tag": "LiveMusic"
+            },
+            {
+                "tag": "Bar"
+            },
+            {
+                "tag": "EventVenue"
             }
         ],
         "city": "Main Ridge, VIC",
@@ -6368,7 +6842,7 @@
         "url": "https://beat.com.au/directory/the-shed-the-pig-whistle/"
     },
     {
-        "address": "293 Fitzroy St\r\nFitzroy VIC 3065",
+        "address": "293 Fitzroy St\nFitzroy VIC 3065",
         "categories": [
             {
                 "tag": "LiveMusic"
@@ -6382,7 +6856,7 @@
         "url": "https://beat.com.au/directory/the-standard-hotel/"
     },
     {
-        "address": "197 Plenty Rd\r\nPreston VIC 3072",
+        "address": "197 Plenty Rd\nPreston VIC 3072",
         "categories": [
             {
                 "tag": "Pub"
@@ -6393,7 +6867,7 @@
         "url": "https://beat.com.au/directory/the-stolberg/"
     },
     {
-        "address": "1 Market St\r\nNewport VIC 3015",
+        "address": "1 Market St\nNewport VIC 3015",
         "categories": [
             {
                 "tag": "EventVenue"
@@ -6404,7 +6878,7 @@
         "url": "https://beat.com.au/directory/the-substation/"
     },
     {
-        "address": "290 Macaulay Rd\r\nNorth Melbourne VIC 3051",
+        "address": "290 Macaulay Rd\nNorth Melbourne VIC 3051",
         "categories": [
             {
                 "tag": "EventVenue"
@@ -6429,7 +6903,7 @@
         "url": "https://beat.com.au/directory/the-thorn/"
     },
     {
-        "address": "635 High St\r\nThornbury VIC 3071",
+        "address": "635 High St\nThornbury VIC 3071",
         "categories": [
             {
                 "tag": "Bar"
@@ -6440,7 +6914,7 @@
         "url": "https://beat.com.au/directory/the-thornbury-local/"
     },
     {
-        "address": "859 High St\r\nThornbury VIC 3071",
+        "address": "859 High St\nThornbury VIC 3071",
         "categories": [
             {
                 "tag": "TheatreVenue"
@@ -6451,7 +6925,7 @@
         "url": "https://beat.com.au/directory/the-thornbury-theatre/"
     },
     {
-        "address": "351 Plummer St\r\nPort Melbourne VIC 3207",
+        "address": "351 Plummer St\nPort Melbourne VIC 3207",
         "categories": [
             {
                 "tag": "EventVenue"
@@ -6462,7 +6936,7 @@
         "url": "https://beat.com.au/directory/the-timber-yard/"
     },
     {
-        "address": "2f/252 Swanston St\r\nMelbourne VIC 3000",
+        "address": "2f/252 Swanston St\nMelbourne VIC 3000",
         "categories": [
             {
                 "tag": "Bar"
@@ -6476,7 +6950,7 @@
         "url": "https://beat.com.au/directory/the-toff-in-town/"
     },
     {
-        "address": "67-71 Johnston St\r\nCollingwood VIC 3066",
+        "address": "67-71 Johnston St\nCollingwood VIC 3066",
         "categories": [
             {
                 "tag": "Bar"
@@ -6493,7 +6967,24 @@
         "url": "https://beat.com.au/directory/the-tote-hotel/"
     },
     {
-        "address": "256 Moray St\r\nSouth Melbourne VIC 3205",
+        "address": "71A Acland St\nSt Kilda VIC 3182",
+        "categories": [
+            {
+                "tag": "Bar"
+            },
+            {
+                "tag": "LiveMusic"
+            },
+            {
+                "tag": "Pub"
+            }
+        ],
+        "city": "St Kilda, VIC",
+        "name": "The Vineyard Restaurant & Bar",
+        "url": "https://beat.com.au/directory/the-vineyard-restaurant-bar/"
+    },
+    {
+        "address": "256 Moray St\nSouth Melbourne VIC 3205",
         "categories": [
             {
                 "tag": "Pub"
@@ -6504,7 +6995,7 @@
         "url": "https://beat.com.au/directory/the-water-rat-hotel/"
     },
     {
-        "address": "176 Little Lonsdale St\r\nMelbourne VIC 3000",
+        "address": "176 Little Lonsdale St\nMelbourne VIC 3000",
         "categories": [
             {
                 "contents": "",
@@ -6516,7 +7007,7 @@
         "url": "https://beat.com.au/directory/the-wheeler-centre/"
     },
     {
-        "address": "51 Brunswick Street\r\nFitzroy VIC 3065",
+        "address": "51 Brunswick Street\nFitzroy VIC 3065",
         "categories": [
             {
                 "tag": "Bar"
@@ -6533,7 +7024,7 @@
         "url": "https://beat.com.au/directory/workers-club/"
     },
     {
-        "address": "90 Little Malop St\r\nGeelong VIC 3220",
+        "address": "90 Little Malop St\nGeelong VIC 3220",
         "categories": [
             {
                 "tag": "Bar"
@@ -6547,7 +7038,7 @@
         "url": "https://beat.com.au/directory/the-workers-club-geelong/"
     },
     {
-        "address": "295 Johnston St\r\nAbbotsford VIC 3067",
+        "address": "295 Johnston St\nAbbotsford VIC 3067",
         "categories": [
             {
                 "tag": "LiveMusic"
@@ -6561,7 +7052,7 @@
         "url": "https://beat.com.au/directory/the-yarra-hotel/"
     },
     {
-        "address": "48 Hoddle St\r\nAbbotsford VIC 3067",
+        "address": "48 Hoddle St\nAbbotsford VIC 3067",
         "categories": [
             {
                 "tag": "Bar"
@@ -6575,7 +7066,7 @@
         "url": "https://beat.com.au/directory/the-yorkshire-hotel/"
     },
     {
-        "address": "48 Hoddle St\r\nAbbotsford VIC 3067",
+        "address": "48 Hoddle St\nAbbotsford VIC 3067",
         "categories": [
             {
                 "tag": "Pub"
@@ -6586,7 +7077,7 @@
         "url": "https://beat.com.au/directory/the-yorkshire-stingo-hotel/"
     },
     {
-        "address": "30 Hargraves Street\r\nCastlemaine VIC 3450",
+        "address": "30 Hargraves Street\nCastlemaine VIC 3450",
         "categories": [
             {
                 "tag": "Bar"
@@ -6603,7 +7094,7 @@
         "url": "https://beat.com.au/directory/theatre-royal-castlemaine/"
     },
     {
-        "address": "14 Acland St\r\nSt Kilda VIC 3182",
+        "address": "14 Acland St\nSt Kilda VIC 3182",
         "categories": [
             {
                 "tag": "TheatreVenue"
@@ -6614,7 +7105,7 @@
         "url": "https://beat.com.au/directory/theatre-works/"
     },
     {
-        "address": "289 Lygon St \r\nBrunswick East VIC 3057",
+        "address": "289 Lygon St \nBrunswick East VIC 3057",
         "categories": [
             {
                 "contents": "Galleries",
@@ -6626,7 +7117,7 @@
         "url": "https://beat.com.au/directory/this-is-not-a-toy-store/"
     },
     {
-        "address": "27 Ballantyne Street\r\nThornbury VIC 3071",
+        "address": "27 Ballantyne Street\nThornbury VIC 3071",
         "categories": [
             {
                 "tag": "EventVenue"
@@ -6637,7 +7128,7 @@
         "url": "https://beat.com.au/directory/thornbury-bowls-club/"
     },
     {
-        "address": "69 Dover St\r\nCremorne VIC 3121",
+        "address": "69 Dover St\nCremorne VIC 3121",
         "categories": [
             {
                 "tag": "EventVenue"
@@ -6648,7 +7139,7 @@
         "url": "https://beat.com.au/directory/thought-forms-gallery/"
     },
     {
-        "address": "130 Barkly St\r\nBrunswick VIC 3056",
+        "address": "130 Barkly St\nBrunswick VIC 3056",
         "categories": [
             {
                 "tag": "Brewery"
@@ -6659,7 +7150,7 @@
         "url": "https://beat.com.au/directory/thunder-road-brewing-company/"
     },
     {
-        "address": "Level 1, 59-63 Bourke St\r\nMelbourne VIC 3000",
+        "address": "Level 1, 59-63 Bourke St\nMelbourne VIC 3000",
         "categories": [
             {
                 "tag": "Club"
@@ -6670,7 +7161,7 @@
         "url": "https://beat.com.au/directory/tokyo-hustle/"
     },
     {
-        "address": "Geddes Ln\r\nMelbourne VIC 3000",
+        "address": "Geddes Ln\nMelbourne VIC 3000",
         "categories": [
             {
                 "tag": "Bar"
@@ -6684,7 +7175,7 @@
         "url": "https://beat.com.au/directory/top-yard-rooftop/"
     },
     {
-        "address": "233 Lonsdale St\r\nMelbourne VIC 3000",
+        "address": "233 Lonsdale St\nMelbourne VIC 3000",
         "categories": [
             {
                 "contents": "",
@@ -6696,7 +7187,7 @@
         "url": "https://beat.com.au/directory/touche-hombre/"
     },
     {
-        "address": "33 Errol St\r\nNorth Melbourne VIC 3051",
+        "address": "33 Errol St\nNorth Melbourne VIC 3051",
         "categories": [
             {
                 "tag": "LiveMusic"
@@ -6710,7 +7201,7 @@
         "url": "https://beat.com.au/directory/town-hall-hotel/"
     },
     {
-        "address": "Cnr Lygon & Victoria Streets\r\nCarlton VIC 3053",
+        "address": "Cnr Lygon & Victoria Streets\nCarlton VIC 3053",
         "categories": [
             {
                 "tag": "EventVenue"
@@ -6721,7 +7212,7 @@
         "url": "https://beat.com.au/directory/trades-hall/"
     },
     {
-        "address": "445 Toorak Rd\r\nToorak VIC 3142",
+        "address": "445 Toorak Rd\nToorak VIC 3142",
         "categories": [
             {
                 "tag": "Bar"
@@ -6735,7 +7226,7 @@
         "url": "https://beat.com.au/directory/trak-live-lounge-bar/"
     },
     {
-        "address": "165 Rae St\r\nFitzroy North VIC 3068",
+        "address": "165 Rae St\nFitzroy North VIC 3068",
         "categories": [
             {
                 "tag": "LiveMusic"
@@ -6749,13 +7240,13 @@
         "url": "https://beat.com.au/directory/tramway-hotel/"
     },
     {
-        "address": "167 Franklin Street\r\nMelbourne VIC 3000",
+        "address": "167 Franklin Street\nMelbourne VIC 3000",
         "categories": [
             {
-                "tag": "Bar"
+                "tag": "Club"
             },
             {
-                "tag": "Club"
+                "tag": "Bar"
             },
             {
                 "tag": "EventVenue"
@@ -6766,7 +7257,7 @@
         "url": "https://beat.com.au/directory/transistor-social/"
     },
     {
-        "address": "Level 2, Transport Hotel Federation Square\r\nMelbourne VIC 3000",
+        "address": "Level 2, Transport Hotel Federation Square\nMelbourne VIC 3000",
         "categories": [
             {
                 "tag": "Bar"
@@ -6780,11 +7271,8 @@
         "url": "https://beat.com.au/directory/transit-rooftop-bar/"
     },
     {
-        "address": "Ground Level, Federation Square\r\nMelbourne VIC 3000",
+        "address": "Ground Level, Federation Square\nMelbourne VIC 3000",
         "categories": [
-            {
-                "tag": "Pub"
-            },
             {
                 "tag": "Bar"
             },
@@ -6793,6 +7281,9 @@
             },
             {
                 "tag": "LiveMusic"
+            },
+            {
+                "tag": "Pub"
             }
         ],
         "city": "Melbourne, VIC",
@@ -6800,7 +7291,7 @@
         "url": "https://beat.com.au/directory/transport-public-bar/"
     },
     {
-        "address": "577 Little Bourke St\r\nMelbourne VIC 3004",
+        "address": "577 Little Bourke St\nMelbourne VIC 3004",
         "categories": [
             {
                 "tag": "Club"
@@ -6811,7 +7302,7 @@
         "url": "https://beat.com.au/directory/treat-danceclub/"
     },
     {
-        "address": "234 Gertrude St\r\nFitzroy VIC 3065",
+        "address": "234 Gertrude St\nFitzroy VIC 3065",
         "categories": [
             {
                 "contents": "",
@@ -6823,7 +7314,7 @@
         "url": "https://beat.com.au/directory/trippy-taco/"
     },
     {
-        "address": "275 Exhibition St\r\nMelbourne VIC 3000",
+        "address": "275 Exhibition St\nMelbourne VIC 3000",
         "categories": [
             {
                 "tag": "Bar"
@@ -6834,7 +7325,19 @@
         "url": "https://beat.com.au/directory/trunk-restaurant-bar/"
     },
     {
-        "address": "449 Victoria St\r\nAbbotsford VIC 3067",
+        "address": "55 Edward St\nBrunswick VIC 3056",
+        "categories": [
+            {
+                "contents": "Galleries",
+                "tag": "OtherVenue"
+            }
+        ],
+        "city": "Brunswick, VIC",
+        "name": "Unassigned Gallery",
+        "url": "https://beat.com.au/directory/unassigned-gallery/"
+    },
+    {
+        "address": "449 Victoria St\nAbbotsford VIC 3067",
         "categories": [
             {
                 "contents": "Café",
@@ -6846,7 +7349,7 @@
         "url": "https://beat.com.au/directory/undercover-roasters/"
     },
     {
-        "address": "109 Union St\r\nBrunswick VIC 3056",
+        "address": "109 Union St\nBrunswick VIC 3056",
         "categories": [
             {
                 "tag": "Bar"
@@ -6860,7 +7363,7 @@
         "url": "https://beat.com.au/directory/union-hotel-brunswick/"
     },
     {
-        "address": "34 Union St\r\nBrunswick VIC 3056",
+        "address": "34 Union St\nBrunswick VIC 3056",
         "categories": [
             {
                 "contents": "",
@@ -6872,7 +7375,7 @@
         "url": "https://beat.com.au/directory/union-st-brewers/"
     },
     {
-        "address": "177 Brunswick St\r\nFitzroy VIC 3065",
+        "address": "177 Brunswick St\nFitzroy VIC 3065",
         "categories": [
             {
                 "tag": "LiveMusic"
@@ -6883,7 +7386,7 @@
         "url": "https://beat.com.au/directory/uptown-jazz-cafe/"
     },
     {
-        "address": "17-21 Eaton Mall\r\nOakleigh VIC 3166",
+        "address": "17-21 Eaton Mall\nOakleigh VIC 3166",
         "categories": [
             {
                 "contents": "",
@@ -6895,7 +7398,7 @@
         "url": "https://beat.com.au/directory/vanilla-lounge/"
     },
     {
-        "address": "179 High St\r\nFremantle WA 6160",
+        "address": "179 High St\nFremantle WA 6160",
         "categories": [
             {
                 "contents": "",
@@ -6907,7 +7410,7 @@
         "url": "https://beat.com.au/directory/victoria-hall/"
     },
     {
-        "address": "31 Victoria St\r\nMelbourne VIC 3000",
+        "address": "31 Victoria St\nMelbourne VIC 3000",
         "categories": [
             {
                 "tag": "TheatreVenue"
@@ -6918,7 +7421,7 @@
         "url": "https://beat.com.au/directory/victorian-opera/"
     },
     {
-        "address": "79/81 Fitzroy St\r\nSt Kilda VIC 3182",
+        "address": "79/81 Fitzroy St\nSt Kilda VIC 3182",
         "categories": [
             {
                 "contents": "Galleries",
@@ -6930,7 +7433,7 @@
         "url": "https://beat.com.au/directory/victorian-pride-centre/"
     },
     {
-        "address": "416 Collins St\r\nMelbourne VIC 3000",
+        "address": "416 Collins St\nMelbourne VIC 3000",
         "categories": [
             {
                 "tag": "LiveMusic"
@@ -6941,7 +7444,7 @@
         "url": "https://beat.com.au/directory/victory-lounge/"
     },
     {
-        "address": "Springvale Rd & Ferntree Gully Rd\r\nMulgrave VIC 3170",
+        "address": "Springvale Rd & Ferntree Gully Rd\nMulgrave VIC 3170",
         "categories": [
             {
                 "contents": "",
@@ -6953,16 +7456,33 @@
         "url": "https://beat.com.au/directory/village-green/"
     },
     {
-        "address": "143 Chapel St\r\nSt Kilda VIC 3182",
+        "address": "64/90 Sutton St, North Melbourne VIC 3051",
         "categories": [
             {
                 "tag": "Bar"
             },
             {
-                "tag": "EventVenue"
+                "tag": "Club"
             },
             {
+                "tag": "TheatreVenue"
+            }
+        ],
+        "city": "North Melbourne",
+        "name": "Viva",
+        "url": "https://beat.com.au/directory/viva/"
+    },
+    {
+        "address": "143 Chapel St\nSt Kilda VIC 3182",
+        "categories": [
+            {
                 "tag": "LiveMusic"
+            },
+            {
+                "tag": "Bar"
+            },
+            {
+                "tag": "EventVenue"
             },
             {
                 "contents": "Café",
@@ -6974,7 +7494,7 @@
         "url": "https://beat.com.au/directory/voodoo-love-child-speakeasy/"
     },
     {
-        "address": "Shop MR3, Southgate Ave\r\nSouthbank VIC 3006",
+        "address": "Shop MR3, Southgate Ave\nSouthbank VIC 3006",
         "categories": [
             {
                 "tag": "Bar"
@@ -6985,7 +7505,7 @@
         "url": "https://beat.com.au/directory/waterslide-bar/"
     },
     {
-        "address": "Riversdale Rd\r\nBurwood VIC 3125",
+        "address": "Riversdale Rd\nBurwood VIC 3125",
         "categories": [
             {
                 "contents": "",
@@ -6997,13 +7517,24 @@
         "url": "https://beat.com.au/directory/wattle-park/"
     },
     {
-        "address": "250 High St\r\nNorthcote VIC 3070",
+        "address": "250 Flinders St, Melbourne VIC 3000",
         "categories": [
             {
-                "tag": "Pub"
-            },
+                "tag": "LiveMusic"
+            }
+        ],
+        "city": "Melbourne",
+        "name": "Wax Music Lounge",
+        "url": "https://beat.com.au/directory/wax-music-lounge/"
+    },
+    {
+        "address": "250 High St\nNorthcote VIC 3070",
+        "categories": [
             {
                 "tag": "LiveMusic"
+            },
+            {
+                "tag": "Pub"
             }
         ],
         "city": "Northcote, VIC",
@@ -7011,7 +7542,21 @@
         "url": "https://beat.com.au/directory/wesley-anne/"
     },
     {
-        "address": "115-117 Greville St\r\nPrahran VIC 3181",
+        "address": "284 Smith St\nCollingwood VIC 3066",
+        "categories": [
+            {
+                "tag": "Bar"
+            },
+            {
+                "tag": "Brewery"
+            }
+        ],
+        "city": "Collingwood, VIC",
+        "name": "Wheat, Wine & Whisky",
+        "url": "https://beat.com.au/directory/wheat-wine-whisky/"
+    },
+    {
+        "address": "115-117 Greville St\nPrahran VIC 3181",
         "categories": [
             {
                 "tag": "Bar"
@@ -7022,16 +7567,16 @@
         "url": "https://beat.com.au/directory/white-oaks-saloon-bar-dining/"
     },
     {
-        "address": "22 Whitehart Ln\r\nMelbourne VIC 3000",
+        "address": "22 Whitehart Ln\nMelbourne VIC 3000",
         "categories": [
+            {
+                "tag": "LiveMusic"
+            },
             {
                 "tag": "Bar"
             },
             {
                 "tag": "EventVenue"
-            },
-            {
-                "tag": "LiveMusic"
             }
         ],
         "city": "Melbourne, VIC",
@@ -7039,7 +7584,7 @@
         "url": "https://beat.com.au/directory/whitehart-bar/"
     },
     {
-        "address": "524 Lygon St\r\nBrunswick East VIC 3057",
+        "address": "524 Lygon St\nBrunswick East VIC 3057",
         "categories": [
             {
                 "tag": "Bar"
@@ -7053,7 +7598,7 @@
         "url": "https://beat.com.au/directory/whole-lotta-love/"
     },
     {
-        "address": "288 Little Lonsdale St\r\nMelbourne VIC 3000",
+        "address": "288 Little Lonsdale St\nMelbourne VIC 3000",
         "categories": [
             {
                 "contents": "",
@@ -7065,7 +7610,7 @@
         "url": "https://beat.com.au/directory/wings-of-glory/"
     },
     {
-        "address": "386-388 Brunswick Street\r\nFitzroy VIC 3065",
+        "address": "386-388 Brunswick Street\nFitzroy VIC 3065",
         "categories": [
             {
                 "tag": "Bar"
@@ -7079,7 +7624,7 @@
         "url": "https://beat.com.au/directory/wolfhound-on-brunswick/"
     },
     {
-        "address": "29 Woodstock St\r\nBalaclava VIC 3183",
+        "address": "29 Woodstock St\nBalaclava VIC 3183",
         "categories": [
             {
                 "tag": "LiveMusic"
@@ -7090,7 +7635,7 @@
         "url": "https://beat.com.au/directory/woodstock-recording-studios/"
     },
     {
-        "address": "64 Smith St\r\nCollingwood VIC 3066",
+        "address": "64 Smith St\nCollingwood VIC 3066",
         "categories": [
             {
                 "tag": "Bar"
@@ -7104,7 +7649,7 @@
         "url": "https://beat.com.au/directory/woodys-bar/"
     },
     {
-        "address": "44 Corio St\r\nGeelong VIC 3220",
+        "address": "44 Corio St\nGeelong VIC 3220",
         "categories": [
             {
                 "tag": "EventVenue"
@@ -7115,7 +7660,7 @@
         "url": "https://beat.com.au/directory/wool-exchange/"
     },
     {
-        "address": "1/413 Elizabeth St\r\nMelbourne VIC 3000",
+        "address": "1/413 Elizabeth St\nMelbourne VIC 3000",
         "categories": [
             {
                 "tag": "Bar"
@@ -7126,7 +7671,7 @@
         "url": "https://beat.com.au/directory/workshop-bar/"
     },
     {
-        "address": "97B Smith St\r\nFitzroy VIC 3065",
+        "address": "97B Smith St\nFitzroy VIC 3065",
         "categories": [
             {
                 "tag": "Bar"
@@ -7146,7 +7691,7 @@
         "url": "https://beat.com.au/directory/wows/"
     },
     {
-        "address": "8C Whitely Parade\r\nWest Footscray VIC 3011",
+        "address": "8C Whitely Parade\nWest Footscray VIC 3011",
         "categories": [
             {
                 "tag": "Club"
@@ -7157,7 +7702,7 @@
         "url": "https://beat.com.au/directory/wrangler-studios/"
     },
     {
-        "address": "344 City Rd\r\nSouthbank VIC 3006",
+        "address": "344 City Rd\nSouthbank VIC 3006",
         "categories": [
             {
                 "tag": "Bar"
@@ -7171,7 +7716,7 @@
         "url": "https://beat.com.au/directory/xe54/"
     },
     {
-        "address": "99 Little Smith St\r\nFitzroy VIC 3065",
+        "address": "99 Little Smith St\nFitzroy VIC 3065",
         "categories": [
             {
                 "tag": "Bar"
@@ -7188,7 +7733,7 @@
         "url": "https://beat.com.au/directory/yah-yahs/"
     },
     {
-        "address": "135 Stephen St\r\nYarraville VIC 3013",
+        "address": "135 Stephen St\nYarraville VIC 3013",
         "categories": [
             {
                 "tag": "Pub"
@@ -7199,7 +7744,7 @@
         "url": "https://beat.com.au/directory/yarraville-club/"
     },
     {
-        "address": "60 Rose Street\r\nFitzroy VIC 3065",
+        "address": "60 Rose Street\nFitzroy VIC 3065",
         "categories": [
             {
                 "contents": "",
@@ -7211,7 +7756,7 @@
         "url": "https://beat.com.au/directory/young-bloods/"
     },
     {
-        "address": "12 Young St\r\nFrankston VIC 3199",
+        "address": "12 Young St\nFrankston VIC 3199",
         "categories": [
             {
                 "contents": "",
@@ -7223,7 +7768,7 @@
         "url": "https://beat.com.au/directory/young-street-supper-club/"
     },
     {
-        "address": "229 Queensberry St\r\nCarlton VIC 3053",
+        "address": "229 Queensberry St\nCarlton VIC 3053",
         "categories": [
             {
                 "tag": "Club"
