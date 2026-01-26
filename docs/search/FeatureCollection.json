@@ -1,1 +1,1 @@
-{"features":[],"type":"FeatureCollection"}
+{"features":[{"geometry":{"coordinates":[144.9879283,-37.7505509],"type":"Point"},"properties":{"events":[{"categories":["Other \"Trivia \""],"eDate":"2026-01-27","eName":"Merri Bar Trivia Night","genre":null,"price":"Free","supports":[],"ticketUrl":null,"time":" 7:30pm"}],"vName":"The Merri Bar"},"type":"Feature"}],"type":"FeatureCollection"}
