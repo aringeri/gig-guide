@@ -1,1 +1,1 @@
-{"features":[],"type":"FeatureCollection"}
+{"features":[{"geometry":{"coordinates":[144.9706211,-37.778276],"type":"Point"},"properties":{"events":[{"categories":["Free","Other \"Trivia \""],"eDate":"2026-02-10","eName":"Trivia Tuesdays","genre":null,"price":"Free","supports":[],"ticketUrl":null,"time":" 8pm"}],"vName":"The Beast"},"type":"Feature"}],"type":"FeatureCollection"}
