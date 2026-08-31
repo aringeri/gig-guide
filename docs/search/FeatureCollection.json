@@ -1,1 +1,1 @@
-{"features":[],"type":"FeatureCollection"}
+{"features":[{"geometry":{"coordinates":[145.0142411,-37.7310367],"type":"Point"},"properties":{"events":[{"categories":["Music"],"eDate":"2026-09-01","eName":"Ragtime Tavern Celtic Session","genre":"Acoustic","price":"Free","supports":[],"ticketUrl":null,"time":" 6pm"}],"vName":"Ragtime Tavern"},"type":"Feature"}],"type":"FeatureCollection"}
